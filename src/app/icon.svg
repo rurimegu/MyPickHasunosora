@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <g transform="translate(16, 16)">
+    <!-- 11 Petals in Hasunosora Member Colors (Larger, transparent background) -->
+    <!-- 1. Kaho Hinoshita (Sun Yellow) -->
+    <path d="M0 0 C3.2 -4, 4 -11, 0 -15 C-4 -11, -3.2 -4, 0 0 Z" fill="#f8b500" />
+    <!-- 2. Sayaka Murano (Ice Blue) -->
+    <path d="M0 0 C3.2 -4, 4 -11, 0 -15 C-4 -11, -3.2 -4, 0 0 Z" fill="#5383c3" transform="rotate(32.73)" />
+    <!-- 3. Kozue Otomune (Mermaid Green) -->
+    <path d="M0 0 C3.2 -4, 4 -11, 0 -15 C-4 -11, -3.2 -4, 0 0 Z" fill="#68be8d" transform="rotate(65.45)" />
+    <!-- 4. Tsuzuri Yugiri (My Red) -->
+    <path d="M0 0 C3.2 -4, 4 -11, 0 -15 C-4 -11, -3.2 -4, 0 0 Z" fill="#ba2636" transform="rotate(98.18)" />
+    <!-- 5. Rurino Osawa (Ruri Pink) -->
+    <path d="M0 0 C3.2 -4, 4 -11, 0 -15 C-4 -11, -3.2 -4, 0 0 Z" fill="#e7609e" transform="rotate(130.91)" />
+    <!-- 6. Megumi Fujishima (Angel White) -->
+    <path d="M0 0 C3.2 -4, 4 -11, 0 -15 C-4 -11, -3.2 -4, 0 0 Z" fill="#ffffff" transform="rotate(163.64)" />
+    <!-- 7. Ginko Momose (Amanohara Sky Blue) -->
+    <path d="M0 0 C3.2 -4, 4 -11, 0 -15 C-4 -11, -3.2 -4, 0 0 Z" fill="#a2d7dd" transform="rotate(196.36)" />
+    <!-- 8. Kosuzu Kachimachi (Ichibanboshi Gold) -->
+    <path d="M0 0 C3.2 -4, 4 -11, 0 -15 C-4 -11, -3.2 -4, 0 0 Z" fill="#fad764" transform="rotate(229.09)" />
+    <!-- 9. Hime Anyoji (Sugar Purple) -->
+    <path d="M0 0 C3.2 -4, 4 -11, 0 -15 C-4 -11, -3.2 -4, 0 0 Z" fill="#9d8de2" transform="rotate(261.82)" />
+    <!-- 10. Ceras Yanagida Lilienfeld (Rise Scarlet) -->
+    <path d="M0 0 C3.2 -4, 4 -11, 0 -15 C-4 -11, -3.2 -4, 0 0 Z" fill="#f46455" transform="rotate(294.55)" />
+    <!-- 11. Izumi Katsuragi (Chevalier Cyan-Green) -->
+    <path d="M0 0 C3.2 -4, 4 -11, 0 -15 C-4 -11, -3.2 -4, 0 0 Z" fill="#1ebecd" transform="rotate(327.27)" />
+    
+    <!-- Central Core -->
+    <circle cx="0" cy="0" r="4" fill="#ffffff" stroke="#f8b500" stroke-width="1.5" />
+  </g>
+</svg>

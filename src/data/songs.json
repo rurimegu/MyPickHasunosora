@@ -1,0 +1,3980 @@
+[
+  {
+    "title": {
+      "ja": "365 Days",
+      "romaji": "365 Days"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Maika Sato",
+      "romaji": "Maika Sato"
+    },
+    "composer": {
+      "ja": "Kentaro Sonoda",
+      "romaji": "Kentaro Sonoda"
+    },
+    "arranger": {
+      "ja": "Kentaro Sonoda",
+      "romaji": "Kentaro Sonoda"
+    },
+    "coverUrl": "/104/hasunosora/365_days.jpg",
+    "wikiCoverFile": "Hasunosora 365 Days Jacket Art.jpg",
+    "unit": 5,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "37.5℃のファンタジー",
+      "romaji": "37.5℃ no Fantasy"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Kentaro Sonoda",
+      "romaji": "Kentaro Sonoda"
+    },
+    "arranger": {
+      "ja": "Kentaro Sonoda",
+      "romaji": "Kentaro Sonoda"
+    },
+    "coverUrl": "/105/cerisebouquet/375_no_fantasy.jpg",
+    "wikiCoverFile": "Cerise Bouquet 37.5℃ no Fantasy.jpg",
+    "unit": 1,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "A出るノート",
+      "romaji": "A Deru Note"
+    },
+    "artist": {
+      "ja": "エーデルノート",
+      "romaji": "EdelNote"
+    },
+    "lyricist": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "composer": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "arranger": {
+      "ja": "Atsuhito Sato",
+      "romaji": "Atsuhito Sato"
+    },
+    "coverUrl": "/105/edelnote/a_deru_note.jpg",
+    "wikiCoverFile": "Edel Note EdelinieN.jpg|CD Jacket Art",
+    "unit": 4,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "飴色",
+      "romaji": "Ameiro"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Aira",
+      "romaji": "Aira"
+    },
+    "arranger": {
+      "ja": "Aira",
+      "romaji": "Aira"
+    },
+    "coverUrl": "/103/dollchestra/ameiro.jpg",
+    "wikiCoverFile": "Ameiro.jpg",
+    "unit": 2,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "アンペア",
+      "romaji": "Ampere"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Kanata Okajima and Hayato Yamamoto",
+      "romaji": "Kanata Okajima and Hayato Yamamoto"
+    },
+    "arranger": {
+      "ja": "Hayato Yamamoto",
+      "romaji": "Hayato Yamamoto"
+    },
+    "coverUrl": "/105/dollchestra/ampere.png",
+    "wikiCoverFile": "Ampere Game Jacket Art.png",
+    "unit": 2,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "青とシャボン",
+      "romaji": "Ao to Shabon"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Atsuhito Sato",
+      "romaji": "Atsuhito Sato"
+    },
+    "arranger": {
+      "ja": "Atsuhito Sato",
+      "romaji": "Atsuhito Sato"
+    },
+    "coverUrl": "/103/dollchestra/ao_to_shabon.png",
+    "wikiCoverFile": "Ao to Shabon.png",
+    "unit": 2,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "アオクハルカ",
+      "romaji": "Aoku Haruka"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Koichi Tsurusaki",
+      "romaji": "Koichi Tsurusaki"
+    },
+    "arranger": {
+      "ja": "Koichi Tsurusaki",
+      "romaji": "Koichi Tsurusaki"
+    },
+    "coverUrl": "/104/cerisebouquet/aoku_haruka.jpg",
+    "wikiCoverFile": "Cerise Bouquet Aoku Haruka Cover.jpg",
+    "unit": 1,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "アステリズム",
+      "romaji": "Asterism"
+    },
+    "artist": {
+      "ja": "Kozue Otomune, Tsuzuri Yugiri & Megumi Fujishima",
+      "romaji": "Kozue Otomune, Tsuzuri Yugiri & Megumi Fujishima"
+    },
+    "lyricist": {
+      "ja": "Nanoha Komatsu",
+      "romaji": "Nanoha Komatsu"
+    },
+    "composer": {
+      "ja": "Yusuke Tojima",
+      "romaji": "Yusuke Tojima"
+    },
+    "arranger": {
+      "ja": "Yusuke Tojima",
+      "romaji": "Yusuke Tojima"
+    },
+    "coverUrl": "/104/other/asterism.png",
+    "wikiCoverFile": "Asterism.png",
+    "unit": 6,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "明日の空の僕たちへ",
+      "romaji": "Asu no Sora no Bokutachi e"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "KOMU",
+      "romaji": "KOMU"
+    },
+    "composer": {
+      "ja": "Masaki Iehara",
+      "romaji": "Masaki Iehara"
+    },
+    "arranger": {
+      "ja": "Masaki Iehara",
+      "romaji": "Masaki Iehara"
+    },
+    "coverUrl": "/103/hasunosora/asu_no_sora_no_bokutachi_e.jpg",
+    "wikiCoverFile": "Asu no Sora no Bokutachi e.jpg",
+    "unit": 5,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "可惜夜花火",
+      "romaji": "Atarayo Hanabi"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Atsuhito Sato (Dream Monster)",
+      "romaji": "Atsuhito Sato (Dream Monster)"
+    },
+    "arranger": {
+      "ja": "Atsuhito Sato (Dream Monster)",
+      "romaji": "Atsuhito Sato (Dream Monster)"
+    },
+    "coverUrl": "/105/cerisebouquet/atarayo_hanabi.jpg",
+    "wikiCoverFile": "Cerise Bouquet Atarayo Hanabi.jpg",
+    "unit": 1,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "AURORA FLOWER",
+      "romaji": "AURORA FLOWER"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "畑亜貴",
+      "romaji": "Aki Hata"
+    },
+    "composer": {
+      "ja": "Yusuke Shirato (Dream Monster)",
+      "romaji": "Yusuke Shirato (Dream Monster)"
+    },
+    "arranger": {
+      "ja": "Yusuke Shirato (Dream Monster)",
+      "romaji": "Yusuke Shirato (Dream Monster)"
+    },
+    "coverUrl": "/104/hasunosora/aurora_flower.jpg",
+    "wikiCoverFile": "Hasunosora AURORA FLOWER.jpg",
+    "unit": 5,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "AWOKE",
+      "romaji": "AWOKE"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Kanata Okajima and Hayato Yamamoto",
+      "romaji": "Kanata Okajima and Hayato Yamamoto"
+    },
+    "arranger": {
+      "ja": "Hayato Yamamoto",
+      "romaji": "Hayato Yamamoto"
+    },
+    "coverUrl": "/103/dollchestra/awoke.png",
+    "wikiCoverFile": "AWOKE.png",
+    "unit": 2,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "BANG YOU グラビティ",
+      "romaji": "BANG YOU Gravity"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Reiji Yamamoto",
+      "romaji": "Reiji Yamamoto"
+    },
+    "arranger": {
+      "ja": "Reiji Yamamoto",
+      "romaji": "Reiji Yamamoto"
+    },
+    "coverUrl": "/103/miracrapark/bang_you_gravity.jpg",
+    "wikiCoverFile": "BANG YOU Gravity.jpg",
+    "unit": 3,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "be proud",
+      "romaji": "be proud"
+    },
+    "artist": {
+      "ja": "Kozue Otomune",
+      "romaji": "Kozue Otomune"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Menma",
+      "romaji": "Menma"
+    },
+    "arranger": {
+      "ja": "Menma",
+      "romaji": "Menma"
+    },
+    "coverUrl": "/104/other/be_proud.jpg",
+    "wikiCoverFile": "Kozue Otomune be proud.jpg",
+    "unit": 6,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "Berry Merry Go Round",
+      "romaji": "Berry Merry Go Round"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Akira Kabe and RT2",
+      "romaji": "Akira Kabe and RT2"
+    },
+    "arranger": {
+      "ja": "Akira Kabe",
+      "romaji": "Akira Kabe"
+    },
+    "coverUrl": "/105/cerisebouquet/berry_merry_go_round.jpg",
+    "wikiCoverFile": "Cerise Bouquet Berry Merry Go Round.jpg",
+    "unit": 1,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "バアドケージ",
+      "romaji": "Birdcage"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Souta Itou",
+      "romaji": "Souta Itou"
+    },
+    "arranger": {
+      "ja": "Shoichiro Hirata",
+      "romaji": "Shoichiro Hirata"
+    },
+    "coverUrl": "/104/dollchestra/birdcage.jpg",
+    "wikiCoverFile": "DOLLCHESTRA Birdcage Jacket Art.jpg",
+    "unit": 2,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "BLAST!!",
+      "romaji": "BLAST!!"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Fi'Ne and Yuqui-lah",
+      "romaji": "Fi'Ne and Yuqui-lah"
+    },
+    "arranger": {
+      "ja": "Tomonori Hayashibe (Plus-Tech Squeeze Box)",
+      "romaji": "Tomonori Hayashibe (Plus-Tech Squeeze Box)"
+    },
+    "coverUrl": "/105/miracrapark/blast.jpg",
+    "wikiCoverFile": "Mira-Cra Park! BLAST!!.jpg",
+    "unit": 3,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Bloom the smile, Bloom the dream!",
+      "romaji": "Bloom the smile, Bloom the dream!"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Kohei Tsukada",
+      "romaji": "Kohei Tsukada"
+    },
+    "composer": {
+      "ja": "Kohei Tsukada",
+      "romaji": "Kohei Tsukada"
+    },
+    "arranger": {
+      "ja": "Kohei Tsukada",
+      "romaji": "Kohei Tsukada"
+    },
+    "coverUrl": "/104/hasunosora/bloom_the_smile_bloom_the_dream.jpg",
+    "wikiCoverFile": "Hasunosora Bloom the smile Bloom the dream.jpg",
+    "unit": 5,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "ブルウモーメント",
+      "romaji": "Blue Moment"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Koichi Tsurusaki",
+      "romaji": "Koichi Tsurusaki"
+    },
+    "arranger": {
+      "ja": "Koichi Tsurusaki",
+      "romaji": "Koichi Tsurusaki"
+    },
+    "coverUrl": "/105/dollchestra/blue_moment.jpg",
+    "wikiCoverFile": "DOLLCHESTRA Blue Moment.jpg",
+    "unit": 2,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Bring the LOVE!",
+      "romaji": "Bring the LOVE!"
+    },
+    "artist": {
+      "ja": "You Watanabe, Ayumu Uehara, Kanon Shibuya, Kaho Hinoshita, and Honoka Kosaka",
+      "romaji": "You Watanabe, Ayumu Uehara, Kanon Shibuya, Kaho Hinoshita, and Honoka Kosaka"
+    },
+    "lyricist": {
+      "ja": "Ayaka Miyake",
+      "romaji": "Ayaka Miyake"
+    },
+    "composer": {
+      "ja": "Quemika, Carlos K. and Furuppe",
+      "romaji": "Quemika, Carlos K. and Furuppe"
+    },
+    "arranger": {
+      "ja": "TeddyLoid and Quemika",
+      "romaji": "TeddyLoid and Quemika"
+    },
+    "coverUrl": "/104/other/bring_the_love.jpg",
+    "wikiCoverFile": "Love Live! Series Asia Tour 2024 ~Minna de Kanaeru Monogatari~ Theme Song CD Bring the LOVE!.jpg",
+    "unit": 6,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "Celebration!",
+      "romaji": "Celebration!"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Kohei Tsukada",
+      "romaji": "Kohei Tsukada"
+    },
+    "arranger": {
+      "ja": "CHOKKAKU",
+      "romaji": "CHOKKAKU"
+    },
+    "coverUrl": "/105/cerisebouquet/celebration.png",
+    "wikiCoverFile": "Celebration! Game Jacket Art.png",
+    "unit": 1,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "チャーミングな花束を！",
+      "romaji": "Charming na Hanataba o!"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Clear Kila",
+      "romaji": "Clear Kila"
+    },
+    "composer": {
+      "ja": "Kouhei Tsukada",
+      "romaji": "Kouhei Tsukada"
+    },
+    "arranger": {
+      "ja": "Masaya Suzuki",
+      "romaji": "Masaya Suzuki"
+    },
+    "coverUrl": "/105/hasunosora/charming_na_hanataba_o.jpg",
+    "wikiCoverFile": "Charming na Hanataba o! Game Cover.jpg",
+    "unit": 5,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "チリコンカン",
+      "romaji": "Chili Con Carne"
+    },
+    "artist": {
+      "ja": "エーデルノート",
+      "romaji": "EdelNote"
+    },
+    "lyricist": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "composer": {
+      "ja": "Atsuhito Sato (Dream Monster)",
+      "romaji": "Atsuhito Sato (Dream Monster)"
+    },
+    "arranger": {
+      "ja": "Atsuhito Sato (Dream Monster)",
+      "romaji": "Atsuhito Sato (Dream Monster)"
+    },
+    "coverUrl": "/105/edelnote/chili_con_carne.png",
+    "wikiCoverFile": "Chili Con Carne Game Jacket Art.png",
+    "unit": 4,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "ちょ、尊いLOVE",
+      "romaji": "Cho, Toutoi LOVE"
+    },
+    "artist": {
+      "ja": "Ruri&To",
+      "romaji": "Ruri&To"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Menma",
+      "romaji": "Menma"
+    },
+    "arranger": {
+      "ja": "Menma",
+      "romaji": "Menma"
+    },
+    "coverUrl": "/105/other/cho_toutoi_love.jpg",
+    "wikiCoverFile": "Ruri&To Cho, Toutoi LOVE.jpg",
+    "unit": 6,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Chu! Chocolate",
+      "romaji": "Chu! Chocolate"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Kohei Tsukada",
+      "romaji": "Kohei Tsukada"
+    },
+    "arranger": {
+      "ja": "Kohei Tsukada",
+      "romaji": "Kohei Tsukada"
+    },
+    "coverUrl": "/104/cerisebouquet/chu_chocolate.png",
+    "wikiCoverFile": "Chu! Chocolate.png",
+    "unit": 1,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "Colorfulness",
+      "romaji": "Colorfulness"
+    },
+    "artist": {
+      "ja": "Rurino to Yukai na Tsuzuri-tachi",
+      "romaji": "Rurino to Yukai na Tsuzuri-tachi"
+    },
+    "lyricist": {
+      "ja": "PA-NON",
+      "romaji": "PA-NON"
+    },
+    "composer": {
+      "ja": "Tomoya Kawasaki",
+      "romaji": "Tomoya Kawasaki"
+    },
+    "arranger": {
+      "ja": "Tomoya Kawasaki",
+      "romaji": "Tomoya Kawasaki"
+    },
+    "coverUrl": "/103/other/colorfulness.jpg",
+    "wikiCoverFile": "Colorfulness.jpg",
+    "unit": 6,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "COMPASS",
+      "romaji": "COMPASS"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Yoshida Unpyou (SUPA LOVE)",
+      "romaji": "Yoshida Unpyou (SUPA LOVE)"
+    },
+    "arranger": {
+      "ja": "Masaya Suzuki",
+      "romaji": "Masaya Suzuki"
+    },
+    "coverUrl": "/104/dollchestra/compass.jpg",
+    "wikiCoverFile": "DOLLCHESTRA COMPASS.jpg",
+    "unit": 2,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "抱きしめる花びら",
+      "romaji": "Dakishimeru Hanabira"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Kanata Okajima",
+      "romaji": "Kanata Okajima"
+    },
+    "composer": {
+      "ja": "Kanata Okajima and Hayato Yamamoto",
+      "romaji": "Kanata Okajima and Hayato Yamamoto"
+    },
+    "arranger": {
+      "ja": "Hayato Yamamoto",
+      "romaji": "Hayato Yamamoto"
+    },
+    "coverUrl": "/104/hasunosora/dakishimeru_hanabira.jpg",
+    "wikiCoverFile": "Hasunosora Dakishimeru Hanabira.jpg",
+    "unit": 5,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "Dear my future",
+      "romaji": "Dear my future"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Joshua Leung and Fumetsu No Asuca",
+      "romaji": "Joshua Leung and Fumetsu No Asuca"
+    },
+    "arranger": {
+      "ja": "Joshua Leung",
+      "romaji": "Joshua Leung"
+    },
+    "coverUrl": "/103/cerisebouquet/dear_my_future.jpg",
+    "wikiCoverFile": "Dear my future.jpg",
+    "unit": 1,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "DEEPNESS",
+      "romaji": "DEEPNESS"
+    },
+    "artist": {
+      "ja": "Kaho Hinoshita, Sayaka Murano, Kozue Otomune & Tsuzuri Yugiri",
+      "romaji": "Kaho Hinoshita, Sayaka Murano, Kozue Otomune & Tsuzuri Yugiri"
+    },
+    "lyricist": {
+      "ja": "Arisa Momou",
+      "romaji": "Arisa Momou"
+    },
+    "composer": {
+      "ja": "Yu Furukawa",
+      "romaji": "Yu Furukawa"
+    },
+    "arranger": {
+      "ja": "EFFY",
+      "romaji": "EFFY"
+    },
+    "coverUrl": "/103/other/deepness.png",
+    "wikiCoverFile": "DEEPNESS.png",
+    "unit": 6,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "diamondz",
+      "romaji": "diamondz"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Ryuichi Sakamoto",
+      "romaji": "Ryuichi Sakamoto"
+    },
+    "arranger": {
+      "ja": "Yasuaki Maejima",
+      "romaji": "Yasuaki Maejima"
+    },
+    "coverUrl": "/105/dollchestra/diamondz.png",
+    "wikiCoverFile": "diamondz Game Jacket Art.png",
+    "unit": 2,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "ド！ド！ド！",
+      "romaji": "Do! Do! Do!"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Reiji Yamamoto",
+      "romaji": "Reiji Yamamoto"
+    },
+    "arranger": {
+      "ja": "Reiji Yamamoto",
+      "romaji": "Reiji Yamamoto"
+    },
+    "coverUrl": "/103/miracrapark/do_do_do.png",
+    "wikiCoverFile": "Do! Do! Do!.png",
+    "unit": 3,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "Dream Believers",
+      "romaji": "Dream Believers"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "畑亜貴",
+      "romaji": "Aki Hata"
+    },
+    "composer": {
+      "ja": "渡辺拓也",
+      "romaji": "Takuya Watanabe"
+    },
+    "arranger": {
+      "ja": "渡辺拓也",
+      "romaji": "Takuya Watanabe"
+    },
+    "coverUrl": "/103/hasunosora/dream_believers.png",
+    "wikiCoverFile": "Dream Believers SAKURA Ver Game jacket.png",
+    "unit": 5,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "ドライブ・スペード・クレイジー",
+      "romaji": "Drive・Spade・Crazy"
+    },
+    "artist": {
+      "ja": "エーデルノート",
+      "romaji": "EdelNote"
+    },
+    "lyricist": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "composer": {
+      "ja": "Shingo Yamazaki (SUPA LOVE)",
+      "romaji": "Shingo Yamazaki (SUPA LOVE)"
+    },
+    "arranger": {
+      "ja": "Shingo Yamazaki (SUPA LOVE)",
+      "romaji": "Shingo Yamazaki (SUPA LOVE)"
+    },
+    "coverUrl": "/105/edelnote/drivespadecrazy.png",
+    "wikiCoverFile": "Drive・Spade・Crazy Game Jacket Art.png",
+    "unit": 4,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Echoes Beyond",
+      "romaji": "Echoes Beyond"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "EFFY",
+      "romaji": "EFFY"
+    },
+    "arranger": {
+      "ja": "EFFY",
+      "romaji": "EFFY"
+    },
+    "coverUrl": "/105/hasunosora/echoes_beyond.jpg",
+    "wikiCoverFile": "Hasunosora Echoes Beyond.jpg",
+    "unit": 5,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Edelied",
+      "romaji": "Edelied"
+    },
+    "artist": {
+      "ja": "エーデルノート",
+      "romaji": "EdelNote"
+    },
+    "lyricist": {
+      "ja": "Kano Higashino",
+      "romaji": "Kano Higashino"
+    },
+    "composer": {
+      "ja": "Kanji Eguchi",
+      "romaji": "Kanji Eguchi"
+    },
+    "arranger": {
+      "ja": "Jun Ichikawa",
+      "romaji": "Jun Ichikawa"
+    },
+    "coverUrl": "/105/edelnote/edelied.png",
+    "wikiCoverFile": "Edelied Cover Art.png",
+    "unit": 4,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "EdelinieN",
+      "romaji": "EdelinieN"
+    },
+    "artist": {
+      "ja": "エーデルノート",
+      "romaji": "EdelNote"
+    },
+    "lyricist": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "composer": {
+      "ja": "Jun Ichikawa",
+      "romaji": "Jun Ichikawa"
+    },
+    "arranger": {
+      "ja": "Jun Ichikawa",
+      "romaji": "Jun Ichikawa"
+    },
+    "coverUrl": "/105/edelnote/edelinien.jpg",
+    "wikiCoverFile": "Edel Note EdelinieN Game Jacket Art.jpg",
+    "unit": 4,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "永遠のEuphoria",
+      "romaji": "Eien no Euphoria"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "KOMU",
+      "romaji": "KOMU"
+    },
+    "composer": {
+      "ja": "Hiroo Ooyagi",
+      "romaji": "Hiroo Ooyagi"
+    },
+    "arranger": {
+      "ja": "Hiroo Ooyagi",
+      "romaji": "Hiroo Ooyagi"
+    },
+    "coverUrl": "/103/hasunosora/eien_no_euphoria.jpg",
+    "wikiCoverFile": "Eien no Euphoria.jpg",
+    "unit": 5,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "ファンファーレ！！！",
+      "romaji": "Fanfare!!!"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Kijibato (Dream Monster)",
+      "romaji": "Kijibato (Dream Monster)"
+    },
+    "arranger": {
+      "ja": "Kijibato (Dream Monster)",
+      "romaji": "Kijibato (Dream Monster)"
+    },
+    "coverUrl": "/104/miracrapark/fanfare.jpg",
+    "wikiCoverFile": "Mira-Cra Park Fanfare.jpg",
+    "unit": 3,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "フォーチュンムービー",
+      "romaji": "Fortune Movie"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Arisa Momou and Menma",
+      "romaji": "Arisa Momou and Menma"
+    },
+    "arranger": {
+      "ja": "Menma",
+      "romaji": "Menma"
+    },
+    "coverUrl": "/103/cerisebouquet/fortune_movie.png",
+    "wikiCoverFile": "Fortune Movie.png",
+    "unit": 1,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "フリジア",
+      "romaji": "Freesia"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Michael Super Lassie",
+      "romaji": "Michael Super Lassie"
+    },
+    "arranger": {
+      "ja": "Atsuhito Satou",
+      "romaji": "Atsuhito Satou"
+    },
+    "coverUrl": "/105/dollchestra/freesia.jpg",
+    "wikiCoverFile": "DOLLCHESTRA Freesia.jpg",
+    "unit": 2,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "フルーツパンチ",
+      "romaji": "Fruit Punch"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Masaki Honda (Dream Monster)",
+      "romaji": "Masaki Honda (Dream Monster)"
+    },
+    "arranger": {
+      "ja": "Masaki Honda (Dream Monster)",
+      "romaji": "Masaki Honda (Dream Monster)"
+    },
+    "coverUrl": "/105/cerisebouquet/fruit_punch.jpg",
+    "wikiCoverFile": "Cerise Bouquet Fruit Punch.jpg",
+    "unit": 1,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "不思議と君とライブラリー",
+      "romaji": "Fushigi to Kimi to Library"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Kouhei Tsukada",
+      "romaji": "Kouhei Tsukada"
+    },
+    "arranger": {
+      "ja": "Kouhei Tsukada",
+      "romaji": "Kouhei Tsukada"
+    },
+    "coverUrl": "/105/cerisebouquet/fushigi_to_kimi_to_library.jpg",
+    "wikiCoverFile": "Cerise Bouquet Fushigi to Kimi to Library Game Jacket Art.jpg",
+    "unit": 1,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "フュージョンクラスト",
+      "romaji": "Fusion Crust"
+    },
+    "artist": {
+      "ja": "エーデルノート",
+      "romaji": "EdelNote"
+    },
+    "lyricist": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "composer": {
+      "ja": "Maiko Iuchi",
+      "romaji": "Maiko Iuchi"
+    },
+    "arranger": {
+      "ja": "Maiko Iuchi",
+      "romaji": "Maiko Iuchi"
+    },
+    "coverUrl": "/105/edelnote/fusion_crust.jpg",
+    "wikiCoverFile": "Edel Note Fusion Crust.jpg",
+    "unit": 4,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "ガランドFlash",
+      "romaji": "Garando Flash"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Takenoko Shounen",
+      "romaji": "Takenoko Shounen"
+    },
+    "arranger": {
+      "ja": "Takenoko Shounen",
+      "romaji": "Takenoko Shounen"
+    },
+    "coverUrl": "/105/dollchestra/garando_flash.jpg",
+    "wikiCoverFile": "DOLLCHESTRA Garando Flash.jpg",
+    "unit": 2,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "ゲッカビジン",
+      "romaji": "Gekka Bijin"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Clear Kila",
+      "romaji": "Clear Kila"
+    },
+    "composer": {
+      "ja": "Giz'Mo (from Jam9), Eunsol (1008), and Gou Ishikuro",
+      "romaji": "Giz'Mo (from Jam9), Eunsol (1008), and Gou Ishikuro"
+    },
+    "arranger": {
+      "ja": "渡辺和紀",
+      "romaji": "Kazunori Watanabe"
+    },
+    "coverUrl": "/104/hasunosora/gekka_bijin.png",
+    "wikiCoverFile": "Gekka Bijin.png",
+    "unit": 5,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "Genyou Yakou",
+      "romaji": "Genyou Yakou"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Yuusuke Onodera (Arte Refact)",
+      "romaji": "Yuusuke Onodera (Arte Refact)"
+    },
+    "arranger": {
+      "ja": "Masatomi Waki (Arte Refact)",
+      "romaji": "Masatomi Waki (Arte Refact)"
+    },
+    "coverUrl": "/103/cerisebouquet/genyou_yakou.jpg",
+    "wikiCoverFile": "Cerise Bouquet Genyou Yakou.jpg",
+    "unit": 1,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "恥は人生のかきすて",
+      "romaji": "Haji wa Jinsei no Kakisute"
+    },
+    "artist": {
+      "ja": "Ginko Momose, Kosuzu Kachimachi & Hime Anyoji",
+      "romaji": "Ginko Momose, Kosuzu Kachimachi & Hime Anyoji"
+    },
+    "lyricist": {
+      "ja": "Clear Kila",
+      "romaji": "Clear Kila"
+    },
+    "composer": {
+      "ja": "Clear Kila",
+      "romaji": "Clear Kila"
+    },
+    "arranger": {
+      "ja": "Tomoki Kikuya",
+      "romaji": "Tomoki Kikuya"
+    },
+    "coverUrl": "/104/other/haji_wa_jinsei_no_kakisute.png",
+    "wikiCoverFile": "Haji wa Jinsei no Kakisute.png",
+    "unit": 6,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "はじまりの羽音",
+      "romaji": "Hajimari no Hane Oto"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "PA-NON",
+      "romaji": "PA-NON"
+    },
+    "composer": {
+      "ja": "渡辺未来",
+      "romaji": "Miki Watanabe"
+    },
+    "arranger": {
+      "ja": "渡辺未来",
+      "romaji": "Miki Watanabe"
+    },
+    "coverUrl": "/105/hasunosora/hajimari_no_hane_oto.jpg",
+    "wikiCoverFile": "Hajimari no Hane Oto Game Cover.jpg",
+    "unit": 5,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "ハクチューアラモード",
+      "romaji": "Hakuchuu à la Mode"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "NayutalieN",
+      "romaji": "NayutalieN"
+    },
+    "composer": {
+      "ja": "NayutalieN",
+      "romaji": "NayutalieN"
+    },
+    "arranger": {
+      "ja": "NayutalieN",
+      "romaji": "NayutalieN"
+    },
+    "coverUrl": "/103/miracrapark/hakuchuu_la_mode.png",
+    "wikiCoverFile": "Hakuchuu à la Mode.png",
+    "unit": 3,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "ハナ咲けばユメ駆ける",
+      "romaji": "Hana Sakeba Yume Kakeru"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "畑亜貴",
+      "romaji": "Aki Hata"
+    },
+    "composer": {
+      "ja": "Kohei Tsukada",
+      "romaji": "Kohei Tsukada"
+    },
+    "arranger": {
+      "ja": "Motoki Funayama",
+      "romaji": "Motoki Funayama"
+    },
+    "coverUrl": "/105/hasunosora/hana_sakeba_yume_kakeru.jpg",
+    "wikiCoverFile": "Hasunosora Hana Sakeba Yume Kakeru.jpg",
+    "unit": 5,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "ハナムスビ",
+      "romaji": "Hanamusubi"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Tomoya Kawasaki",
+      "romaji": "Tomoya Kawasaki"
+    },
+    "arranger": {
+      "ja": "Tomoya Kawasaki",
+      "romaji": "Tomoya Kawasaki"
+    },
+    "coverUrl": "/104/cerisebouquet/hanamusubi.jpg",
+    "wikiCoverFile": "Cerise Bouquet Hanamusubi Jacket Art.jpg",
+    "unit": 1,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "ハッピー至上主義！",
+      "romaji": "Happy Shijou Shugi!"
+    },
+    "artist": {
+      "ja": "KahoMegu♡Gelato",
+      "romaji": "KahoMegu♡Gelato"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Takayuki Tomokiyo",
+      "romaji": "Takayuki Tomokiyo"
+    },
+    "arranger": {
+      "ja": "EFFY",
+      "romaji": "EFFY"
+    },
+    "coverUrl": "/103/other/happy_shijou_shugi.jpg",
+    "wikiCoverFile": "Happy Shijou Shugi!.jpg",
+    "unit": 6,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "ハートにQ",
+      "romaji": "Heart ni Q"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "5u5hi",
+      "romaji": "5u5hi"
+    },
+    "arranger": {
+      "ja": "5u5hi",
+      "romaji": "5u5hi"
+    },
+    "coverUrl": "/105/miracrapark/heart_ni_q.jpg",
+    "wikiCoverFile": "Heart ni Q Game Jacket Art.jpg",
+    "unit": 3,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "平成ギャルズ!!!!",
+      "romaji": "Heisei Galz!!!!"
+    },
+    "artist": {
+      "ja": "Ruri&To",
+      "romaji": "Ruri&To"
+    },
+    "lyricist": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "composer": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "arranger": {
+      "ja": "Kaoru Okubo",
+      "romaji": "Kaoru Okubo"
+    },
+    "coverUrl": "/105/other/heisei_galz.jpg",
+    "wikiCoverFile": "Ruri&To Heisei Galz.jpg",
+    "unit": 6,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "ハロめぐ讃歌",
+      "romaji": "Hello Megu Sanka"
+    },
+    "artist": {
+      "ja": "Megumi Fujishima",
+      "romaji": "Megumi Fujishima"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Kijibato (Dream Monster)",
+      "romaji": "Kijibato (Dream Monster)"
+    },
+    "arranger": {
+      "ja": "Kijibato (Dream Monster)",
+      "romaji": "Kijibato (Dream Monster)"
+    },
+    "coverUrl": "/105/other/hello_megu_sanka.jpg",
+    "wikiCoverFile": "Megumi Fujishima Hello Megu Sanka.jpg",
+    "unit": 6,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Hello, new dream!",
+      "romaji": "Hello, new dream!"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Kohei Tsukada",
+      "romaji": "Kohei Tsukada"
+    },
+    "composer": {
+      "ja": "Kohei Tsukada",
+      "romaji": "Kohei Tsukada"
+    },
+    "arranger": {
+      "ja": "Kohei Tsukada",
+      "romaji": "Kohei Tsukada"
+    },
+    "coverUrl": "/105/hasunosora/hello_new_dream.png",
+    "wikiCoverFile": "Hello, new dream! Game Jacket Art.png",
+    "unit": 5,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "片翼のトリバガ",
+      "romaji": "Henyoku no Toribaga"
+    },
+    "artist": {
+      "ja": "エーデルノート",
+      "romaji": "EdelNote"
+    },
+    "lyricist": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "composer": {
+      "ja": "Hinako Tsubakiyama (Dream Monster)",
+      "romaji": "Hinako Tsubakiyama (Dream Monster)"
+    },
+    "arranger": {
+      "ja": "Hinako Tsubakiyama (Dream Monster)",
+      "romaji": "Hinako Tsubakiyama (Dream Monster)"
+    },
+    "coverUrl": "/105/edelnote/henyoku_no_toribaga.jpg",
+    "wikiCoverFile": "Edel Note Henyoku no Toribaga.jpg",
+    "unit": 4,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "光の中で花咲いて",
+      "romaji": "Hikari no Naka de Hana Saite"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Nanoha Komatsu",
+      "romaji": "Nanoha Komatsu"
+    },
+    "composer": {
+      "ja": "黒須克彦",
+      "romaji": "Katsuhiko Kurosu"
+    },
+    "arranger": {
+      "ja": "黒須克彦",
+      "romaji": "Katsuhiko Kurosu"
+    },
+    "coverUrl": "/105/hasunosora/hikari_no_naka_de_hana_saite.jpg",
+    "wikiCoverFile": "Hasunosora Hikari no Naka de Hana Saite.jpg",
+    "unit": 5,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Hip, hip, hooray!",
+      "romaji": "Hip, hip, hooray!"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Reiji Yamamoto",
+      "romaji": "Reiji Yamamoto"
+    },
+    "arranger": {
+      "ja": "Reiji Yamamoto",
+      "romaji": "Reiji Yamamoto"
+    },
+    "coverUrl": "/105/miracrapark/hip_hip_hooray.jpg",
+    "wikiCoverFile": "Mira-Cra Park! Hip, hip, hooray!.jpg",
+    "unit": 3,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "一生に夢が咲くように",
+      "romaji": "Hitoyo ni Yume ga Saku You ni"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Nanoha Komatsu",
+      "romaji": "Nanoha Komatsu"
+    },
+    "composer": {
+      "ja": "Clear Kila",
+      "romaji": "Clear Kila"
+    },
+    "arranger": {
+      "ja": "Seiji Hotta",
+      "romaji": "Seiji Hotta"
+    },
+    "coverUrl": "/105/hasunosora/hitoyo_ni_yume_ga_saku_you_ni.jpg",
+    "wikiCoverFile": "Hitoyo ni Yume ga Saku You ni Game Cover.jpg",
+    "unit": 5,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Holiday∞Holiday",
+      "romaji": "Holiday∞Holiday"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Arisa Momou and Menma",
+      "romaji": "Arisa Momou and Menma"
+    },
+    "arranger": {
+      "ja": "Menma",
+      "romaji": "Menma"
+    },
+    "coverUrl": "/103/cerisebouquet/holidayholiday.jpg",
+    "wikiCoverFile": "Cerise Bouquet Holiday∞Holiday.jpg",
+    "unit": 1,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "アイドゥーミー！",
+      "romaji": "I Do Me!"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Clear Kila",
+      "romaji": "Clear Kila"
+    },
+    "composer": {
+      "ja": "SAKUMARYO",
+      "romaji": "SAKUMARYO"
+    },
+    "arranger": {
+      "ja": "SAKUMARYO",
+      "romaji": "SAKUMARYO"
+    },
+    "coverUrl": "/105/hasunosora/i_do_me.jpg",
+    "wikiCoverFile": "Hasunosora I Do Me!.jpg",
+    "unit": 5,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "アイマイメーデー",
+      "romaji": "I My Mayday"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Ryomi Yamashita (SUPA LOVE)",
+      "romaji": "Ryomi Yamashita (SUPA LOVE)"
+    },
+    "arranger": {
+      "ja": "Shuhei Takahashi (SUPA LOVE)",
+      "romaji": "Shuhei Takahashi (SUPA LOVE)"
+    },
+    "coverUrl": "/105/dollchestra/i_my_mayday.jpg",
+    "wikiCoverFile": "DOLLCHESTRA I My Mayday.jpg",
+    "unit": 2,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "IcHiGo milK love",
+      "romaji": "IcHiGo milK love"
+    },
+    "artist": {
+      "ja": "PRINCEε>ε>",
+      "romaji": "PRINCEε>ε>"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Sora Tansho, Tomoki Tamatani, and KUSHITA",
+      "romaji": "Sora Tansho, Tomoki Tamatani, and KUSHITA"
+    },
+    "arranger": {
+      "ja": "Ikuta Machine",
+      "romaji": "Ikuta Machine"
+    },
+    "coverUrl": "/105/other/ichigo_milk_love.jpg",
+    "wikiCoverFile": "PRINCE♡♡ IcHiGo milK love.jpg",
+    "unit": 6,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "アイシイ",
+      "romaji": "Icy"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Michael Super Lassie",
+      "romaji": "Michael Super Lassie"
+    },
+    "arranger": {
+      "ja": "Atsuhito Sato",
+      "romaji": "Atsuhito Sato"
+    },
+    "coverUrl": "/105/dollchestra/icy.jpg",
+    "wikiCoverFile": "DOLLCHESTRA Icy Game Jacket Art.jpg",
+    "unit": 2,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "アイデンティティ",
+      "romaji": "Identity"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Atsuki Okuma (Arte Refact)",
+      "romaji": "Atsuki Okuma (Arte Refact)"
+    },
+    "arranger": {
+      "ja": "Atsuki Okuma (Arte Refact)",
+      "romaji": "Atsuki Okuma (Arte Refact)"
+    },
+    "coverUrl": "/103/miracrapark/identity.jpg",
+    "wikiCoverFile": "Identity.jpg",
+    "unit": 3,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "異次元★♥BIGBANG",
+      "romaji": "Ijigen★♥BIGBANG"
+    },
+    "artist": {
+      "ja": "Uzuki Shimamura, Shizuka Mogami, Kogane Tsukioka, Chika Takami, Ayumu Uehara, Kanon Shibuya and Kaho Hinoshita",
+      "romaji": "Uzuki Shimamura, Shizuka Mogami, Kogane Tsukioka, Chika Takami, Ayumu Uehara, Kanon Shibuya and Kaho Hinoshita"
+    },
+    "lyricist": {
+      "ja": "UiNA",
+      "romaji": "UiNA"
+    },
+    "composer": {
+      "ja": "Koutarou Odaka and UiNA",
+      "romaji": "Koutarou Odaka and UiNA"
+    },
+    "arranger": {
+      "ja": "Koutarou Odaka and Naoki Tani",
+      "romaji": "Koutarou Odaka and Naoki Tani"
+    },
+    "coverUrl": "/103/other/ijigenbigbang.jpg",
+    "wikiCoverFile": "Ijigen★♥BIGBANG CD Jacket Art.jpg",
+    "unit": 6,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "今、過去、未来の三原色",
+      "romaji": "Ima, Kako, Mirai no Sangenshoku"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Nanoha Komatsu",
+      "romaji": "Nanoha Komatsu"
+    },
+    "composer": {
+      "ja": "Clear Kila",
+      "romaji": "Clear Kila"
+    },
+    "arranger": {
+      "ja": "Seiji Hotta",
+      "romaji": "Seiji Hotta"
+    },
+    "coverUrl": "/105/hasunosora/ima_kako_mirai_no_sangenshoku.jpg",
+    "wikiCoverFile": "Ima, Kako, Mirai no Sangenshoku Game Cover.jpg",
+    "unit": 5,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "以心☆電信",
+      "romaji": "Ishin☆Denshin"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Kijibato",
+      "romaji": "Kijibato"
+    },
+    "arranger": {
+      "ja": "Kijibato",
+      "romaji": "Kijibato"
+    },
+    "coverUrl": "/103/miracrapark/ishindenshin.png",
+    "wikiCoverFile": "Ishin☆Denshin 104th.png",
+    "unit": 3,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "いつでも、いつまでも",
+      "romaji": "Itsudemo, Itsumademo"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "youth case",
+      "romaji": "youth case"
+    },
+    "composer": {
+      "ja": "youth case",
+      "romaji": "youth case"
+    },
+    "arranger": {
+      "ja": "Hirofumi Sasaki",
+      "romaji": "Hirofumi Sasaki"
+    },
+    "coverUrl": "/105/hasunosora/itsudemo_itsumademo.jpg",
+    "wikiCoverFile": "Hasunosora Itsudemo, Itsumademo.jpg",
+    "unit": 5,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "いったん",
+      "romaji": "Ittan"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Saeki YouthK",
+      "romaji": "Saeki YouthK"
+    },
+    "composer": {
+      "ja": "Saeki YouthK",
+      "romaji": "Saeki YouthK"
+    },
+    "arranger": {
+      "ja": "Masaya Suzuki",
+      "romaji": "Masaya Suzuki"
+    },
+    "coverUrl": "/105/hasunosora/ittan.png",
+    "wikiCoverFile": "Ittan.png",
+    "unit": 5,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "十六夜セレーネ",
+      "romaji": "Izayoi Selene"
+    },
+    "artist": {
+      "ja": "エーデルノート",
+      "romaji": "EdelNote"
+    },
+    "lyricist": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "composer": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "arranger": {
+      "ja": "Masaya Suzuki",
+      "romaji": "Masaya Suzuki"
+    },
+    "coverUrl": "/105/edelnote/izayoi_selene.jpg",
+    "wikiCoverFile": "Edel Note Izayoi Selene.jpg",
+    "unit": 4,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "ジブンダイアリー",
+      "romaji": "Jibun Diary"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Satoru Kurihara (Jazzin’park) and Tasuku Maeda",
+      "romaji": "Satoru Kurihara (Jazzin’park) and Tasuku Maeda"
+    },
+    "arranger": {
+      "ja": "Tasuku Maeda",
+      "romaji": "Tasuku Maeda"
+    },
+    "coverUrl": "/103/dollchestra/jibun_diary.png",
+    "wikiCoverFile": "Jibun Diary.png",
+    "unit": 2,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "JOKER.",
+      "romaji": "JOKER."
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "GIUNONICO",
+      "romaji": "GIUNONICO"
+    },
+    "composer": {
+      "ja": "Michael Super Lassie",
+      "romaji": "Michael Super Lassie"
+    },
+    "arranger": {
+      "ja": "Masaya Suzuki",
+      "romaji": "Masaya Suzuki"
+    },
+    "coverUrl": "/105/hasunosora/joker.jpg",
+    "wikiCoverFile": "Hasunosora Echoes Beyond.jpg",
+    "unit": 5,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "ジョーショーキリュー",
+      "romaji": "Joushou Kiryuu"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Hamu",
+      "romaji": "Hamu"
+    },
+    "arranger": {
+      "ja": "Hamu",
+      "romaji": "Hamu"
+    },
+    "coverUrl": "/104/miracrapark/joushou_kiryuu.jpg",
+    "wikiCoverFile": "Mira-Cra Park Joushou Kiryuu Jacket Art.jpg",
+    "unit": 3,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "かくれんぼしよう",
+      "romaji": "Kakurenbo Shiyou"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Tomomi Narimoto (SUPA LOVE)",
+      "romaji": "Tomomi Narimoto (SUPA LOVE)"
+    },
+    "arranger": {
+      "ja": "Kotaro Egam (SUPA LOVE)",
+      "romaji": "Kotaro Egam (SUPA LOVE)"
+    },
+    "coverUrl": "/104/miracrapark/kakurenbo_shiyou.png",
+    "wikiCoverFile": "Kakurenbo Shiyou.png",
+    "unit": 3,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "金沢片恋慕",
+      "romaji": "Kanazawa One-Side Love"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "渡辺未来",
+      "romaji": "Miki Watanabe"
+    },
+    "arranger": {
+      "ja": "Eunsol (1008)",
+      "romaji": "Eunsol (1008)"
+    },
+    "coverUrl": "/105/cerisebouquet/kanazawa_one-side_love.jpg",
+    "wikiCoverFile": "Cerise Bouquet Fushigi to Kimi to Library.jpg",
+    "unit": 1,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Kawaii no susume",
+      "romaji": "Kawaii no susume"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Asuhito Sato",
+      "romaji": "Asuhito Sato"
+    },
+    "arranger": {
+      "ja": "Asuhito Sato and Kijibato",
+      "romaji": "Asuhito Sato and Kijibato"
+    },
+    "coverUrl": "/103/cerisebouquet/kawaii_no_susume.png",
+    "wikiCoverFile": "Kawaii no susume.png",
+    "unit": 1,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "KEY of Like!",
+      "romaji": "KEY of Like!"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Kelly, TATSUNE and Rosa",
+      "romaji": "Kelly, TATSUNE and Rosa"
+    },
+    "composer": {
+      "ja": "渡辺拓也",
+      "romaji": "Takuya Watanabe"
+    },
+    "arranger": {
+      "ja": "渡辺拓也",
+      "romaji": "Takuya Watanabe"
+    },
+    "coverUrl": "/104/hasunosora/key_of_like.jpg",
+    "wikiCoverFile": "Hasunosora KEY of Like.jpg",
+    "unit": 5,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "希望的プリズム",
+      "romaji": "Kibouteki Prism"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Yuichiro Mizunami, Yumi Muroya & Haruka Kato",
+      "romaji": "Yuichiro Mizunami, Yumi Muroya & Haruka Kato"
+    },
+    "arranger": {
+      "ja": "Yuichiro Mizunami",
+      "romaji": "Yuichiro Mizunami"
+    },
+    "coverUrl": "/103/dollchestra/kibouteki_prism.png",
+    "wikiCoverFile": "Kibouteki Prism.png",
+    "unit": 2,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "KNOT",
+      "romaji": "KNOT"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Kanata Okajima and Hayato Yamamoto",
+      "romaji": "Kanata Okajima and Hayato Yamamoto"
+    },
+    "arranger": {
+      "ja": "Hayato Yamamoto",
+      "romaji": "Hayato Yamamoto"
+    },
+    "coverUrl": "/103/dollchestra/knot.jpg",
+    "wikiCoverFile": "KNOT.jpg",
+    "unit": 2,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "恋景色昭和ロマン",
+      "romaji": "Koigeshiki Shouwa Roman"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Yukinojo Mori",
+      "romaji": "Yukinojo Mori"
+    },
+    "composer": {
+      "ja": "Kinami Umi",
+      "romaji": "Kinami Umi"
+    },
+    "arranger": {
+      "ja": "Kinami Umi",
+      "romaji": "Kinami Umi"
+    },
+    "coverUrl": "/104/cerisebouquet/koigeshiki_shouwa_roman.png",
+    "wikiCoverFile": "Koigeshiki Shouwa Roman.png",
+    "unit": 1,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "ココン東西",
+      "romaji": "Kokon Touzai"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Ryu",
+      "romaji": "Ryu"
+    },
+    "arranger": {
+      "ja": "Ryu",
+      "romaji": "Ryu"
+    },
+    "coverUrl": "/103/miracrapark/kokon_touzai.png",
+    "wikiCoverFile": "Kokon Touzai.png",
+    "unit": 3,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "レディバグ",
+      "romaji": "Ladybug"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "渡辺拓也",
+      "romaji": "Takuya Watanabe"
+    },
+    "arranger": {
+      "ja": "Masaya Suzuki",
+      "romaji": "Masaya Suzuki"
+    },
+    "coverUrl": "/104/dollchestra/ladybug.jpg",
+    "wikiCoverFile": "DOLLCHESTRA Ladybug Cover.jpg",
+    "unit": 2,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "Legato",
+      "romaji": "Legato"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "PA-NON",
+      "romaji": "PA-NON"
+    },
+    "composer": {
+      "ja": "Shingo Asari",
+      "romaji": "Shingo Asari"
+    },
+    "arranger": {
+      "ja": "Yosuke Yamashita",
+      "romaji": "Yosuke Yamashita"
+    },
+    "coverUrl": "/103/hasunosora/legato.jpg",
+    "wikiCoverFile": "Legato.jpg",
+    "unit": 5,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "Link to the FUTURE",
+      "romaji": "Link to the FUTURE"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "畑亜貴",
+      "romaji": "Aki Hata"
+    },
+    "composer": {
+      "ja": "LiCu and Yu Furukawa",
+      "romaji": "LiCu and Yu Furukawa"
+    },
+    "arranger": {
+      "ja": "EFFY",
+      "romaji": "EFFY"
+    },
+    "coverUrl": "/103/hasunosora/link_to_the_future.png",
+    "wikiCoverFile": "Link to the FUTURE 104th.png",
+    "unit": 5,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "Love it! Wonderful Trip!",
+      "romaji": "Love it! Wonderful Trip!"
+    },
+    "artist": {
+      "ja": "Kaho Hinoshita, Sayaka Murano & Rurino Osawa",
+      "romaji": "Kaho Hinoshita, Sayaka Murano & Rurino Osawa"
+    },
+    "lyricist": {
+      "ja": "Maika Sato",
+      "romaji": "Maika Sato"
+    },
+    "composer": {
+      "ja": "Hinako Tsubakiyama (Dream Monster)",
+      "romaji": "Hinako Tsubakiyama (Dream Monster)"
+    },
+    "arranger": {
+      "ja": "Hinako Tsubakiyama (Dream Monster)",
+      "romaji": "Hinako Tsubakiyama (Dream Monster)"
+    },
+    "coverUrl": "/104/other/love_it_wonderful_trip.png",
+    "wikiCoverFile": "Love it! Wonderful Trip!.png",
+    "unit": 6,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "マハラジャンボリー",
+      "romaji": "Mahara Jamboree"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "SAKUMARYO",
+      "romaji": "SAKUMARYO"
+    },
+    "arranger": {
+      "ja": "SAKUMARYO",
+      "romaji": "SAKUMARYO"
+    },
+    "coverUrl": "/103/miracrapark/mahara_jamboree.png",
+    "wikiCoverFile": "Mahara Jamboree.png",
+    "unit": 3,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "マハラジャンボリーⅡ",
+      "romaji": "Mahara Jamboree II"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "zopp",
+      "romaji": "zopp"
+    },
+    "composer": {
+      "ja": "Shusui",
+      "romaji": "Shusui"
+    },
+    "arranger": {
+      "ja": "Kaoru Okubo",
+      "romaji": "Kaoru Okubo"
+    },
+    "coverUrl": "/104/miracrapark/mahara_jamboree_ii.png",
+    "wikiCoverFile": "Mahara Jamboree II.png",
+    "unit": 3,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "ミアモーレ・ミーアキャット",
+      "romaji": "Meu Amoré・Meerkat"
+    },
+    "artist": {
+      "ja": "エーデルノート",
+      "romaji": "EdelNote"
+    },
+    "lyricist": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "composer": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "arranger": {
+      "ja": "Masaya Suzuki",
+      "romaji": "Masaya Suzuki"
+    },
+    "coverUrl": "/105/edelnote/meu_amormeerkat.jpg",
+    "wikiCoverFile": "Edel Note EdelinieN.jpg|CD Jacket Art",
+    "unit": 4,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "ミルク",
+      "romaji": "Milk"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Arisa Momou and Menma",
+      "romaji": "Arisa Momou and Menma"
+    },
+    "arranger": {
+      "ja": "Menma",
+      "romaji": "Menma"
+    },
+    "coverUrl": "/103/miracrapark/milk.png",
+    "wikiCoverFile": "Milk.png",
+    "unit": 3,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "みらくりえーしょん",
+      "romaji": "Mira-Creation"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Yusuke Kuwabara",
+      "romaji": "Yusuke Kuwabara"
+    },
+    "arranger": {
+      "ja": "MOSAIC.WAV",
+      "romaji": "MOSAIC.WAV"
+    },
+    "coverUrl": "/104/miracrapark/mira-creation.jpg",
+    "wikiCoverFile": "Mira-Cra Park Mira-Creation Cover.jpg",
+    "unit": 3,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "Mirage Voyage",
+      "romaji": "Mirage Voyage"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Kanata Okajima and Hayato Yamamoto",
+      "romaji": "Kanata Okajima and Hayato Yamamoto"
+    },
+    "arranger": {
+      "ja": "Hayato Yamamoto",
+      "romaji": "Hayato Yamamoto"
+    },
+    "coverUrl": "/103/dollchestra/mirage_voyage.jpg",
+    "wikiCoverFile": "DOLLCHESTRA Mirage Voyage.jpg",
+    "unit": 2,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "Mix shake!!",
+      "romaji": "Mix shake!!"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Tomoya Kawasaki",
+      "romaji": "Tomoya Kawasaki"
+    },
+    "arranger": {
+      "ja": "Tomoya Kawasaki",
+      "romaji": "Tomoya Kawasaki"
+    },
+    "coverUrl": "/103/cerisebouquet/mix_shake.png",
+    "wikiCoverFile": "Mix shake!!.png",
+    "unit": 1,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "My Lucky Clover",
+      "romaji": "My Lucky Clover"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Kanji Eguchi (SUPA LOVE)",
+      "romaji": "Kanji Eguchi (SUPA LOVE)"
+    },
+    "arranger": {
+      "ja": "ArmySlick",
+      "romaji": "ArmySlick"
+    },
+    "coverUrl": "/105/cerisebouquet/my_lucky_clover.png",
+    "wikiCoverFile": "My Lucky Clover Game Jacket Art.png",
+    "unit": 1,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "夏めきペイン",
+      "romaji": "Natsumeki Pain"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Rino Sashihara",
+      "romaji": "Rino Sashihara"
+    },
+    "composer": {
+      "ja": "Satoru Kurihara (Jazzin'park) and Tasuku Maeda",
+      "romaji": "Satoru Kurihara (Jazzin'park) and Tasuku Maeda"
+    },
+    "arranger": {
+      "ja": "Tasuku Maeda",
+      "romaji": "Tasuku Maeda"
+    },
+    "coverUrl": "/103/hasunosora/natsumeki_pain.jpg",
+    "wikiCoverFile": "Hasunosora Natsumeki Pain.jpg",
+    "unit": 5,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "NEXT CARD",
+      "romaji": "NEXT CARD"
+    },
+    "artist": {
+      "ja": "AiScReam",
+      "romaji": "AiScReam"
+    },
+    "lyricist": {
+      "ja": "aim",
+      "romaji": "aim"
+    },
+    "composer": {
+      "ja": "Hayato Yamamoto",
+      "romaji": "Hayato Yamamoto"
+    },
+    "arranger": {
+      "ja": "Hayato Yamamoto",
+      "romaji": "Hayato Yamamoto"
+    },
+    "coverUrl": "/105/other/next_card.jpg",
+    "wikiCoverFile": "AiScReam NEXT CARD Digital Release.jpg",
+    "unit": 6,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "ノンフィクションヒーローショー",
+      "romaji": "Nonfiction Hero Show"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "要田健",
+      "romaji": "Takeru Yoda"
+    },
+    "arranger": {
+      "ja": "要田健",
+      "romaji": "Takeru Yoda"
+    },
+    "coverUrl": "/103/miracrapark/nonfiction_hero_show.jpg",
+    "wikiCoverFile": "Nonfiction Hero Show.jpg",
+    "unit": 3,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "Now or Never",
+      "romaji": "Now or Never"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Futa Shintani",
+      "romaji": "Futa Shintani"
+    },
+    "composer": {
+      "ja": "Yu Furukawa",
+      "romaji": "Yu Furukawa"
+    },
+    "arranger": {
+      "ja": "Masaya Suzuki",
+      "romaji": "Masaya Suzuki"
+    },
+    "coverUrl": "/104/hasunosora/now_or_never.png",
+    "wikiCoverFile": "Now or Never.png",
+    "unit": 5,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "ニャオシグニャル",
+      "romaji": "Nyao Signyal"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Kijibato (Dream Monster)",
+      "romaji": "Kijibato (Dream Monster)"
+    },
+    "arranger": {
+      "ja": "Kijibato (Dream Monster)",
+      "romaji": "Kijibato (Dream Monster)"
+    },
+    "coverUrl": "/105/miracrapark/nyao_signyal.jpg",
+    "wikiCoverFile": "Mira-Cra Park Nyao Signyal.jpg",
+    "unit": 3,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Nεw Black",
+      "romaji": "Nεw Black"
+    },
+    "artist": {
+      "ja": "PRINCEε>ε>",
+      "romaji": "PRINCEε>ε>"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Yuki Kokubo, Eunsol (1008), and YHEL",
+      "romaji": "Yuki Kokubo, Eunsol (1008), and YHEL"
+    },
+    "arranger": {
+      "ja": "酒井拓也",
+      "romaji": "Takuya Sakai"
+    },
+    "coverUrl": "/105/other/nw_black.jpg",
+    "wikiCoverFile": "PRINCE♡♡ Nεw Black.jpg",
+    "unit": 6,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "おいでよ！石川大観光",
+      "romaji": "Oide yo! Ishikawa Daikankou"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Futa Shintani",
+      "romaji": "Futa Shintani"
+    },
+    "composer": {
+      "ja": "Yusuke Shirato (Dream Monster)",
+      "romaji": "Yusuke Shirato (Dream Monster)"
+    },
+    "arranger": {
+      "ja": "Yusuke Shirato (Dream Monster)",
+      "romaji": "Yusuke Shirato (Dream Monster)"
+    },
+    "coverUrl": "/104/hasunosora/oide_yo_ishikawa_daikankou.jpg",
+    "wikiCoverFile": "Hasunosora Oide yo! Ishikawa Daikankou.jpg",
+    "unit": 5,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "On your mark",
+      "romaji": "On your mark"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Kanata Okajima and Hayato Yamamoto",
+      "romaji": "Kanata Okajima and Hayato Yamamoto"
+    },
+    "composer": {
+      "ja": "EFFY",
+      "romaji": "EFFY"
+    },
+    "arranger": {
+      "ja": "EFFY",
+      "romaji": "EFFY"
+    },
+    "coverUrl": "/103/hasunosora/on_your_mark.jpg",
+    "wikiCoverFile": "On your mark.jpg",
+    "unit": 5,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "乙女詞華集",
+      "romaji": "Otome Anthology"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Atsuki Okuma (Arte Refact)",
+      "romaji": "Atsuki Okuma (Arte Refact)"
+    },
+    "arranger": {
+      "ja": "Atsuki Okuma (Arte Refact)",
+      "romaji": "Atsuki Okuma (Arte Refact)"
+    },
+    "coverUrl": "/105/cerisebouquet/otome_anthology.jpg",
+    "wikiCoverFile": "Cerise Bouquet Otome Anthology.jpg",
+    "unit": 1,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "謳歌爛漫",
+      "romaji": "Ouka Ranman"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Yuusuke Onodera (Arte Refact)",
+      "romaji": "Yuusuke Onodera (Arte Refact)"
+    },
+    "arranger": {
+      "ja": "Taishi (Arte Refact)",
+      "romaji": "Taishi (Arte Refact)"
+    },
+    "coverUrl": "/103/cerisebouquet/ouka_ranman.png",
+    "wikiCoverFile": "Ouka Ranman.png",
+    "unit": 1,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "PANAI☆",
+      "romaji": "PANAI☆"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Kouhei Tsukada",
+      "romaji": "Kouhei Tsukada"
+    },
+    "arranger": {
+      "ja": "Kouhei Tsukada",
+      "romaji": "Kouhei Tsukada"
+    },
+    "coverUrl": "/105/miracrapark/panai.jpg",
+    "wikiCoverFile": "Mira-Cra Park! PANAI☆.jpg",
+    "unit": 3,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "パラレルダンサー",
+      "romaji": "Parallel Dancer"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Masaki Iehara",
+      "romaji": "Masaki Iehara"
+    },
+    "arranger": {
+      "ja": "Masaki Iehara",
+      "romaji": "Masaki Iehara"
+    },
+    "coverUrl": "/103/dollchestra/parallel_dancer.jpg",
+    "wikiCoverFile": "Parallel Dancer.jpg",
+    "unit": 2,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "ペレニアル",
+      "romaji": "Perennial"
+    },
+    "artist": {
+      "ja": "Kaho Hinoshita, Sayaka Murano & Rurino Osawa",
+      "romaji": "Kaho Hinoshita, Sayaka Murano & Rurino Osawa"
+    },
+    "lyricist": {
+      "ja": "Nanoha Komatsu",
+      "romaji": "Nanoha Komatsu"
+    },
+    "composer": {
+      "ja": "Clear Kila",
+      "romaji": "Clear Kila"
+    },
+    "arranger": {
+      "ja": "Asuhito Sato",
+      "romaji": "Asuhito Sato"
+    },
+    "coverUrl": "/105/other/perennial.jpg",
+    "wikiCoverFile": "Kaho Hinoshita, Sayaka Murano & Rurino Osawa \"Perennial\" Lyric Video",
+    "unit": 6,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Pleasure Feather",
+      "romaji": "Pleasure Feather"
+    },
+    "artist": {
+      "ja": "Hasu no Kyuujitsu",
+      "romaji": "Hasu no Kyuujitsu"
+    },
+    "lyricist": {
+      "ja": "Hayato Yamamoto",
+      "romaji": "Hayato Yamamoto"
+    },
+    "composer": {
+      "ja": "Koichi Yamagishi",
+      "romaji": "Koichi Yamagishi"
+    },
+    "arranger": {
+      "ja": "要田健",
+      "romaji": "Takeru Yoda"
+    },
+    "coverUrl": "/103/other/pleasure_feather.jpg",
+    "wikiCoverFile": "Pleasure Feather.jpg",
+    "unit": 6,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "Proof",
+      "romaji": "Proof"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Yuuki Houto",
+      "romaji": "Yuuki Houto"
+    },
+    "arranger": {
+      "ja": "Atsuhito Sato (Dream Monster)",
+      "romaji": "Atsuhito Sato (Dream Monster)"
+    },
+    "coverUrl": "/104/dollchestra/proof.jpg",
+    "wikiCoverFile": "DOLLCHESTRA Proof.jpg",
+    "unit": 2,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "リブウト",
+      "romaji": "Reboot"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "arranger": {
+      "ja": "Akira Kishi (Rhythmic Toy World)",
+      "romaji": "Akira Kishi (Rhythmic Toy World)"
+    },
+    "coverUrl": "/105/dollchestra/reboot.jpg",
+    "wikiCoverFile": "DOLLCHESTRA Reboot.jpg",
+    "unit": 2,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Reflection in the mirror",
+      "romaji": "Reflection in the mirror"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Arisa Momou and Menma",
+      "romaji": "Arisa Momou and Menma"
+    },
+    "arranger": {
+      "ja": "Menma",
+      "romaji": "Menma"
+    },
+    "coverUrl": "/103/cerisebouquet/reflection_in_the_mirror.png",
+    "wikiCoverFile": "Reflection in the mirror 104th.png",
+    "unit": 1,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "令嬢モブ！",
+      "romaji": "Reijou Mob!"
+    },
+    "artist": {
+      "ja": "エーデルノート",
+      "romaji": "EdelNote"
+    },
+    "lyricist": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "composer": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "arranger": {
+      "ja": "Masaya Suzuki",
+      "romaji": "Masaya Suzuki"
+    },
+    "coverUrl": "/105/edelnote/reijou_mob.jpg",
+    "wikiCoverFile": "Edel Note Reijou Mob!.jpg",
+    "unit": 4,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "レム",
+      "romaji": "Rem"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Keita Tanaka",
+      "romaji": "Keita Tanaka"
+    },
+    "arranger": {
+      "ja": "Ryuichi Takagi (Dream Monster)",
+      "romaji": "Ryuichi Takagi (Dream Monster)"
+    },
+    "coverUrl": "/104/dollchestra/rem.png",
+    "wikiCoverFile": "Rem.png",
+    "unit": 2,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "Retrofuture",
+      "romaji": "Retrofuture"
+    },
+    "artist": {
+      "ja": "エーデルノート",
+      "romaji": "EdelNote"
+    },
+    "lyricist": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "composer": {
+      "ja": "Jun Ichikawa",
+      "romaji": "Jun Ichikawa"
+    },
+    "arranger": {
+      "ja": "Jun Ichikawa",
+      "romaji": "Jun Ichikawa"
+    },
+    "coverUrl": "/105/edelnote/retrofuture.png",
+    "wikiCoverFile": "Retrofuture Game Jacket Art.png",
+    "unit": 4,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Runway",
+      "romaji": "Runway"
+    },
+    "artist": {
+      "ja": "Sayaka Murano",
+      "romaji": "Sayaka Murano"
+    },
+    "lyricist": {
+      "ja": "PA-NON",
+      "romaji": "PA-NON"
+    },
+    "composer": {
+      "ja": "渡辺未来",
+      "romaji": "Miki Watanabe"
+    },
+    "arranger": {
+      "ja": "渡辺未来",
+      "romaji": "Miki Watanabe"
+    },
+    "coverUrl": "/105/other/runway.jpg",
+    "wikiCoverFile": "Runway.jpg",
+    "unit": 6,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "咲かnow！",
+      "romaji": "Saka now!"
+    },
+    "artist": {
+      "ja": "エーデルノート",
+      "romaji": "EdelNote"
+    },
+    "lyricist": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "composer": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "arranger": {
+      "ja": "Ikuta Machine",
+      "romaji": "Ikuta Machine"
+    },
+    "coverUrl": "/105/edelnote/saka_now.jpg",
+    "wikiCoverFile": "Edel Note Saka now!.jpg",
+    "unit": 4,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Sayo-Shigure",
+      "romaji": "Sayo-Shigure"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Clear Kila",
+      "romaji": "Clear Kila"
+    },
+    "arranger": {
+      "ja": "Masaya Suzuki",
+      "romaji": "Masaya Suzuki"
+    },
+    "coverUrl": "/105/cerisebouquet/sayo-shigure.jpg",
+    "wikiCoverFile": "Cerise Bouquet Sayo-Shigure.jpg",
+    "unit": 1,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "スケイプゴート",
+      "romaji": "Scapegoat"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Hiroki Sagawa (Relic Lyric, inc.) and Joey Takeda",
+      "romaji": "Hiroki Sagawa (Relic Lyric, inc.) and Joey Takeda"
+    },
+    "arranger": {
+      "ja": "Joey Takeda",
+      "romaji": "Joey Takeda"
+    },
+    "coverUrl": "/103/dollchestra/scapegoat.png",
+    "wikiCoverFile": "Scapegoat.png",
+    "unit": 2,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "青春の輪郭",
+      "romaji": "Seishun no Rinkaku"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "SHIBU",
+      "romaji": "SHIBU"
+    },
+    "arranger": {
+      "ja": "SHIBU",
+      "romaji": "SHIBU"
+    },
+    "coverUrl": "/103/dollchestra/seishun_no_rinkaku.jpg",
+    "wikiCoverFile": "Seishun no Rinkaku.jpg",
+    "unit": 2,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "センパイ",
+      "romaji": "Senpai"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "KinamiUmi",
+      "romaji": "KinamiUmi"
+    },
+    "arranger": {
+      "ja": "KinamiUmi",
+      "romaji": "KinamiUmi"
+    },
+    "coverUrl": "/105/miracrapark/senpai.jpg",
+    "wikiCoverFile": "Mira-Cra Park! Tomodachi ni Nareru Basho.jpg|CD Jacket Art",
+    "unit": 3,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "千変万華",
+      "romaji": "Senpen Banka"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Atsuki Okuma (Arte Refact)",
+      "romaji": "Atsuki Okuma (Arte Refact)"
+    },
+    "arranger": {
+      "ja": "Atsuki Okuma (Arte Refact)",
+      "romaji": "Atsuki Okuma (Arte Refact)"
+    },
+    "coverUrl": "/103/cerisebouquet/senpen_banka.jpg",
+    "wikiCoverFile": "Senpen Banka.jpg",
+    "unit": 1,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "幸せのリボン",
+      "romaji": "Shiawase no Ribbon"
+    },
+    "artist": {
+      "ja": "Tsuzuri Yugiri",
+      "romaji": "Tsuzuri Yugiri"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Watanabe Takuya",
+      "romaji": "Watanabe Takuya"
+    },
+    "arranger": {
+      "ja": "Watanabe Takuya",
+      "romaji": "Watanabe Takuya"
+    },
+    "coverUrl": "/104/other/shiawase_no_ribbon.jpg",
+    "wikiCoverFile": "Tsuzuri Yugiri Shiawase no Ribbon.jpg",
+    "unit": 6,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "Sparkly Spot",
+      "romaji": "Sparkly Spot"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "渡辺拓也",
+      "romaji": "Takuya Watanabe"
+    },
+    "arranger": {
+      "ja": "渡辺拓也",
+      "romaji": "Takuya Watanabe"
+    },
+    "coverUrl": "/103/dollchestra/sparkly_spot.jpg",
+    "wikiCoverFile": "Sparkly Spot 104th.jpg",
+    "unit": 2,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "Special Thanks",
+      "romaji": "Special Thanks"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Menma",
+      "romaji": "Menma"
+    },
+    "arranger": {
+      "ja": "Menma",
+      "romaji": "Menma"
+    },
+    "coverUrl": "/103/cerisebouquet/special_thanks.png",
+    "wikiCoverFile": "Special Thanks.png",
+    "unit": 1,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "STEP UP!",
+      "romaji": "STEP UP!"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Kouichi Yamagishi",
+      "romaji": "Kouichi Yamagishi"
+    },
+    "composer": {
+      "ja": "Kouichi Yamagishi",
+      "romaji": "Kouichi Yamagishi"
+    },
+    "arranger": {
+      "ja": "Kouichi Yamagishi",
+      "romaji": "Kouichi Yamagishi"
+    },
+    "coverUrl": "/104/hasunosora/step_up.png",
+    "wikiCoverFile": "STEP UP!.png",
+    "unit": 5,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "素顔のピクセル",
+      "romaji": "Sugao no Pixel"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Arisa Momou and Menma",
+      "romaji": "Arisa Momou and Menma"
+    },
+    "arranger": {
+      "ja": "Menma",
+      "romaji": "Menma"
+    },
+    "coverUrl": "/103/cerisebouquet/sugao_no_pixel.jpg",
+    "wikiCoverFile": "Sugao no Pixel.jpg",
+    "unit": 1,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "シュガーメルト",
+      "romaji": "Sugar Melt"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Yosuke Yamashita",
+      "romaji": "Yosuke Yamashita"
+    },
+    "arranger": {
+      "ja": "Yosuke Yamashita",
+      "romaji": "Yosuke Yamashita"
+    },
+    "coverUrl": "/103/cerisebouquet/sugar_melt.jpg",
+    "wikiCoverFile": "Sugar Melt.jpg",
+    "unit": 1,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "水彩世界",
+      "romaji": "Suisai Sekai"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Satoru Kurihara (Jazzin' park) and Tasuku Maeda",
+      "romaji": "Satoru Kurihara (Jazzin' park) and Tasuku Maeda"
+    },
+    "arranger": {
+      "ja": "Tasuku Maeda",
+      "romaji": "Tasuku Maeda"
+    },
+    "coverUrl": "/103/cerisebouquet/suisai_sekai.png",
+    "wikiCoverFile": "Suisai Sekai.png",
+    "unit": 1,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "太陽であれ！",
+      "romaji": "Taiyou de Are!"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Hiroaki Suzuki (SUPA LOVE)",
+      "romaji": "Hiroaki Suzuki (SUPA LOVE)"
+    },
+    "arranger": {
+      "ja": "Hiroaki Suzuki (SUPA LOVE)",
+      "romaji": "Hiroaki Suzuki (SUPA LOVE)"
+    },
+    "coverUrl": "/105/dollchestra/taiyou_de_are.jpg",
+    "wikiCoverFile": "DOLLCHESTRA Taiyou de Are!.jpg",
+    "unit": 2,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Take It Over",
+      "romaji": "Take It Over"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "LiCu",
+      "romaji": "LiCu"
+    },
+    "arranger": {
+      "ja": "LiCu",
+      "romaji": "LiCu"
+    },
+    "coverUrl": "/103/dollchestra/take_it_over.jpg",
+    "wikiCoverFile": "Take It Over.jpg",
+    "unit": 2,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "天地黎明",
+      "romaji": "Tenchi Reimei"
+    },
+    "artist": {
+      "ja": "エーデルノート",
+      "romaji": "EdelNote"
+    },
+    "lyricist": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "composer": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "arranger": {
+      "ja": "Tomoki Ishizuka",
+      "romaji": "Tomoki Ishizuka"
+    },
+    "coverUrl": "/105/edelnote/tenchi_reimei.jpg",
+    "wikiCoverFile": "Edel Note Tenchi Reimei.jpg",
+    "unit": 4,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "天才なのかもしれない",
+      "romaji": "Tensai Nano Kamo Shirenai"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Yusuke Tojima",
+      "romaji": "Yusuke Tojima"
+    },
+    "arranger": {
+      "ja": "Yusuke Tojima",
+      "romaji": "Yusuke Tojima"
+    },
+    "coverUrl": "/103/miracrapark/tensai_nano_kamo_shirenai.jpg",
+    "wikiCoverFile": "Tensai Nano Kamo Shirenai.jpg",
+    "unit": 3,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "シアター生き様",
+      "romaji": "Theater Ikizama"
+    },
+    "artist": {
+      "ja": "エーデルノート",
+      "romaji": "EdelNote"
+    },
+    "lyricist": {
+      "ja": "Skipjack",
+      "romaji": "Skipjack"
+    },
+    "composer": {
+      "ja": "Takuya Fujita",
+      "romaji": "Takuya Fujita"
+    },
+    "arranger": {
+      "ja": "Jun Ichikawa",
+      "romaji": "Jun Ichikawa"
+    },
+    "coverUrl": "/105/edelnote/theater_ikizama.jpg",
+    "wikiCoverFile": "Edel Note Theater Ikizama.jpg",
+    "unit": 4,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "とーひょー☆スター！",
+      "romaji": "Tohyo☆Star!"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Clear Kila",
+      "romaji": "Clear Kila"
+    },
+    "composer": {
+      "ja": "SAKUMARYO",
+      "romaji": "SAKUMARYO"
+    },
+    "arranger": {
+      "ja": "SAKUMARYO",
+      "romaji": "SAKUMARYO"
+    },
+    "coverUrl": "/105/hasunosora/tohyostar.jpg",
+    "wikiCoverFile": "Tohyo☆Star! Game Jacket Art.jpg",
+    "unit": 5,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "トモダチになれる場所",
+      "romaji": "Tomodachi ni Nareru Basho"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Yusuke Kayahara",
+      "romaji": "Yusuke Kayahara"
+    },
+    "arranger": {
+      "ja": "Capchii and Yusuke Kayahara",
+      "romaji": "Capchii and Yusuke Kayahara"
+    },
+    "coverUrl": "/105/miracrapark/tomodachi_ni_nareru_basho.jpg",
+    "wikiCoverFile": "Mira-Cra Park Tomodachi ni Nareru Basho Game Jacket Art.jpg",
+    "unit": 3,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "Tragic Drops",
+      "romaji": "Tragic Drops"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Kanata Okajima and Hayato Yamamoto",
+      "romaji": "Kanata Okajima and Hayato Yamamoto"
+    },
+    "arranger": {
+      "ja": "Hayato Yamamoto",
+      "romaji": "Hayato Yamamoto"
+    },
+    "coverUrl": "/103/dollchestra/tragic_drops.jpg",
+    "wikiCoverFile": "DOLLCHESTRA Tragic Drops.jpg",
+    "unit": 2,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "Trick & Cute",
+      "romaji": "Trick & Cute"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "KOMU",
+      "romaji": "KOMU"
+    },
+    "composer": {
+      "ja": "Mashiro Shimura",
+      "romaji": "Mashiro Shimura"
+    },
+    "arranger": {
+      "ja": "EFFY",
+      "romaji": "EFFY"
+    },
+    "coverUrl": "/103/hasunosora/trick_cute.jpg",
+    "wikiCoverFile": "Trick & Cute.jpg",
+    "unit": 5,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "ツバサ・ラ・リベルテ",
+      "romaji": "Tsubasa・La・Liberte"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Arisa Momou",
+      "romaji": "Arisa Momou"
+    },
+    "composer": {
+      "ja": "Reiji Yamamoto",
+      "romaji": "Reiji Yamamoto"
+    },
+    "arranger": {
+      "ja": "Reiji Yamamoto",
+      "romaji": "Reiji Yamamoto"
+    },
+    "coverUrl": "/103/hasunosora/tsubasalaliberte.jpg",
+    "wikiCoverFile": "Tsubasa・La・Liberte.jpg",
+    "unit": 5,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "ツキマカセ",
+      "romaji": "Tsukimakase"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Yoji Fukuda",
+      "romaji": "Yoji Fukuda"
+    },
+    "arranger": {
+      "ja": "渡辺和紀",
+      "romaji": "Kazunori Watanabe"
+    },
+    "coverUrl": "/103/dollchestra/tsukimakase.png",
+    "wikiCoverFile": "Tsukimakase.png",
+    "unit": 2,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "月夜見海月",
+      "romaji": "Tsukuyomi Kurage"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Kohei Tsukada",
+      "romaji": "Kohei Tsukada"
+    },
+    "arranger": {
+      "ja": "Kohei Tsukada",
+      "romaji": "Kohei Tsukada"
+    },
+    "coverUrl": "/104/cerisebouquet/tsukuyomi_kurage.jpg",
+    "wikiCoverFile": "Cerise Bouquet Tsukuyomi Kurage.jpg",
+    "unit": 1,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "アンブレラ",
+      "romaji": "Umbrella"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "Kentaro Sonoda",
+      "romaji": "Kentaro Sonoda"
+    },
+    "arranger": {
+      "ja": "Kentaro Sonoda",
+      "romaji": "Kentaro Sonoda"
+    },
+    "coverUrl": "/105/dollchestra/umbrella.jpg",
+    "wikiCoverFile": "DOLLCHESTRA Icy.jpg|CD Jacket Art>",
+    "unit": 2,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "ベジ・ラブ・ルー",
+      "romaji": "Veggie・Love・Roux"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "MIZUE",
+      "romaji": "MIZUE"
+    },
+    "composer": {
+      "ja": "Shinya Sumida",
+      "romaji": "Shinya Sumida"
+    },
+    "arranger": {
+      "ja": "Yasuaki Maejima",
+      "romaji": "Yasuaki Maejima"
+    },
+    "coverUrl": "/104/dollchestra/veggieloveroux.png",
+    "wikiCoverFile": "Veggie・Love・Roux.png",
+    "unit": 2,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "Very! Very! COCO夏っ",
+      "romaji": "Very! Very! COCO Natsu"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "YUU for YOU and Yuki Kokubo",
+      "romaji": "YUU for YOU and Yuki Kokubo"
+    },
+    "arranger": {
+      "ja": "YUU for YOU",
+      "romaji": "YUU for YOU"
+    },
+    "coverUrl": "/105/miracrapark/very_very_coco_natsu.jpg",
+    "wikiCoverFile": "Mira-Cra Park! Very! Very! COCO Natsu.jpg",
+    "unit": 3,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "バイタルサイン",
+      "romaji": "Vital Sign"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "渡辺未来",
+      "romaji": "Miki Watanabe"
+    },
+    "arranger": {
+      "ja": "Masaya Suzuki",
+      "romaji": "Masaya Suzuki"
+    },
+    "coverUrl": "/105/miracrapark/vital_sign.jpg",
+    "wikiCoverFile": "Mira-Cra Park! Vital Sign.jpg",
+    "unit": 3,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "WAWO!",
+      "romaji": "WAWO!"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Mican Modoki (Dream Monster)",
+      "romaji": "Mican Modoki (Dream Monster)"
+    },
+    "arranger": {
+      "ja": "ha-j",
+      "romaji": "ha-j"
+    },
+    "coverUrl": "/105/miracrapark/wawo.png",
+    "wikiCoverFile": "WAWO! Game Jacket Art.png",
+    "unit": 3,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "やっぱ天使！",
+      "romaji": "Yappa Tenshi!"
+    },
+    "artist": {
+      "ja": "Megumi Fujishima",
+      "romaji": "Megumi Fujishima"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Reiji Yamamoto",
+      "romaji": "Reiji Yamamoto"
+    },
+    "arranger": {
+      "ja": "Reiji Yamamoto",
+      "romaji": "Reiji Yamamoto"
+    },
+    "coverUrl": "/104/other/yappa_tenshi.jpg",
+    "wikiCoverFile": "Megumi Fujishima Yappa Tenshi.jpg",
+    "unit": 6,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "雪舞う空と二秒の永遠",
+      "romaji": "Yuki Mau Sora to Nibyou no Eien"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Nanoha Komatsu",
+      "romaji": "Nanoha Komatsu"
+    },
+    "composer": {
+      "ja": "Clear Kila",
+      "romaji": "Clear Kila"
+    },
+    "arranger": {
+      "ja": "Seiji Hotta",
+      "romaji": "Seiji Hotta"
+    },
+    "coverUrl": "/105/hasunosora/yuki_mau_sora_to_nibyou_no_eien.jpg",
+    "wikiCoverFile": "Yuki Mau Sora to Nibyou no Eien Game Cover.jpg",
+    "unit": 5,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "ユメワズライ",
+      "romaji": "Yume Wazurai"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Kohei Tsukada",
+      "romaji": "Kohei Tsukada"
+    },
+    "arranger": {
+      "ja": "Kohei Tsukada",
+      "romaji": "Kohei Tsukada"
+    },
+    "coverUrl": "/104/cerisebouquet/yume_wazurai.jpg",
+    "wikiCoverFile": "Cerise Bouquet Yume Wazurai.jpg",
+    "unit": 1,
+    "class": 1
+  },
+  {
+    "title": {
+      "ja": "Yup! Yup! Yup!",
+      "romaji": "Yup! Yup! Yup!"
+    },
+    "artist": {
+      "ja": "蓮ノ空女学院スクールアイドルクラブ",
+      "romaji": "Hasunosora Girls' High School Idol Club"
+    },
+    "lyricist": {
+      "ja": "Kanata Okajima",
+      "romaji": "Kanata Okajima"
+    },
+    "composer": {
+      "ja": "Kanata Okajima and ArmySlick",
+      "romaji": "Kanata Okajima and ArmySlick"
+    },
+    "arranger": {
+      "ja": "ArmySlick",
+      "romaji": "ArmySlick"
+    },
+    "coverUrl": "/103/hasunosora/yup_yup_yup.png",
+    "wikiCoverFile": "Yup! Yup! Yup!.png",
+    "unit": 5,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "残陽",
+      "romaji": "Zanyou"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "Kelly",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "Yuusuke Onodera (Arte Refact)",
+      "romaji": "Yuusuke Onodera (Arte Refact)"
+    },
+    "arranger": {
+      "ja": "Yuusuke Onodera (Arte Refact)",
+      "romaji": "Yuusuke Onodera (Arte Refact)"
+    },
+    "coverUrl": "/103/cerisebouquet/zanyou.jpg",
+    "wikiCoverFile": "Zanyou.jpg",
+    "unit": 1,
+    "class": 0
+  },
+  {
+    "title": {
+      "ja": "全方位キュン♡",
+      "romaji": "Zenhoui Kyun♡"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "Rosa",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "Junky",
+      "romaji": "Junky"
+    },
+    "arranger": {
+      "ja": "Junky",
+      "romaji": "Junky"
+    },
+    "coverUrl": "/104/miracrapark/zenhoui_kyun.jpg",
+    "wikiCoverFile": "Mira-Cra Park! Zenhoui Kyun♡.jpg",
+    "unit": 3,
+    "class": 1
+  }
+]

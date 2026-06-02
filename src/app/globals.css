@@ -1,26 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Outfit:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light !important;
+  --background: #FAF9F5;
+  --foreground: #1E202B;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-border: rgba(0, 0, 0, 0.06);
+  
+  /* Hasunosora Signature Pink */
+  --hasu-pink: #ff528b;
+  --hasu-pink-glow: rgba(255, 82, 139, 0.1);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: Arial, Helvetica, sans-serif;
-  --font-mono: "Courier New", Courier, monospace;
+  --font-sans: 'Outfit', 'Noto Serif JP', sans-serif;
+  --font-serif: 'Cinzel', serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body {
+  background-color: #FAF9F5 !important;
+  color: #1E202B !important;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  background-image: 
+    radial-gradient(circle at 15% 25%, rgba(255, 82, 139, 0.04) 0%, transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(0, 188, 212, 0.03) 0%, transparent 45%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Premium bright glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.02),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+}
+
+/* Hide scrollbars but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Premium Glow effects for Light Mode */
+.text-glow-pink {
+  text-shadow: 0 0 15px rgba(255, 82, 139, 0.35);
+}
+
+.glow-border:hover {
+  box-shadow: 0 0 25px -5px var(--glow-color, rgba(0, 0, 0, 0.05));
+}
+
+/* Grid cell border highlight animation in Light Mode */
+@keyframes pulse-border {
+  0%, 100% { border-color: rgba(0, 0, 0, 0.05); }
+  50% { border-color: rgba(255, 82, 139, 0.25); }
+}
+
+.pulse-cell-border {
+  animation: pulse-border 3s infinite ease-in-out;
 }
