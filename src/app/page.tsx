@@ -388,42 +388,50 @@ export default function Home() {
       )}
 
       {previewUrl && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md transition-all duration-300">
-          <div className="relative max-w-4xl w-full flex flex-col items-center gap-6 glass-panel rounded-3xl p-6 border border-white/15 shadow-2xl max-h-[90vh] overflow-y-auto no-scrollbar">
-            {/* Close Button */}
-            <button
-              onClick={() => setPreviewUrl(null)}
-              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 border border-white/15 text-white hover:bg-white/20 flex items-center justify-center transition-all duration-200 cursor-pointer shadow-md z-10"
-              title="Close Preview"
-            >
-              <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
-                <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-              </svg>
-            </button>
-
-            <div className="text-center space-y-1">
-              <h3 className="font-serif text-lg font-extrabold text-slate-950 tracking-wider uppercase">
-                Image Preview
-              </h3>
-              <p className="text-[11px] text-slate-600 font-light tracking-wide">
-                This is exactly how your exported selection card will look.
-              </p>
+        <div className="fixed inset-0 z-50 flex items-center justify-center px-4 animate-in fade-in duration-200">
+          {/* Overlay Backdrop */}
+          <div 
+            onClick={() => setPreviewUrl(null)}
+            className="absolute inset-0 bg-slate-900/40 backdrop-blur-sm"
+          />
+          
+          {/* Modal Content Card */}
+          <div className="w-full max-w-4xl glass-panel border border-black/10 rounded-3xl shadow-2xl overflow-hidden relative z-10 max-h-[90vh] flex flex-col animate-in fade-in zoom-in-95 duration-200">
+            
+            {/* Modal Header */}
+            <div className="p-6 border-b border-black/5 flex items-center justify-between bg-slate-50/80">
+              <div>
+                <h3 className="text-lg font-serif font-bold text-slate-950 tracking-wide">
+                  Image Preview
+                </h3>
+                <p className="text-[10px] text-pink-500 mt-0.5 tracking-wider font-semibold">
+                  This is exactly how your exported selection card will look.
+                </p>
+              </div>
+              <button 
+                onClick={() => setPreviewUrl(null)}
+                className="w-8 h-8 rounded-full hover:bg-slate-100 flex items-center justify-center text-slate-500 hover:text-slate-950 transition-colors cursor-pointer"
+              >
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+                </svg>
+              </button>
             </div>
 
-            {/* Generated Image */}
-            <div className="w-full flex justify-center overflow-hidden rounded-2xl border border-black/10 shadow-lg bg-white/5 p-2 max-h-[60vh]">
+            {/* Generated Image View Area */}
+            <div className="flex-1 overflow-y-auto p-6 flex justify-center bg-slate-50/30 max-h-[60vh] no-scrollbar">
               <img
                 src={previewUrl}
                 alt="Hasunosora Picks Preview"
-                className="max-w-full max-h-full object-contain rounded-lg shadow-sm"
+                className="max-w-full max-h-[50vh] object-contain rounded-2xl border border-black/10 shadow-lg"
               />
             </div>
 
-            {/* Modal Controls */}
-            <div className="flex items-center gap-4 w-full sm:w-auto">
+            {/* Modal Footer Controls */}
+            <div className="p-5 bg-slate-50 border-t border-black/5 flex items-center justify-end gap-3.5">
               <button
                 onClick={() => setPreviewUrl(null)}
-                className="flex-1 sm:flex-none px-6 py-2.5 rounded-full text-xs font-medium border border-slate-200 text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all duration-300 cursor-pointer"
+                className="px-6 py-2.5 rounded-full text-xs font-medium border border-slate-200 text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all duration-300 cursor-pointer"
               >
                 Close
               </button>
@@ -434,7 +442,7 @@ export default function Home() {
                   link.href = previewUrl;
                   link.click();
                 }}
-                className="flex-1 sm:flex-none px-7 py-2.5 rounded-full text-xs font-bold bg-gradient-to-r from-pink-500 to-pink-600 text-white shadow-lg hover:shadow-pink-500/20 hover:scale-[1.02] transition-all duration-300 cursor-pointer flex items-center justify-center gap-2"
+                className="px-7 py-2.5 rounded-full text-xs font-bold bg-gradient-to-r from-pink-500 to-pink-600 text-white shadow-lg hover:shadow-pink-500/20 hover:scale-[1.02] transition-all duration-300 cursor-pointer flex items-center justify-center gap-2"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
                   <path d="M13 8V2H7v6H2l8 8 8-8h-5zM2 18h16v2H2v-2z" />
@@ -442,6 +450,7 @@ export default function Home() {
                 Download Image
               </button>
             </div>
+
           </div>
         </div>
       )}

@@ -1197,7 +1197,7 @@
   },
   {
     "title": {
-      "ja": "Genyou Yakou",
+      "ja": "眩耀夜行",
       "romaji": "Genyou Yakou"
     },
     "artist": {
@@ -1944,8 +1944,8 @@
       "ja": "Masaya Suzuki",
       "romaji": "Masaya Suzuki"
     },
-    "coverUrl": "/105/hasunosora/joker.jpg",
-    "wikiCoverFile": "Hasunosora Echoes Beyond.jpg",
+    "coverUrl": "/105/hasunosora/joker.png",
+    "wikiCoverFile": "JOKER 4L.png",
     "unit": 5,
     "class": 2
   },

@@ -472,10 +472,18 @@ async function run() {
           }
         }
       } else {
-        const nameParam = params['name'] || '';
-        if (nameParam) {
-          titleJa = cleanTemplateTags(nameParam);
-          titleRomaji = cleanTemplateTags(nameParam);
+        // Fallback: Try to parse Japanese title from wikitext parentheses (e.g., '''Genyou Yakou''' (眩耀夜行 ...))
+        const boldTitleEscaped = pageTitle.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+        const parenRegex = new RegExp(`'''${boldTitleEscaped}'''\\s*\\(([\u3040-\u309f\u30a0-\u30ff\u4e00-\u9faf\\s]+)`, 'i');
+        const parenMatch = introText.match(parenRegex);
+        if (parenMatch) {
+          titleJa = parenMatch[1].trim();
+        } else {
+          const nameParam = params['name'] || '';
+          if (nameParam) {
+            titleJa = cleanTemplateTags(nameParam);
+            titleRomaji = cleanTemplateTags(nameParam);
+          }
         }
       }
 
