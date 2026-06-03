@@ -725,7 +725,7 @@
     "coverUrl": "/104/hasunosora/dakishimeru_hanabira.jpg",
     "wikiCoverFile": "Hasunosora Dakishimeru Hanabira.jpg",
     "unit": 5,
-    "class": 1
+    "class": 0
   },
   {
     "title": {
@@ -1843,7 +1843,7 @@
     "coverUrl": "/105/hasunosora/itsudemo_itsumademo.jpg",
     "wikiCoverFile": "Hasunosora Itsudemo, Itsumademo.jpg",
     "unit": 5,
-    "class": 2
+    "class": 1
   },
   {
     "title": {
@@ -1869,7 +1869,7 @@
     "coverUrl": "/105/hasunosora/ittan.png",
     "wikiCoverFile": "Ittan.png",
     "unit": 5,
-    "class": 2
+    "class": 1
   },
   {
     "title": {
@@ -3299,7 +3299,7 @@
     "coverUrl": "/104/hasunosora/step_up.png",
     "wikiCoverFile": "STEP UP!.png",
     "unit": 5,
-    "class": 1
+    "class": 0
   },
   {
     "title": {

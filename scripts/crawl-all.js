@@ -118,12 +118,16 @@ function getUnitEnum(artistStr) {
 function parseReleaseClass(releasedStr, recordedStr, titleRomaji) {
   if (titleRomaji) {
     const lowerTitle = titleRomaji.toLowerCase();
-    if (lowerTitle === 'runway') {
+    if (lowerTitle === 'runway' ||
+        lowerTitle === 'dakishimeru hanabira' ||
+        lowerTitle === 'step up!') {
       return CLASS_ENUM.C103;
     }
     if (lowerTitle === 'be proud' || 
         lowerTitle === 'shiawase no ribbon' || 
-        lowerTitle === 'yappa tenshi!') {
+        lowerTitle === 'yappa tenshi!' ||
+        lowerTitle === 'itsudemo, itsumademo' ||
+        lowerTitle === 'ittan') {
       return CLASS_ENUM.C104;
     }
   }
@@ -580,22 +584,33 @@ async function run() {
         };
       };
 
-      const unitEnum = getUnitEnum(artistRaw);
-      const classEnum = parseReleaseClass(releasedRaw, recordedRaw, titleRomaji);
+      let unitEnum = getUnitEnum(artistRaw);
+      let classEnum = parseReleaseClass(releasedRaw, recordedRaw, titleRomaji);
 
       // Get image URL from file name
       let coverUrl = '';
       let localExists = false;
-      const existingSong = existingSongs.find(s => s.title.romaji.toLowerCase() === titleRomaji.toLowerCase() && s.unit === unitEnum);
-      if (existingSong && existingSong.coverUrl && existingSong.coverUrl.startsWith('/')) {
-        const localPath = path.join(__dirname, '..', 'public', existingSong.coverUrl);
-        if (fs.existsSync(localPath)) {
-          if (!coverImageFile || existingSong.wikiCoverFile === coverImageFile) {
-            localExists = true;
-            coverUrl = existingSong.coverUrl;
-            console.log(`  Preserved existing local cover URL for "${titleRomaji}": ${coverUrl}`);
-          } else {
-            console.log(`  Obsolete local cover detected for "${titleRomaji}": ${existingSong.wikiCoverFile} -> ${coverImageFile}. Will re-craw/re-download.`);
+      
+      const isJoker = titleRomaji.toLowerCase() === 'joker' || titleRomaji.toLowerCase() === 'joker.';
+      if (isJoker) {
+        localExists = true;
+        coverUrl = '/105/hasunosora/joker.png';
+        coverImageFile = 'JOKER 4L.png';
+        unitEnum = 5;
+        classEnum = 2;
+        console.log(`  Forced correct git history cover URL and wikiCoverFile for "JOKER": ${coverUrl}`);
+      } else {
+        const existingSong = existingSongs.find(s => s.title.romaji.toLowerCase() === titleRomaji.toLowerCase() && s.unit === unitEnum);
+        if (existingSong && existingSong.coverUrl && existingSong.coverUrl.startsWith('/')) {
+          const localPath = path.join(__dirname, '..', 'public', existingSong.coverUrl);
+          if (fs.existsSync(localPath)) {
+            if (!coverImageFile || existingSong.wikiCoverFile === coverImageFile) {
+              localExists = true;
+              coverUrl = existingSong.coverUrl;
+              console.log(`  Preserved existing local cover URL for "${titleRomaji}": ${coverUrl}`);
+            } else {
+              console.log(`  Obsolete local cover detected for "${titleRomaji}": ${existingSong.wikiCoverFile} -> ${coverImageFile}. Will re-craw/re-download.`);
+            }
           }
         }
       }
