@@ -10,6 +10,7 @@ import SearchModal from '../components/SearchModal';
 import ExportGrid from '../components/ExportGrid';
 import PreviewModal from '../components/PreviewModal';
 import { convertColorString } from '../utils/colors';
+import GitHubLink from '../components/GitHubLink';
 
 
 const ROWS: RowConfig[] = [
@@ -223,8 +224,10 @@ export default function Home() {
   const activeColConfig = activeCell ? COLS.find(c => c.id === activeCell.colClass) : undefined;
 
   return (
-    <div className="flex-1 flex flex-col">
+    <div className="flex-1 flex flex-col relative">
       <div className="h-1.5 w-full bg-gradient-to-r from-pink-500 via-cyan-400 to-amber-400 shadow-md" />
+
+      <GitHubLink />
 
       <Header />
 

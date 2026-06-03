@@ -628,6 +628,7 @@ async function run() {
       let localExists = false;
       
       const isJoker = titleRomaji.toLowerCase() === 'joker' || titleRomaji.toLowerCase() === 'joker.';
+      const isDeepness = titleRomaji.toLowerCase() === 'deepness';
       if (isJoker) {
         localExists = true;
         coverUrl = '/105/hasunosora/joker.png';
@@ -635,6 +636,11 @@ async function run() {
         unitEnum = 5;
         classEnum = 2;
         console.log(`  Forced correct git history cover URL and wikiCoverFile for "JOKER": ${coverUrl}`);
+      } else if (isDeepness) {
+        coverUrl = 'https://storage.moegirl.org.cn/moegirl/commons/a/a6/DEEPNESS.png';
+        coverImageFile = 'DEEPNESS.png';
+        localExists = false;
+        console.log(`  Forced correct original cover URL for "DEEPNESS": ${coverUrl}`);
       } else {
         const existingSong = existingSongs.find(s => s.title.romaji.toLowerCase() === titleRomaji.toLowerCase() && s.unit === unitEnum);
         if (existingSong && existingSong.coverUrl && existingSong.coverUrl.startsWith('/')) {
@@ -651,7 +657,7 @@ async function run() {
         }
       }
 
-      if (!localExists && coverImageFile) {
+      if (!localExists && coverImageFile && !coverUrl.startsWith('http')) {
         const imgQueryUrl = `https://love-live.fandom.com/api.php?action=query&prop=imageinfo&iiprop=url&titles=File:${encodeURIComponent(coverImageFile)}&format=json`;
         try {
           const imgRes = await fetch(imgQueryUrl);

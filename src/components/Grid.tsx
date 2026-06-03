@@ -1,5 +1,3 @@
-'use client';
-
 import React, { forwardRef } from 'react';
 import { Song, RowConfig, ColConfig, Unit, GradeClass } from '../schema/song';
 import { SONGS } from '../data/songs';
