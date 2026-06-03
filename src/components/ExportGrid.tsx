@@ -65,8 +65,16 @@ export default function ExportGrid({ rows, cols, picks, showTitles = false }: Ex
   return (
     <div
       id="mypick-export-canvas"
-      className="w-[1024px] pt-14 px-14 pb-10 flex flex-col gap-9 border border-black/5 relative overflow-hidden font-sans"
-      style={{ backgroundColor: '#FAF9F5', boxSizing: 'border-box' }}
+      className="border border-black/5 relative overflow-hidden font-sans"
+      style={{
+        backgroundColor: '#FAF9F5',
+        boxSizing: 'border-box',
+        width: '1024px',
+        padding: '56px 56px 40px 56px',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '36px'
+      }}
     >
 
       {/* Header Section */}
@@ -95,16 +103,33 @@ export default function ExportGrid({ rows, cols, picks, showTitles = false }: Ex
       </div>
 
       {/* Grid Columns Headers */}
-      <div className="grid grid-cols-4 gap-7 relative z-10 mt-6">
+      <div
+        className="flex items-end relative z-10 mt-6"
+        style={{ width: '912px', boxSizing: 'border-box' }}
+      >
         {/* Empty corner spacer */}
-        <div className="col-span-1 flex items-end pb-2.5 pl-2.5">
+        {/* Row padding (20px) + border (2px) + left column (192px) + gap (28px) = 242px */}
+        <div
+          className="flex items-end pb-2.5 pl-2.5"
+          style={{ width: '242px', flexShrink: 0, boxSizing: 'border-box' }}
+        >
           <div className="flex flex-col">
             <span className="font-serif text-[18px] font-bold text-slate-800 tracking-wider">SELECTIONS</span>
           </div>
         </div>
 
         {/* Grade Headers */}
-        <div className="col-span-3 grid grid-cols-3 gap-6 text-center">
+        <div
+          className="text-center"
+          style={{
+            width: '648px',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, 200px)',
+            gap: '24px',
+            flexShrink: 0,
+            boxSizing: 'border-box'
+          }}
+        >
           {cols.map(col => (
             <div key={col.id} className="py-2 border-b-2 border-black/5">
               <div className="font-serif text-[24px] font-bold text-slate-900 tracking-wide">{col.name}</div>
@@ -115,24 +140,33 @@ export default function ExportGrid({ rows, cols, picks, showTitles = false }: Ex
       </div>
 
       {/* Grid Rows */}
-      <div className="flex flex-col gap-6 relative z-10">
+      <div
+        className="relative z-10"
+        style={{ display: 'flex', flexDirection: 'column', gap: '24px', width: '912px' }}
+      >
         {rows.map(row => {
           return (
             <div
               key={row.id}
-              className="grid grid-cols-4 gap-7 items-center p-5 rounded-3xl border-2"
+              className="rounded-3xl border-2 flex items-center p-5"
               style={{
+                width: '912px',
+                boxSizing: 'border-box',
                 background: getSolidBgStyle(row.id),
-                borderColor: getSolidBorderStyle(row.id)
+                borderColor: getSolidBorderStyle(row.id),
+                gap: '28px'
               }}
             >
               {/* Row Header (Left Column) */}
-              <div className="col-span-1 flex items-center justify-center pl-2.5 h-20 w-full">
+              <div
+                className="flex items-center justify-center pl-2.5 h-20"
+                style={{ width: '192px', flexShrink: 0, boxSizing: 'border-box' }}
+              >
                 {getUnitLogoPath(row.id) ? (
                   <img
                     src={getUnitLogoPath(row.id)!}
                     alt={`${row.name} Logo`}
-                    className="max-h-full max-w-full object-contain flex-shrink-0"
+                    className="max-h-full max-w-full object-contain flex-shrink-0 block"
                   />
                 ) : (
                     <div className="flex flex-col items-center text-center">
@@ -143,7 +177,16 @@ export default function ExportGrid({ rows, cols, picks, showTitles = false }: Ex
               </div>
 
               {/* Row Grid Cells (3 Columns) */}
-              <div className="col-span-3 grid grid-cols-3 gap-6">
+              <div
+                style={{
+                  width: '648px',
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(3, 200px)',
+                  gap: '24px',
+                  flexShrink: 0,
+                  boxSizing: 'border-box'
+                }}
+              >
                 {cols.map(col => {
                   const cellKey = `${row.id}_${col.id}`;
                   const song = picks[cellKey];
@@ -154,7 +197,12 @@ export default function ExportGrid({ rows, cols, picks, showTitles = false }: Ex
                     return (
                       <div
                         key={col.id}
-                        className="aspect-square rounded-2xl border-2 border-dashed border-slate-200 bg-[#F8F8F6] flex flex-col items-center justify-center p-4 text-slate-300/40 select-none"
+                        className="rounded-2xl border-2 border-dashed border-slate-200 bg-[#F8F8F6] flex flex-col items-center justify-center p-4 text-slate-300/40 select-none"
+                        style={{
+                          width: '200px',
+                          height: '200px',
+                          boxSizing: 'border-box'
+                        }}
                       >
                         <svg className="w-7 h-7 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth="1.5">
                           <rect width="16" height="16" x="4" y="4" rx="2" strokeDasharray="4 2" />
@@ -167,23 +215,37 @@ export default function ExportGrid({ rows, cols, picks, showTitles = false }: Ex
                   return (
                     <div
                       key={col.id}
-                      className={`aspect-square rounded-2xl overflow-hidden relative flex flex-col items-center justify-center ${
+                      className={`rounded-2xl overflow-hidden relative ${
                         song
                           ? 'border border-black/5 bg-white'
                           : 'border-2 border-dashed border-slate-300 bg-white'
                       }`}
+                      style={{
+                        width: '200px',
+                        height: '200px',
+                        boxSizing: 'border-box',
+                        display: song ? undefined : 'flex',
+                        flexDirection: song ? undefined : 'column',
+                        alignItems: song ? undefined : 'center',
+                        justifyContent: song ? undefined : 'center'
+                      }}
                     >
                       {song ? (
-                        <div className="w-full h-full absolute inset-0 flex flex-col">
+                        <div className="w-full h-full absolute inset-0">
                           {/* Cover image */}
                           <img
                             src={song.coverUrl}
                             alt={song.title.romaji}
-                            className="absolute inset-0 w-full h-full object-cover"
+                            className="absolute inset-0 w-full h-full object-cover block"
                           />
                           {showTitles && (
-                            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent pt-8 pb-5 px-3 flex flex-col justify-end min-h-[50%] z-10">
-                              <span className="text-white font-serif font-black text-[18px] tracking-wide text-center drop-shadow-lg leading-normal">
+                            <div
+                              className="absolute inset-0 pt-8 pb-5 px-3 flex flex-col justify-end z-10"
+                              style={{
+                                background: 'linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0) 45%)'
+                              }}
+                            >
+                              <span className="text-white font-sans font-bold text-[18px] tracking-wide text-center drop-shadow-lg leading-normal">
                                 {song.title.ja}
                               </span>
                             </div>
@@ -191,11 +253,11 @@ export default function ExportGrid({ rows, cols, picks, showTitles = false }: Ex
                         </div>
                       ) : (
                         // Empty Cell Placeholder
-                          <div className="flex flex-col items-center gap-2 text-slate-300 p-4">
-                            <svg className="w-7 h-7 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth="1.5">
+                        <div className="flex flex-col items-center gap-2 text-slate-300 p-4">
+                          <svg className="w-7 h-7 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth="1.5">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                           </svg>
-                            <span className="text-[13px] tracking-widest font-semibold uppercase text-center mt-2.5">No Pick</span>
+                          <span className="text-[13px] tracking-widest font-semibold uppercase text-center mt-2.5">No Pick</span>
                         </div>
                       )}
                     </div>
