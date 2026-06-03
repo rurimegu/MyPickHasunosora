@@ -3,6 +3,7 @@
 import React from 'react';
 import { Song, RowConfig, ColConfig, Unit, GradeClass } from '../schema/song';
 import { SONGS } from '../data/songs';
+import { SITE_DOMAIN } from '../utils/constants';
 
 interface ExportGridProps {
   rows: RowConfig[];
@@ -208,7 +209,7 @@ export default function ExportGrid({ rows, cols, picks, showTitles = false }: Ex
 
       {/* Watermark / Footer */}
       <div className="flex items-center justify-center mt-8 pt-8 border-t-2 border-black/5 text-[26px] tracking-[0.45em] text-slate-700 uppercase font-black relative z-10">
-        mypick.rurino.dev
+        {SITE_DOMAIN}
       </div>
     </div>
   );

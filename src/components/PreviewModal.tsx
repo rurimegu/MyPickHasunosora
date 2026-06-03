@@ -1,4 +1,5 @@
 import React from 'react';
+import { SITE_URL } from '../utils/constants';
 
 interface PreviewModalProps {
   previewUrl: string;
@@ -27,19 +28,31 @@ export default function PreviewModal({
       <div className="w-full max-w-4xl glass-panel border border-black/10 rounded-3xl shadow-2xl overflow-hidden relative z-10 max-h-[90vh] flex flex-col animate-in fade-in zoom-in-95 duration-200 bg-white">
         
         {/* Modal Header */}
-        <div className="p-6 border-b border-black/5 flex items-center justify-between bg-slate-50/80">
-          <div className="flex items-center gap-6">
-            <div>
-              <h3 className="text-lg font-serif font-bold text-slate-950 tracking-wide">
-                Image Preview
-              </h3>
-              <p className="text-[10px] text-pink-500 mt-0.5 tracking-wider font-semibold">
-                This is exactly how your exported selection card will look.
-              </p>
+        <div className="p-4 sm:p-6 border-b border-black/5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-slate-50/80">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 w-full sm:w-auto">
+            <div className="flex items-center justify-between sm:block w-full sm:w-auto">
+              <div>
+                <h3 className="text-lg font-serif font-bold text-slate-950 tracking-wide">
+                  Image Preview
+                </h3>
+                <p className="text-[10px] text-pink-500 mt-0.5 tracking-wider font-semibold">
+                  This is exactly how your exported selection card will look.
+                </p>
+              </div>
+              
+              {/* Mobile Close Button */}
+              <button 
+                onClick={onClose}
+                className="sm:hidden w-8 h-8 rounded-full hover:bg-slate-100 flex items-center justify-center text-slate-500 hover:text-slate-950 transition-colors cursor-pointer"
+              >
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+                </svg>
+              </button>
             </div>
             
             {/* Option Toggle to Show Song Titles */}
-            <label className="flex items-center gap-2.5 px-4 py-2 rounded-full border border-slate-200 bg-white shadow-sm cursor-pointer hover:bg-slate-50 select-none transition-colors">
+            <label className="flex items-center justify-center sm:justify-start gap-2.5 px-4 py-2 rounded-full border border-slate-200 bg-white shadow-sm cursor-pointer hover:bg-slate-50 select-none transition-colors w-full sm:w-auto">
               <input
                 type="checkbox"
                 checked={showTitles}
@@ -50,9 +63,11 @@ export default function PreviewModal({
               <span className="text-xs font-bold text-slate-700">Show Song Titles</span>
             </label>
           </div>
+          
+          {/* Desktop Close Button */}
           <button 
             onClick={onClose}
-            className="w-8 h-8 rounded-full hover:bg-slate-100 flex items-center justify-center text-slate-500 hover:text-slate-950 transition-colors cursor-pointer"
+            className="hidden sm:flex w-8 h-8 rounded-full hover:bg-slate-100 items-center justify-center text-slate-500 hover:text-slate-950 transition-colors cursor-pointer"
           >
             <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
               <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
@@ -83,7 +98,7 @@ export default function PreviewModal({
         </div>
 
         {/* Modal Footer Controls */}
-        <div className="p-5 bg-slate-50 border-t border-black/5 flex items-center justify-end gap-3.5">
+        <div className="p-5 bg-slate-50 border-t border-black/5 flex items-center justify-end gap-3.5 flex-wrap">
           <button
             onClick={onClose}
             className="px-6 py-2.5 rounded-full text-xs font-medium border border-slate-200 text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all duration-300 cursor-pointer"
@@ -103,6 +118,19 @@ export default function PreviewModal({
               <path d="M13 8V2H7v6H2l8 8 8-8h-5zM2 18h16v2H2v-2z" />
             </svg>
             Download Image
+          </button>
+          <button
+            onClick={() => {
+              const shareText = "蓮ノ空女学院スクールアイドルクラブの楽曲マイベストグリッドを作成しました！\n（※ダウンロードした画像を添付してください）\n#MyPick蓮ノ空";
+              const xUrl = `https://x.com/intent/post?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(SITE_URL)}`;
+              window.open(xUrl, '_blank', 'noopener,noreferrer');
+            }}
+            className="px-7 py-2.5 rounded-full text-xs font-bold bg-black hover:bg-slate-900 text-white shadow-lg hover:shadow-black/20 hover:scale-[1.02] transition-all duration-300 cursor-pointer flex items-center justify-center gap-2"
+          >
+            <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            Share to X
           </button>
         </div>
 
