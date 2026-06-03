@@ -95,7 +95,7 @@ export default function Home() {
   const [showModal, setShowModal] = useState(false);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [generating, setGenerating] = useState(false);
-  const [showTitles, setShowTitles] = useState(false);
+  const [showTitles, setShowTitles] = useState(true);
   
   const gridRef = useRef<HTMLDivElement>(null);
 
