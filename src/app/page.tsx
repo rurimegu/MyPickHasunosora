@@ -235,6 +235,7 @@ export default function Home() {
   const [showModal, setShowModal] = useState(false);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [generating, setGenerating] = useState(false);
+  const [showTitles, setShowTitles] = useState(false);
   
   const gridRef = useRef<HTMLDivElement>(null);
 
@@ -249,6 +250,16 @@ export default function Home() {
       }
     }
   }, []);
+
+  // Re-generate image preview when showTitles changes (if preview modal is currently active)
+  useEffect(() => {
+    if (previewUrl) {
+      const timer = setTimeout(() => {
+        handleGenerateImage();
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [showTitles]);
 
   // Save picks to localStorage
   const savePicks = (newPicks: Record<string, Song>) => {
@@ -331,7 +342,7 @@ export default function Home() {
         const canvas = await html2canvas(exportElement, {
           useCORS: true,
           backgroundColor: '#FAF9F5',
-          scale: 1,
+          scale: 2,
           logging: false
         });
 
@@ -400,13 +411,27 @@ export default function Home() {
             
             {/* Modal Header */}
             <div className="p-6 border-b border-black/5 flex items-center justify-between bg-slate-50/80">
-              <div>
-                <h3 className="text-lg font-serif font-bold text-slate-950 tracking-wide">
-                  Image Preview
-                </h3>
-                <p className="text-[10px] text-pink-500 mt-0.5 tracking-wider font-semibold">
-                  This is exactly how your exported selection card will look.
-                </p>
+              <div className="flex items-center gap-6">
+                <div>
+                  <h3 className="text-lg font-serif font-bold text-slate-950 tracking-wide">
+                    Image Preview
+                  </h3>
+                  <p className="text-[10px] text-pink-500 mt-0.5 tracking-wider font-semibold">
+                    This is exactly how your exported selection card will look.
+                  </p>
+                </div>
+                
+                {/* Option Toggle to Show Song Titles */}
+                <label className="flex items-center gap-2.5 px-4 py-2 rounded-full border border-slate-200 bg-white shadow-sm cursor-pointer hover:bg-slate-50 select-none transition-colors">
+                  <input
+                    type="checkbox"
+                    checked={showTitles}
+                    disabled={generating}
+                    onChange={(e) => setShowTitles(e.target.checked)}
+                    className="w-4 h-4 rounded text-pink-500 focus:ring-pink-400 border-slate-300 transition cursor-pointer disabled:opacity-50"
+                  />
+                  <span className="text-xs font-bold text-slate-700">Show Song Titles</span>
+                </label>
               </div>
               <button 
                 onClick={() => setPreviewUrl(null)}
@@ -419,12 +444,25 @@ export default function Home() {
             </div>
 
             {/* Generated Image View Area */}
-            <div className="flex-1 overflow-y-auto p-6 flex justify-center bg-slate-50/30 max-h-[60vh] no-scrollbar">
+            <div className="flex-1 overflow-y-auto p-6 flex justify-center bg-slate-50/30 max-h-[60vh] no-scrollbar relative">
               <img
                 src={previewUrl}
                 alt="Hasunosora Picks Preview"
-                className="max-w-full max-h-[50vh] object-contain rounded-2xl border border-black/10 shadow-lg"
+                className={`max-w-full max-h-[50vh] object-contain rounded-2xl border border-black/10 shadow-lg transition-opacity duration-200 ${
+                  generating ? 'opacity-50 blur-[2px]' : 'opacity-100'
+                }`}
               />
+              {generating && (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="px-4 py-2 bg-slate-900/80 backdrop-blur-md rounded-full text-white text-xs font-bold shadow-lg flex items-center gap-2 animate-pulse">
+                    <svg className="animate-spin h-3.5 w-3.5 text-white" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                    </svg>
+                    Updating Preview...
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Modal Footer Controls */}
@@ -457,7 +495,7 @@ export default function Home() {
 
       {/* Hidden off-screen grid canvas container for absolute consistency & device-independence during export */}
       <div className="fixed -left-[9999px] -top-[9999px] overflow-hidden pointer-events-none select-none">
-        <ExportGrid rows={ROWS} cols={COLS} picks={picks} />
+        <ExportGrid rows={ROWS} cols={COLS} picks={picks} showTitles={showTitles} />
       </div>
     </div>
   );

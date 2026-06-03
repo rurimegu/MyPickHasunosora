@@ -118,6 +118,9 @@ function getUnitEnum(artistStr) {
 function parseReleaseClass(releasedStr, recordedStr, titleRomaji) {
   if (titleRomaji) {
     const lowerTitle = titleRomaji.toLowerCase();
+    if (lowerTitle === 'runway') {
+      return CLASS_ENUM.C103;
+    }
     if (lowerTitle === 'be proud' || 
         lowerTitle === 'shiawase no ribbon' || 
         lowerTitle === 'yappa tenshi!') {

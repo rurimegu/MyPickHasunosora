@@ -8,6 +8,7 @@ interface ExportGridProps {
   rows: RowConfig[];
   cols: ColConfig[];
   picks: Record<string, Song>;
+  showTitles?: boolean;
 }
 
 const MEMBER_COLORS = [
@@ -59,7 +60,7 @@ const getSolidBorderStyle = (unit: Unit): string => {
   }
 };
 
-export default function ExportGrid({ rows, cols, picks }: ExportGridProps) {
+export default function ExportGrid({ rows, cols, picks, showTitles = false }: ExportGridProps) {
   return (
     <div
       id="mypick-export-canvas"
@@ -179,6 +180,13 @@ export default function ExportGrid({ rows, cols, picks }: ExportGridProps) {
                             alt={song.title.romaji}
                             className="absolute inset-0 w-full h-full object-cover"
                           />
+                          {showTitles && (
+                            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent pt-8 pb-5 px-3 flex flex-col justify-end min-h-[50%] z-10">
+                              <span className="text-white font-serif font-black text-[18px] tracking-wide text-center drop-shadow-lg leading-normal">
+                                {song.title.ja}
+                              </span>
+                            </div>
+                          )}
                         </div>
                       ) : (
                         // Empty Cell Placeholder
