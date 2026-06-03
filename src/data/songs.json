@@ -1743,6 +1743,32 @@
   },
   {
     "title": {
+      "ja": "アイデンティティ（104期NEW Ver.）",
+      "romaji": "Identity (104th Class NEW Ver.)"
+    },
+    "artist": {
+      "ja": "みらくらぱーく！",
+      "romaji": "Mira-Cra Park!"
+    },
+    "lyricist": {
+      "ja": "ろさ",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "大熊淳生（Arte Refact）",
+      "romaji": "Atsuki Okuma (Arte Refact)"
+    },
+    "arranger": {
+      "ja": "Atsuhito Sato",
+      "romaji": "Atsuhito Sato"
+    },
+    "coverUrl": "/104/miracrapark/identity_104th_class_new_ver.png",
+    "wikiCoverFile": "Identity 104th.png",
+    "unit": 3,
+    "class": 1
+  },
+  {
+    "title": {
       "ja": "異次元★♥BIGBANG",
       "romaji": "Ijigen★♥BIGBANG"
     },
@@ -2939,6 +2965,32 @@
   },
   {
     "title": {
+      "ja": "Reflection in the mirror（104期NEW Ver.）",
+      "romaji": "Reflection in the mirror (104th Class NEW Ver.)"
+    },
+    "artist": {
+      "ja": "スリーズブーケ",
+      "romaji": "Cerise Bouquet"
+    },
+    "lyricist": {
+      "ja": "ケリー",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "桃宇アリサ, めんま",
+      "romaji": "Arisa Momou and Menma"
+    },
+    "arranger": {
+      "ja": "ArmySlick",
+      "romaji": "ArmySlick"
+    },
+    "coverUrl": "/104/cerisebouquet/reflection_in_the_mirror_104th_class_new_ver.png",
+    "wikiCoverFile": "Reflection in the mirror 104th.png",
+    "unit": 1,
+    "class": 1
+  },
+  {
+    "title": {
       "ja": "令嬢モブ！",
       "romaji": "Reijou Mob!"
     },
@@ -3248,6 +3300,32 @@
     "wikiCoverFile": "DOLLCHESTRA Sparkly Spot.jpg",
     "unit": 2,
     "class": 0
+  },
+  {
+    "title": {
+      "ja": "Sparkly Spot（104期NEW Ver.）",
+      "romaji": "Sparkly Spot (104th Class NEW Ver.)"
+    },
+    "artist": {
+      "ja": "DOLLCHESTRA",
+      "romaji": "DOLLCHESTRA"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "渡辺拓也",
+      "romaji": "Takuya Watanabe"
+    },
+    "arranger": {
+      "ja": "Takuya Sakai (Arte Refact)",
+      "romaji": "Takuya Sakai (Arte Refact)"
+    },
+    "coverUrl": "/104/dollchestra/sparkly_spot_104th_class_new_ver.jpg",
+    "wikiCoverFile": "Sparkly Spot 104th.jpg",
+    "unit": 2,
+    "class": 1
   },
   {
     "title": {

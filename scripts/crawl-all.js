@@ -701,6 +701,110 @@ async function run() {
 
       console.log(`  Parsed: "${titleRomaji}" [${artistRomaji}] | Unit: ${unitEnum} | Class: ${classEnum}`);
 
+       // Parse and push 104th version if present
+      const escapedTitleRomaji = titleRomaji.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+      const escapedTitleJa = titleJa.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+      const titlePattern = new RegExp(`(?:${escapedTitleRomaji}|${escapedTitleJa})\\s*(?:\\(104th Class NEW Ver\\.\\)|（104期NEW Ver.）)`, 'i');
+      const has104thVer = titlePattern.test(content);
+      if (has104thVer) {
+        const song104 = {
+          title: {
+            ja: `${titleJa}（104期NEW Ver.）`,
+            romaji: `${titleRomaji} (104th Class NEW Ver.)`
+          },
+          artist: { ja: artistJa, romaji: artistRomaji },
+          lyricist: processCredit(lyricist),
+          composer: processCredit(composer),
+          arranger: processCredit(arranger),
+          coverUrl: '',
+          wikiCoverFile: '',
+          unit: unitEnum,
+          class: 1 // 104th class
+        };
+
+        // Find 104th version arranger in the text
+        const arranger104Match = content.match(/The 104th version was arranged by\s+([^\n.]+)/i);
+        if (arranger104Match) {
+          const arr104Raw = cleanWikiLinks(arranger104Match[1]);
+          song104.arranger = processCredit(arr104Raw);
+        }
+
+        // Find cover file for 104th version
+        const extractFilenameFor104 = (field) => {
+          if (!field) return '';
+          const trimmed = field.trim();
+          if (trimmed.toLowerCase().includes('<gallery') || trimmed.toLowerCase().includes('<tabber')) {
+            const files = [];
+            const lines = trimmed.split('\n').map(l => l.trim()).filter(Boolean);
+            for (const line of lines) {
+              if (line.startsWith('<gallery') || line.startsWith('</gallery') || line.startsWith('<tabber') || line.startsWith('</tabber')) {
+                continue;
+              }
+              let fileMatch = line.match(/(?:File|Image):\s*([^|\]]+)/i);
+              let filename = '';
+              if (fileMatch) {
+                filename = fileMatch[1].trim();
+              } else {
+                const parts = line.split('|');
+                const candidate = parts[0].trim();
+                if (/\.(jpe?g|png|gif|webp)$/i.test(candidate)) {
+                  filename = candidate;
+                }
+              }
+              if (filename) {
+                const lowerLine = line.toLowerCase();
+                if (lowerLine.includes('104')) {
+                  files.push({ filename, line: lowerLine });
+                }
+              }
+            }
+            const gameJacket = files.find(f => f.line.includes('game') || f.line.includes('art') || f.filename.toLowerCase().includes('game') || f.filename.toLowerCase().includes('art'));
+            if (gameJacket) return gameJacket.filename;
+            if (files.length > 0) return files[0].filename;
+          }
+          return '';
+        };
+
+        const cover104File = extractFilenameFor104(imageField);
+        song104.wikiCoverFile = cover104File;
+
+        // Fetch cover URL for 104th version
+        let local104Exists = false;
+        const existing104 = existingSongs.find(s => s.title.romaji.toLowerCase() === song104.title.romaji.toLowerCase() && s.unit === unitEnum);
+        if (existing104 && existing104.coverUrl && existing104.coverUrl.startsWith('/')) {
+          const localPath = path.join(__dirname, '..', 'public', existing104.coverUrl);
+          if (fs.existsSync(localPath)) {
+            if (!song104.wikiCoverFile || existing104.wikiCoverFile === song104.wikiCoverFile) {
+              local104Exists = true;
+              song104.coverUrl = existing104.coverUrl;
+              console.log(`  Preserved existing local cover URL for "${song104.title.romaji}": ${song104.coverUrl}`);
+            }
+          }
+        }
+
+        if (!local104Exists && song104.wikiCoverFile) {
+          const imgQueryUrl = `https://love-live.fandom.com/api.php?action=query&prop=imageinfo&iiprop=url&titles=File:${encodeURIComponent(song104.wikiCoverFile)}&format=json`;
+          try {
+            const imgRes = await fetch(imgQueryUrl);
+            const imgData = await imgRes.json();
+            const imgPages = imgData.query.pages;
+            const imgPageId = Object.keys(imgPages)[0];
+            if (imgPageId !== '-1' && imgPages[imgPageId].imageinfo && imgPages[imgPageId].imageinfo.length > 0) {
+              song104.coverUrl = imgPages[imgPageId].imageinfo[0].url;
+            }
+          } catch (imgErr) {
+            console.error(`    Error fetching image URL for 104th version ${song104.wikiCoverFile}:`, imgErr);
+          }
+        }
+
+        if (!song104.coverUrl) {
+          song104.coverUrl = 'https://via.placeholder.com/300?text=No+Cover';
+        }
+
+        songs.push(song104);
+        console.log(`  Parsed 104th version: "${song104.title.romaji}" [${song104.artist.romaji}] | Unit: ${unitEnum} | Class: 1`);
+      }
+
       // Sleep a bit to avoid hitting API limits
       await sleep(100);
     } catch (err) {

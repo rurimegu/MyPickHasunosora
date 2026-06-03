@@ -80,8 +80,19 @@ async function run() {
   let unmatchedCount = 0;
 
   for (const song of songs) {
-    const jaClean = cleanName(song.title.ja);
-    const romajiClean = cleanName(song.title.romaji);
+    const cleanTitle = (title) => {
+      if (!title) return '';
+      return cleanName(
+        title
+          .replace(/\(104th Class NEW Ver\.\)/gi, '')
+          .replace(/（104期NEW Ver\.）/gi, '')
+          .replace(/\(105th Class NEW Ver\.\)/gi, '')
+          .replace(/（105期NEW Ver\.）/gi, '')
+      );
+    };
+
+    const jaClean = cleanTitle(song.title.ja);
+    const romajiClean = cleanTitle(song.title.romaji);
     
     // Find matching wiki song checking both ja and romaji titles
     const wikiSong = wikiSongs.find(w => {
@@ -90,9 +101,18 @@ async function run() {
     });
     
     if (wikiSong) {
+      const is104Ver = song.title.romaji.includes('104th Class NEW Ver.');
+      const is105Ver = song.title.romaji.includes('105th Class NEW Ver.');
+
       // 1. Update Title ja
       if (wikiSong.name) {
-        song.title.ja = wikiSong.name.trim();
+        if (is104Ver) {
+          song.title.ja = `${wikiSong.name.trim()}（104期NEW Ver.）`;
+        } else if (is105Ver) {
+          song.title.ja = `${wikiSong.name.trim()}（105期NEW Ver.）`;
+        } else {
+          song.title.ja = wikiSong.name.trim();
+        }
       }
 
       // 2. Extract credits
@@ -111,10 +131,14 @@ async function run() {
         .map(c => c.staffName.name.trim())
         .join(', ');
 
-      // Update ja field for lyricist, composer, arranger if found, fallback to romaji
+      // Update ja field for lyricist, composer if found, fallback to romaji
       song.lyricist.ja = lyricists || song.lyricist.romaji;
       song.composer.ja = composers || song.composer.romaji;
-      song.arranger.ja = arrangers || song.arranger.romaji;
+
+      // Only update arranger for base versions to preserve the custom arranger for special versions
+      if (!is104Ver && !is105Ver) {
+        song.arranger.ja = arrangers || song.arranger.romaji;
+      }
       
       updatedCount++;
     } else {
