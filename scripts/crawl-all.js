@@ -369,80 +369,6 @@ async function run() {
       const recordedRaw = params['recorded'] || '';
       const imageField = params['image'] || '';
 
-      // Parse Cover Image Name robustly
-      const extractFilename = (field) => {
-        if (!field) return '';
-        const trimmed = field.trim();
-        if (trimmed.toLowerCase().includes('<gallery') || trimmed.toLowerCase().includes('<tabber')) {
-          const files = [];
-          const lines = trimmed.split('\n').map(l => l.trim()).filter(Boolean);
-          for (const line of lines) {
-            if (line.startsWith('<gallery') || line.startsWith('</gallery') || line.startsWith('<tabber') || line.startsWith('</tabber')) {
-              continue;
-            }
-            
-            let fileMatch = line.match(/(?:File|Image):\s*([^|\]]+)/i);
-            let filename = '';
-            if (fileMatch) {
-              filename = fileMatch[1].trim();
-            } else {
-              const parts = line.split('|');
-              const candidate = parts[0].trim();
-              if (/\.(jpe?g|png|gif|webp)$/i.test(candidate)) {
-                filename = candidate;
-              }
-            }
-
-            if (filename) {
-              const isGameJacket = line.toLowerCase().includes('game');
-              files.push({ filename, isGameJacket });
-            }
-          }
-          if (files.length > 0) {
-            const gameJacket = files.find(f => f.isGameJacket);
-            if (gameJacket) return gameJacket.filename;
-            return files[0].filename;
-          }
-        }
-        const fileMatch = trimmed.match(/\[\[\s*(?:File|Image):([^|\]]+)/i);
-        if (fileMatch) {
-          return fileMatch[1].trim();
-        }
-        const plainFileMatch = trimmed.match(/(?:File|Image):\s*([^|\]\n]+)/i);
-        if (plainFileMatch) {
-          return plainFileMatch[1].trim();
-        }
-        return trimmed;
-      };
-
-      let coverImageFile = extractFilename(imageField);
-
-      // Fallback for missing cover image files: query the page's linked images list
-      if (!coverImageFile) {
-        const pageImagesUrl = `https://love-live.fandom.com/api.php?action=query&prop=images&titles=${encodeURIComponent(m.title)}&format=json`;
-        try {
-          const imgListRes = await fetch(pageImagesUrl);
-          const imgListData = await imgListRes.json();
-          const pages = imgListData.query.pages;
-          const pid = Object.keys(pages)[0];
-          if (pid !== '-1' && pages[pid].images && pages[pid].images.length > 0) {
-            const matchedImg = pages[pid].images.find(img =>
-              img.title.toLowerCase().includes('jacket') ||
-              img.title.toLowerCase().includes('cover') ||
-              img.title.toLowerCase().includes('video') ||
-              img.title.toLowerCase().includes('lyric')
-            );
-            if (matchedImg) {
-              coverImageFile = matchedImg.title.replace(/^File:/i, '').trim();
-            } else {
-              coverImageFile = pages[pid].images[0].title.replace(/^File:/i, '').trim();
-            }
-          }
-        } catch (err) {
-          console.error(`    Error fetching page images fallback list for ${m.title}:`, err);
-        }
-      }
-
       // Check for DISPLAYTITLE in the content
       const displayTitleMatch = content.match(/\{\{DISPLAYTITLE:\s*([^}]+)\}\}/i);
       let pageTitle = m.title;
@@ -491,6 +417,117 @@ async function run() {
             titleJa = cleanTemplateTags(nameParam);
             titleRomaji = cleanTemplateTags(nameParam);
           }
+        }
+      }
+
+      let classEnum = parseReleaseClass(releasedRaw, recordedRaw, titleRomaji);
+
+      // Parse Cover Image Name robustly
+      const extractFilename = (field, classVal) => {
+        if (!field) return '';
+        const trimmed = field.trim();
+        if (trimmed.toLowerCase().includes('<gallery') || trimmed.toLowerCase().includes('<tabber')) {
+          const files = [];
+          const lines = trimmed.split('\n').map(l => l.trim()).filter(Boolean);
+          for (const line of lines) {
+            if (line.startsWith('<gallery') || line.startsWith('</gallery') || line.startsWith('<tabber') || line.startsWith('</tabber')) {
+              continue;
+            }
+            
+            let fileMatch = line.match(/(?:File|Image):\s*([^|\]]+)/i);
+            let filename = '';
+            if (fileMatch) {
+              filename = fileMatch[1].trim();
+            } else {
+              const parts = line.split('|');
+              const candidate = parts[0].trim();
+              if (/\.(jpe?g|png|gif|webp)$/i.test(candidate)) {
+                filename = candidate;
+              }
+            }
+
+            if (filename) {
+              const lowerLine = line.toLowerCase();
+              const isGameJacket = lowerLine.includes('game');
+              
+              // Filter out alternative versions not matching the base target class
+              let isSpecialVersion = false;
+              if (lowerLine.includes('sakura') || lowerLine.includes('bgp') || lowerLine.includes('tribute')) {
+                isSpecialVersion = true;
+              }
+              if (classVal === 0) {
+                // If base song (C103), ignore 104th and 105th jackets
+                if (lowerLine.includes('104') || lowerLine.includes('105')) {
+                  isSpecialVersion = true;
+                }
+              } else if (classVal === 1) {
+                // If 104th class version, ignore 103rd and 105th jackets
+                if (lowerLine.includes('103') || lowerLine.includes('105')) {
+                  isSpecialVersion = true;
+                }
+              } else if (classVal === 2) {
+                // If 105th class version, ignore 103rd and 104th jackets
+                if (lowerLine.includes('103') || lowerLine.includes('104')) {
+                  isSpecialVersion = true;
+                }
+              }
+
+              files.push({ filename, isGameJacket, isSpecialVersion });
+            }
+          }
+          if (files.length > 0) {
+            // 1. Try to find a non-special game jacket first
+            const mainGameJacket = files.find(f => f.isGameJacket && !f.isSpecialVersion);
+            if (mainGameJacket) return mainGameJacket.filename;
+
+            // 2. Try to find any non-special jacket (like CD cover)
+            const mainCDJacket = files.find(f => !f.isSpecialVersion);
+            if (mainCDJacket) return mainCDJacket.filename;
+
+            // 3. Fallback to game jacket even if special
+            const gameJacket = files.find(f => f.isGameJacket);
+            if (gameJacket) return gameJacket.filename;
+
+            // 4. Default to first file in list
+            return files[0].filename;
+          }
+        }
+        const fileMatch = trimmed.match(/\[\[\s*(?:File|Image):([^|\]]+)/i);
+        if (fileMatch) {
+          return fileMatch[1].trim();
+        }
+        const plainFileMatch = trimmed.match(/(?:File|Image):\s*([^|\]\n]+)/i);
+        if (plainFileMatch) {
+          return plainFileMatch[1].trim();
+        }
+        return trimmed;
+      };
+
+      let coverImageFile = extractFilename(imageField, classEnum);
+
+      // Fallback for missing cover image files: query the page's linked images list
+      if (!coverImageFile) {
+        const pageImagesUrl = `https://love-live.fandom.com/api.php?action=query&prop=images&titles=${encodeURIComponent(m.title)}&format=json`;
+        try {
+          const imgListRes = await fetch(pageImagesUrl);
+          const imgListData = await imgListRes.json();
+          const pages = imgListData.query.pages;
+          const pid = Object.keys(pages)[0];
+          if (pid !== '-1' && pages[pid].images && pages[pid].images.length > 0) {
+            const matchedImg = pages[pid].images.find(img =>
+              img.title.toLowerCase().includes('jacket') ||
+              img.title.toLowerCase().includes('cover') ||
+              img.title.toLowerCase().includes('video') ||
+              img.title.toLowerCase().includes('lyric')
+            );
+            if (matchedImg) {
+              coverImageFile = matchedImg.title.replace(/^File:/i, '').trim();
+            } else {
+              coverImageFile = pages[pid].images[0].title.replace(/^File:/i, '').trim();
+            }
+          }
+        } catch (err) {
+          console.error(`    Error fetching page images fallback list for ${m.title}:`, err);
         }
       }
 
@@ -585,7 +622,6 @@ async function run() {
       };
 
       let unitEnum = getUnitEnum(artistRaw);
-      let classEnum = parseReleaseClass(releasedRaw, recordedRaw, titleRomaji);
 
       // Get image URL from file name
       let coverUrl = '';
