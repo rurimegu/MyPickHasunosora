@@ -4,6 +4,8 @@ Generates images for sharing your favorite songs from Hasunosora.
 
 This app allows fans to select their top picks for each sub-unit (Cerise Bouquet, DOLLCHESTRA, Mira-Cra Park!, Edel Note, etc.) and class year (103rd Class / 2023, 104th Class / 2024, 105th Class / 2025), and generate a beautiful, high-quality image of their grid ready for sharing on social media.
 
+<img width="1024" height="2121" alt="Hasunosora_MyPicks" src="https://github.com/user-attachments/assets/4372cb85-4f05-44b8-9d4d-6460ef186d94" />
+
 ---
 
 ## 🛠️ Getting Started
