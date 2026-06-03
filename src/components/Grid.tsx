@@ -40,34 +40,18 @@ const Grid = forwardRef<HTMLDivElement, GridProps>(({
       <div className="absolute top-0 right-0 w-96 h-96 bg-pink-500/[0.03] rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500/[0.03] rounded-full blur-3xl pointer-events-none" />
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative z-10">
+      <div className="flex flex-col gap-6 relative z-10">
         
-        {/* Grid Left Corner Info Column */}
-        <div className="md:col-span-1 flex flex-col justify-between pr-4 border-r border-black/5 pb-6 md:pb-0">
-          <div className="space-y-4">
-            <div className="text-2xl font-serif font-bold text-slate-950 tracking-wide">
-              SELECTIONS
-            </div>
-            <p className="text-xs text-slate-600 leading-relaxed font-light">
-              Click any empty cell in the grid to search and add your absolute favorite song for each unit and class combination.
-            </p>
-          </div>
-          
-          {/* Branding watermark */}
-          <div className="mt-8 pt-6 border-t border-black/5">
-            <div className="font-serif text-sm tracking-wider font-bold text-slate-800">
-              蓮ノ空女学院スクールアイドルクラブ
-            </div>
-            <div className="text-[9px] tracking-widest text-slate-400 uppercase font-light mt-1">
-              hasunosora girls' high school idol club
+        {/* Columns Headers */}
+        <div className="grid grid-cols-4 gap-4 text-center items-end">
+          {/* Selections corner title (1st column) */}
+          <div className="col-span-1 flex items-end pb-2 pl-2">
+            <div className="flex flex-col text-left">
+              <span className="font-serif text-sm md:text-base font-bold text-slate-800 tracking-wider">SELECTIONS</span>
             </div>
           </div>
-        </div>
-
-        {/* Grid Grid Areas Column */}
-        <div className="md:col-span-3 flex flex-col gap-6">
-          {/* Columns Headers */}
-          <div className="grid grid-cols-3 gap-4 text-center">
+          {/* Grade Headers (3 columns) */}
+          <div className="col-span-3 grid grid-cols-3 gap-4 text-center">
             {cols.map(col => (
               <div key={col.id} className="py-2">
                 <div className="font-serif text-lg font-bold text-slate-900 tracking-wide">{col.name}</div>
@@ -75,39 +59,39 @@ const Grid = forwardRef<HTMLDivElement, GridProps>(({
               </div>
             ))}
           </div>
+        </div>
 
-          {/* Grid Rows */}
-          <div className="space-y-4">
-            {rows.map(row => {
-              return (
-                <div 
-                  key={row.id} 
-                  className="grid grid-cols-3 gap-4 p-3.5 rounded-2xl border transition-all duration-300"
-                  style={{ 
-                    '--glow-color': row.glowColor,
-                    background: row.bgStyle,
-                    borderColor: row.borderStyle
-                  } as React.CSSProperties}
-                >
-                  {/* Row Header (Inside row block) */}
-                  <div className="col-span-3 flex items-center justify-between px-1.5 pb-2 border-b border-black/5">
-                    <div className="flex items-center gap-3">
-                      {getUnitLogoPath(row.id) ? (
-                        <img 
-                          src={getUnitLogoPath(row.id)!} 
-                          alt={`${row.name} Logo`}
-                          className="h-6 w-auto object-contain flex-shrink-0"
-                        />
-                      ) : (
-                        <div className="flex items-baseline gap-2">
-                          <span className="font-serif text-sm font-bold text-slate-900 tracking-wide">{row.name}</span>
-                          <span className="text-[10px] text-slate-500 font-light">{row.nameJa}</span>
-                        </div>
-                      )}
+        {/* Grid Rows */}
+        <div className="space-y-4">
+          {rows.map(row => {
+            return (
+              <div 
+                key={row.id} 
+                className="grid grid-cols-4 gap-4 items-center p-3.5 rounded-2xl border transition-all duration-300"
+                style={{ 
+                  '--glow-color': row.glowColor,
+                  background: row.bgStyle,
+                  borderColor: row.borderStyle
+                } as React.CSSProperties}
+              >
+                {/* Row Header (Left Column) */}
+                <div className="col-span-1 flex items-center justify-center pl-2 h-14 md:h-16 w-full">
+                  {getUnitLogoPath(row.id) ? (
+                    <img 
+                      src={getUnitLogoPath(row.id)!} 
+                      alt={`${row.name} Logo`}
+                      className="max-h-full max-w-full object-contain flex-shrink-0"
+                    />
+                  ) : (
+                    <div className="flex flex-col items-center text-center">
+                      <span className="font-serif text-xs md:text-sm font-bold text-slate-900 tracking-wide leading-tight">{row.name}</span>
+                      <span className="text-[9px] text-slate-500 font-light mt-0.5">{row.nameJa}</span>
                     </div>
-                  </div>
+                  )}
+                </div>
 
-                  {/* Row Grid Cells */}
+                {/* Row Grid Cells (3 Columns) */}
+                <div className="col-span-3 grid grid-cols-3 gap-4">
                   {cols.map(col => {
                     const cellKey = `${row.id}_${col.id}`;
                     const song = picks[cellKey];
@@ -127,9 +111,9 @@ const Grid = forwardRef<HTMLDivElement, GridProps>(({
                     );
                   })}
                 </div>
-              );
-            })}
-          </div>
+              </div>
+            );
+          })}
         </div>
 
       </div>
