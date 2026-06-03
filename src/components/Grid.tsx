@@ -34,40 +34,40 @@ const Grid = forwardRef<HTMLDivElement, GridProps>(({
   return (
     <div 
       ref={ref} 
-      className="glass-panel rounded-3xl p-8 border border-black/5 shadow-xl overflow-hidden relative"
+      className="glass-panel rounded-2xl md:rounded-3xl p-4 md:p-8 border border-black/5 shadow-xl overflow-hidden relative"
     >
       {/* Grid Decorative Accents */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-pink-500/[0.03] rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500/[0.03] rounded-full blur-3xl pointer-events-none" />
 
-      <div className="flex flex-col gap-6 relative z-10">
+      <div className="flex flex-col gap-3.5 md:gap-6 relative z-10">
         
         {/* Columns Headers */}
-        <div className="grid grid-cols-4 gap-4 text-center items-end">
+        <div className="grid grid-cols-4 gap-2 md:gap-4 text-center items-end">
           {/* Selections corner title (1st column) */}
-          <div className="col-span-1 flex items-end pb-2 pl-2">
+          <div className="col-span-1 flex items-end pb-1 md:pb-2 pl-1 md:pl-2">
             <div className="flex flex-col text-left">
-              <span className="font-serif text-sm md:text-base font-bold text-slate-800 tracking-wider">SELECTIONS</span>
+              <span className="font-serif text-[10px] sm:text-xs md:text-base font-bold text-slate-800 tracking-wider">SELECTIONS</span>
             </div>
           </div>
           {/* Grade Headers (3 columns) */}
-          <div className="col-span-3 grid grid-cols-3 gap-4 text-center">
+          <div className="col-span-3 grid grid-cols-3 gap-2 md:gap-4 text-center">
             {cols.map(col => (
-              <div key={col.id} className="py-2">
-                <div className="font-serif text-lg font-bold text-slate-900 tracking-wide">{col.name}</div>
-                <div className="text-[10px] text-slate-500 tracking-wider font-light uppercase mt-0.5">{col.label}</div>
+              <div key={col.id} className="py-1 md:py-2">
+                <div className="font-serif text-xs sm:text-sm md:text-lg font-bold text-slate-900 tracking-wide">{col.name}</div>
+                <div className="text-[8px] md:text-[10px] text-slate-500 tracking-wider font-light uppercase mt-0.5 leading-tight">{col.label}</div>
               </div>
             ))}
           </div>
         </div>
 
         {/* Grid Rows */}
-        <div className="space-y-4">
+        <div className="space-y-2 md:space-y-4">
           {rows.map(row => {
             return (
               <div 
                 key={row.id} 
-                className="grid grid-cols-4 gap-4 items-center p-3.5 rounded-2xl border transition-all duration-300"
+                className="grid grid-cols-4 gap-2 md:gap-4 items-center p-1.5 sm:p-2 md:p-3.5 rounded-xl md:rounded-2xl border transition-all duration-300"
                 style={{ 
                   '--glow-color': row.glowColor,
                   background: row.bgStyle,
@@ -75,7 +75,7 @@ const Grid = forwardRef<HTMLDivElement, GridProps>(({
                 } as React.CSSProperties}
               >
                 {/* Row Header (Left Column) */}
-                <div className="col-span-1 flex items-center justify-center pl-2 h-14 md:h-16 w-full">
+                <div className="col-span-1 flex items-center justify-center pl-1 h-10 sm:h-12 md:h-16 w-full">
                   {getUnitLogoPath(row.id) ? (
                     <img 
                       src={getUnitLogoPath(row.id)!} 
@@ -84,14 +84,14 @@ const Grid = forwardRef<HTMLDivElement, GridProps>(({
                     />
                   ) : (
                     <div className="flex flex-col items-center text-center">
-                      <span className="font-serif text-xs md:text-sm font-bold text-slate-900 tracking-wide leading-tight">{row.name}</span>
-                      <span className="text-[9px] text-slate-500 font-light mt-0.5">{row.nameJa}</span>
+                      <span className="font-serif text-[9px] sm:text-xs md:text-sm font-bold text-slate-900 tracking-wide leading-tight">{row.name}</span>
+                      <span className="text-[7px] sm:text-[9px] text-slate-500 font-light mt-0.5 leading-none">{row.nameJa}</span>
                     </div>
                   )}
                 </div>
 
                 {/* Row Grid Cells (3 Columns) */}
-                <div className="col-span-3 grid grid-cols-3 gap-4">
+                <div className="col-span-3 grid grid-cols-3 gap-2 md:gap-4">
                   {cols.map(col => {
                     const cellKey = `${row.id}_${col.id}`;
                     const song = picks[cellKey];

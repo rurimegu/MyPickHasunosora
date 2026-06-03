@@ -237,7 +237,7 @@ export default function Home() {
         totalSongs={SONGS.length}
       />
 
-      <main className="max-w-7xl w-full mx-auto px-6 flex-1 flex flex-col">
+      <main className="max-w-7xl w-full mx-auto px-3 sm:px-6 flex-1 flex flex-col">
         <Grid
           ref={gridRef}
           rows={ROWS}

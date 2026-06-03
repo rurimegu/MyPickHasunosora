@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <header className="max-w-7xl w-full mx-auto px-6 pt-12 pb-8 flex flex-col items-center text-center">
+    <header className="max-w-7xl w-full mx-auto px-4 pt-6 md:pt-12 pb-4 md:pb-8 flex flex-col items-center text-center">
       <div className="mb-3 text-xs tracking-[0.3em] font-semibold text-pink-400 uppercase text-glow-pink">
         Link! Like! Love Live!
       </div>

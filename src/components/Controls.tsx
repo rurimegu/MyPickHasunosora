@@ -20,7 +20,7 @@ export default function Controls({
   totalSongs
 }: ControlsProps) {
   return (
-    <div className="max-w-7xl w-full mx-auto px-6 mb-10 flex flex-wrap items-center justify-between gap-4">
+    <div className="max-w-7xl w-full mx-auto px-4 mb-6 md:mb-10 flex flex-wrap items-center justify-between gap-3.5">
       <div className="flex items-center gap-2.5 text-xs text-slate-600 font-light">
         <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
         <span>Database loaded: {totalSongs} songs ready</span>
