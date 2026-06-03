@@ -153,11 +153,22 @@ async function run() {
     
     const targetPath = path.join(targetDir, safeFilename);
     
-    // If the coverUrl is already a local path, keep it and skip
+    // If the coverUrl is already a local path, check if it is at the correct destination
     if (url.startsWith('/')) {
-      song.coverUrl = url;
-      console.log(`[${i + 1}/${uniqueSongs.length}] Image already exists locally for "${song.title.romaji}"`);
-      continue;
+      const expectedUrl = `/${grade}/${unit}/${safeFilename}`;
+      if (url === expectedUrl) {
+        song.coverUrl = url;
+        console.log(`[${i + 1}/${uniqueSongs.length}] Image already exists locally at correct path for "${song.title.romaji}"`);
+        continue;
+      }
+      
+      const oldPath = path.join(publicDir, url);
+      if (fs.existsSync(oldPath)) {
+        console.log(`[${i + 1}/${uniqueSongs.length}] Moving image for "${song.title.romaji}" from ${url} to ${expectedUrl}`);
+        fs.renameSync(oldPath, targetPath);
+        song.coverUrl = expectedUrl;
+        continue;
+      }
     }
     
     console.log(`[${i + 1}/${uniqueSongs.length}] Downloading cover for "${song.title.romaji}" -> /${grade}/${unit}/${safeFilename}...`);
