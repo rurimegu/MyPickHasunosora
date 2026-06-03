@@ -1,5 +1,7 @@
 # MyPickHasunosora
 
+<a href="https://mypick.rurino.dev" target="_blank" rel="noopener noreferrer">Website</a>
+
 Generates images for sharing your favorite songs from Hasunosora.
 
 This app allows fans to select their top picks for each sub-unit (Cerise Bouquet, DOLLCHESTRA, Mira-Cra Park!, Edel Note, etc.) and class year (103rd Class / 2023, 104th Class / 2024, 105th Class / 2025), and generate a beautiful, high-quality image of their grid ready for sharing on social media.
