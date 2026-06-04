@@ -504,6 +504,9 @@ async function run() {
       };
 
       let coverImageFile = extractFilename(imageField, classEnum);
+      if (titleRomaji.toLowerCase() === 'identity' && classEnum === 0) {
+        coverImageFile = 'Mira-Cra Park Identity.jpg';
+      }
 
       // Fallback for missing cover image files: query the page's linked images list
       if (!coverImageFile) {
