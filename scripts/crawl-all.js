@@ -632,6 +632,7 @@ async function run() {
       
       const isJoker = titleRomaji.toLowerCase() === 'joker' || titleRomaji.toLowerCase() === 'joker.';
       const isDeepness = titleRomaji.toLowerCase() === 'deepness';
+      const isPerennial = titleRomaji.toLowerCase() === 'perennial';
       if (isJoker) {
         localExists = true;
         coverUrl = '/105/hasunosora/joker.png';
@@ -644,6 +645,11 @@ async function run() {
         coverImageFile = 'DEEPNESS.png';
         localExists = false;
         console.log(`  Forced correct original cover URL for "DEEPNESS": ${coverUrl}`);
+      } else if (isPerennial) {
+        localExists = true;
+        coverUrl = '/105/other/perennial.jpg';
+        coverImageFile = 'Perennial.jpg';
+        console.log(`  Forced correct local cover URL for "Perennial" (skipping crawl): ${coverUrl}`);
       } else {
         const existingSong = existingSongs.find(s => s.title.romaji.toLowerCase() === titleRomaji.toLowerCase() && s.unit === unitEnum);
         if (existingSong && existingSong.coverUrl && existingSong.coverUrl.startsWith('/')) {
