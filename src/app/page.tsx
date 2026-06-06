@@ -97,6 +97,7 @@ export default function Home() {
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [generating, setGenerating] = useState(false);
   const [showTitles, setShowTitles] = useState(true);
+  const [transparentBg, setTransparentBg] = useState(false);
   
   const gridRef = useRef<HTMLDivElement>(null);
 
@@ -112,7 +113,7 @@ export default function Home() {
     }
   }, []);
 
-  // Re-generate image preview when showTitles changes (if preview modal is currently active)
+  // Re-generate image preview when options change (if preview modal is currently active)
   useEffect(() => {
     if (previewUrl) {
       const timer = setTimeout(() => {
@@ -120,7 +121,7 @@ export default function Home() {
       }, 100);
       return () => clearTimeout(timer);
     }
-  }, [showTitles]);
+  }, [showTitles, transparentBg]);
 
   // Save picks to localStorage
   const savePicks = (newPicks: Record<string, Song>) => {
@@ -202,7 +203,7 @@ export default function Home() {
         
         const canvas = await html2canvas(exportElement, {
           useCORS: true,
-          backgroundColor: '#FAF9F5',
+          backgroundColor: transparentBg ? null : '#FAF9F5',
           scale: 2,
           logging: false
         });
@@ -273,13 +274,15 @@ export default function Home() {
           onClose={() => setPreviewUrl(null)}
           showTitles={showTitles}
           onToggleShowTitles={setShowTitles}
+          transparentBg={transparentBg}
+          onToggleTransparentBg={setTransparentBg}
           generating={generating}
         />
       )}
 
       {/* Hidden off-screen grid canvas container for absolute consistency & device-independence during export */}
       <div className="fixed -left-[9999px] -top-[9999px] overflow-hidden pointer-events-none select-none">
-        <ExportGrid rows={ROWS} cols={COLS} picks={picks} showTitles={showTitles} />
+        <ExportGrid rows={ROWS} cols={COLS} picks={picks} showTitles={showTitles} transparentBg={transparentBg} />
       </div>
     </div>
   );

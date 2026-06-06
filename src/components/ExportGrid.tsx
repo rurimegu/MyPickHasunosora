@@ -8,6 +8,7 @@ interface ExportGridProps {
   cols: ColConfig[];
   picks: Record<string, Song>;
   showTitles?: boolean;
+  transparentBg?: boolean;
 }
 
 const MEMBER_COLORS = [
@@ -84,13 +85,14 @@ export default function ExportGrid({
   cols,
   picks,
   showTitles = false,
+  transparentBg = false,
 }: ExportGridProps) {
   return (
     <div
       id="mypick-export-canvas"
       className="border border-black/5 relative overflow-hidden font-sans"
       style={{
-        backgroundColor: "#FAF9F5",
+        backgroundColor: transparentBg ? "transparent" : "#FAF9F5",
         boxSizing: "border-box",
         width: "1024px",
         padding: "56px 56px 40px 56px",
@@ -288,7 +290,10 @@ export default function ExportGrid({
                       }}
                     >
                       {song ? (
-                        <div className="w-full h-full absolute inset-0">
+                        <div
+                          className="absolute"
+                          style={{ top: -1, left: -1, right: -1, bottom: -1 }}
+                        >
                           {/* Cover image */}
                           <img
                             src={song.coverUrl}

@@ -6,6 +6,8 @@ interface PreviewModalProps {
   onClose: () => void;
   showTitles: boolean;
   onToggleShowTitles: (show: boolean) => void;
+  transparentBg: boolean;
+  onToggleTransparentBg: (transparent: boolean) => void;
   generating: boolean;
 }
 
@@ -14,6 +16,8 @@ export default function PreviewModal({
   onClose,
   showTitles,
   onToggleShowTitles,
+  transparentBg,
+  onToggleTransparentBg,
   generating,
 }: PreviewModalProps) {
   return (
@@ -50,19 +54,35 @@ export default function PreviewModal({
               </button>
             </div>
 
-            {/* Option Toggle to Show Song Titles */}
-            <label className="flex items-center justify-center sm:justify-start gap-2.5 px-4 py-2 rounded-full border border-slate-200 bg-white shadow-sm cursor-pointer hover:bg-slate-50 select-none transition-colors w-full sm:w-auto">
-              <input
-                type="checkbox"
-                checked={showTitles}
-                disabled={generating}
-                onChange={(e) => onToggleShowTitles(e.target.checked)}
-                className="w-4 h-4 rounded text-pink-500 focus:ring-pink-400 border-slate-300 transition cursor-pointer disabled:opacity-50"
-              />
-              <span className="text-xs font-bold text-slate-700">
-                Show Song Titles
-              </span>
-            </label>
+            <div className="flex flex-wrap gap-2.5 w-full sm:w-auto">
+              {/* Option Toggle to Show Song Titles */}
+              <label className="flex items-center justify-center sm:justify-start gap-2.5 px-4 py-2 rounded-full border border-slate-200 bg-white shadow-sm cursor-pointer hover:bg-slate-50 select-none transition-colors w-full sm:w-auto">
+                <input
+                  type="checkbox"
+                  checked={showTitles}
+                  disabled={generating}
+                  onChange={(e) => onToggleShowTitles(e.target.checked)}
+                  className="w-4 h-4 rounded text-pink-500 focus:ring-pink-400 border-slate-300 transition cursor-pointer disabled:opacity-50"
+                />
+                <span className="text-xs font-bold text-slate-700">
+                  Show Song Titles
+                </span>
+              </label>
+
+              {/* Option Toggle for Transparent Background */}
+              <label className="flex items-center justify-center sm:justify-start gap-2.5 px-4 py-2 rounded-full border border-slate-200 bg-white shadow-sm cursor-pointer hover:bg-slate-50 select-none transition-colors w-full sm:w-auto">
+                <input
+                  type="checkbox"
+                  checked={transparentBg}
+                  disabled={generating}
+                  onChange={(e) => onToggleTransparentBg(e.target.checked)}
+                  className="w-4 h-4 rounded text-pink-500 focus:ring-pink-400 border-slate-300 transition cursor-pointer disabled:opacity-50"
+                />
+                <span className="text-xs font-bold text-slate-700">
+                  Transparent Background
+                </span>
+              </label>
+            </div>
           </div>
 
           {/* Desktop Close Button */}
