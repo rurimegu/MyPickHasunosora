@@ -443,6 +443,32 @@
   },
   {
     "title": {
+      "ja": "Bless you!",
+      "romaji": "Bless you!"
+    },
+    "artist": {
+      "ja": "Murano Sayaka",
+      "romaji": "Murano Sayaka"
+    },
+    "lyricist": {
+      "ja": "TATSUNE",
+      "romaji": "TATSUNE"
+    },
+    "composer": {
+      "ja": "渡辺未来",
+      "romaji": "Miki Watanabe"
+    },
+    "arranger": {
+      "ja": "渡辺未来",
+      "romaji": "Miki Watanabe"
+    },
+    "coverUrl": "/105/other/bless_you.jpg",
+    "wikiCoverFile": "Sayaka Murano Bless you!.jpg",
+    "unit": 6,
+    "class": 2
+  },
+  {
+    "title": {
       "ja": "Bloom the smile, Bloom the dream!",
       "romaji": "Bloom the smile, Bloom the dream!"
     },
@@ -2393,6 +2419,32 @@
   },
   {
     "title": {
+      "ja": "ミジンコトランスフォーメーション",
+      "romaji": "Mijinko Transformation"
+    },
+    "artist": {
+      "ja": "Osawa Rurino",
+      "romaji": "Osawa Rurino"
+    },
+    "lyricist": {
+      "ja": "ろさ",
+      "romaji": "Rosa"
+    },
+    "composer": {
+      "ja": "山本玲史",
+      "romaji": "Reiji Yamamoto"
+    },
+    "arranger": {
+      "ja": "山本玲史",
+      "romaji": "Reiji Yamamoto"
+    },
+    "coverUrl": "/105/other/mijinko_transformation.jpg",
+    "wikiCoverFile": "Rurino Osawa Mijinko Transformation.jpg",
+    "unit": 6,
+    "class": 2
+  },
+  {
+    "title": {
       "ja": "ミルク",
       "romaji": "Milk"
     },
@@ -2856,6 +2908,32 @@
     },
     "coverUrl": "/105/other/perennial.jpg",
     "wikiCoverFile": "Perennial.jpg",
+    "unit": 6,
+    "class": 2
+  },
+  {
+    "title": {
+      "ja": "プレイリスト/「あの日」",
+      "romaji": "Playlist / \"Ano Hi\""
+    },
+    "artist": {
+      "ja": "Hinoshita Kaho",
+      "romaji": "Hinoshita Kaho"
+    },
+    "lyricist": {
+      "ja": "ケリー",
+      "romaji": "Kelly"
+    },
+    "composer": {
+      "ja": "塚田耕平,めんま",
+      "romaji": "Kohei Tsukada and Menma"
+    },
+    "arranger": {
+      "ja": "塚田耕平,めんま",
+      "romaji": "Kohei Tsukada and Menma"
+    },
+    "coverUrl": "/105/other/playlist_ano_hi.jpg",
+    "wikiCoverFile": "Kaho Hinoshita Playlist_Ano_Hi.jpg",
     "unit": 6,
     "class": 2
   },
