@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Unit, GradeClass, Song, RowConfig, ColConfig } from '../schema/song';
 import { SONGS } from '../data/songs';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import Controls from '../components/Controls';
 import Grid from '../components/Grid';
 import SearchModal from '../components/SearchModal';
@@ -252,11 +253,7 @@ export default function Home() {
         />
       </main>
 
-      <footer className="w-full py-8 mt-12 border-t border-slate-200/60 bg-white/40 backdrop-blur-sm text-center">
-        <p className="text-xs text-slate-500 font-medium">
-          Contact: <a href="mailto:hime@rurino.dev" className="text-pink-500 hover:text-pink-600 transition-colors hover:underline">hime@rurino.dev</a>
-        </p>
-      </footer>
+      <Footer />
 
       {showModal && (
         <SearchModal
