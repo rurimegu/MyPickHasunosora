@@ -6,7 +6,8 @@
     "search_all": "搜索所有歌曲",
     "clear_grid": "清空网格",
     "generating": "正在生成图片...",
-    "generate": "生成图片"
+    "generate": "生成图片",
+    "nickname_placeholder": "昵称 (可选)"
   },
   "grid": {
     "selections": "SELECTIONS",

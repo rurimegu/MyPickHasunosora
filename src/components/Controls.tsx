@@ -10,6 +10,8 @@ interface ControlsProps {
   generating: boolean;
   hasPicks: boolean;
   totalSongs: number;
+  nickname: string;
+  onNicknameChange: (nickname: string) => void;
 }
 
 export default function Controls({
@@ -18,7 +20,9 @@ export default function Controls({
   onGlobalSearch,
   generating,
   hasPicks,
-  totalSongs
+  totalSongs,
+  nickname,
+  onNicknameChange
 }: ControlsProps) {
   const { t } = useTranslation();
 
@@ -28,12 +32,12 @@ export default function Controls({
         <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
         <span>{t('controls.database_loaded', { count: totalSongs })}</span>
       </div>
-      <div className="flex items-center gap-3.5">
+      <div className="flex flex-wrap items-center gap-3 justify-end w-full sm:w-auto">
         <button
           onClick={onGlobalSearch}
           className="px-4 py-2 rounded-full text-xs font-semibold border border-pink-200 text-pink-600 hover:text-white hover:bg-pink-500 transition-all duration-300 cursor-pointer flex items-center gap-1.5 shadow-sm"
         >
-          <svg className="w-3 h-3 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth="2.5">
+          <svg className="w-3.5 h-3.5 stroke-current text-pink-500/80" fill="none" viewBox="0 0 24 24" strokeWidth="2.5">
             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
           {t('controls.search_all')}
@@ -45,6 +49,19 @@ export default function Controls({
         >
           {t('controls.clear_grid')}
         </button>
+        {/* Nickname Input Capsule */}
+        <div className="relative group">
+          <input
+            type="text"
+            value={nickname}
+            onChange={(e) => onNicknameChange(e.target.value)}
+            placeholder={t('controls.nickname_placeholder')}
+            className="pl-8 pr-4 py-2 border border-slate-200 group-hover:border-pink-300 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500/10 rounded-full text-xs text-slate-900 placeholder-slate-400 bg-white/60 focus:bg-white transition-all w-36 sm:w-40 shadow-sm cursor-text"
+          />
+          <svg className="w-3.5 h-3.5 absolute left-3 top-2.5 text-slate-400 group-hover:text-pink-500 transition-colors pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+        </div>
         <button
           onClick={onGenerate}
           disabled={generating || !hasPicks}

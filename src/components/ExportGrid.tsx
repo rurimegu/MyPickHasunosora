@@ -9,6 +9,7 @@ interface ExportGridProps {
   picks: Record<string, Song>;
   showTitles?: boolean;
   transparentBg?: boolean;
+  nickname?: string;
 }
 
 const MEMBER_COLORS = [
@@ -86,6 +87,7 @@ export default function ExportGrid({
   picks,
   showTitles = false,
   transparentBg = false,
+  nickname = "",
 }: ExportGridProps) {
   return (
     <div
@@ -344,9 +346,16 @@ export default function ExportGrid({
       </div>
 
       {/* Watermark / Footer */}
-      <div className="flex items-center justify-center mt-8 pt-8 border-t-2 border-black/5 text-[26px] tracking-[0.45em] text-slate-700 uppercase font-black relative z-10">
-        {SITE_DOMAIN}
-      </div>
+      {nickname ? (
+        <div className="flex items-center justify-between pt-6 border-t-2 border-black/5 text-slate-700 relative z-10 w-full font-sans">
+          <span className="text-[24px] font-bold">Picked by {nickname}</span>
+          <span className="text-[24px] tracking-[0.2em] font-black uppercase">{SITE_DOMAIN}</span>
+        </div>
+      ) : (
+        <div className="flex items-center justify-center pt-6 border-t-2 border-black/5 text-[32px] tracking-[0.45em] text-slate-700 uppercase font-black relative z-10">
+          {SITE_DOMAIN}
+        </div>
+      )}
     </div>
   );
 }

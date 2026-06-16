@@ -6,7 +6,8 @@
     "search_all": "Search All Songs",
     "clear_grid": "Clear Grid",
     "generating": "Generating Image...",
-    "generate": "Generate Image"
+    "generate": "Generate Image",
+    "nickname_placeholder": "Nickname (Optional)"
   },
   "grid": {
     "selections": "SELECTIONS",

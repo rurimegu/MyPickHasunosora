@@ -6,7 +6,8 @@
     "search_all": "全楽曲から検索",
     "clear_grid": "グリッドをクリア",
     "generating": "画像を生成中...",
-    "generate": "画像を生成"
+    "generate": "画像を生成",
+    "nickname_placeholder": "ニックネーム (任意)"
   },
   "grid": {
     "selections": "SELECTIONS",

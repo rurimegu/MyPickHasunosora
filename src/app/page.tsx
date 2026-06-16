@@ -103,10 +103,11 @@ export default function Home() {
   const [generating, setGenerating] = useState(false);
   const [showTitles, setShowTitles] = useState(true);
   const [transparentBg, setTransparentBg] = useState(false);
+  const [nickname, setNickname] = useState("");
   
   const gridRef = useRef<HTMLDivElement>(null);
 
-  // Load selections from localStorage on mount
+  // Load selections and nickname from localStorage on mount
   useEffect(() => {
     const saved = localStorage.getItem('hasu_mypicks');
     if (saved) {
@@ -115,6 +116,10 @@ export default function Home() {
       } catch (e) {
         console.error("Failed to parse saved picks", e);
       }
+    }
+    const savedNickname = localStorage.getItem('hasu_nickname');
+    if (savedNickname) {
+      setNickname(savedNickname);
     }
   }, []);
 
@@ -140,6 +145,11 @@ export default function Home() {
   const savePicks = (newPicks: Record<string, Song>) => {
     setPicks(newPicks);
     localStorage.setItem('hasu_mypicks', JSON.stringify(newPicks));
+  };
+
+  const handleNicknameChange = (name: string) => {
+    setNickname(name);
+    localStorage.setItem('hasu_nickname', name);
   };
 
   const handleCellClick = (rowUnit: Unit, colClass: GradeClass) => {
@@ -255,6 +265,8 @@ export default function Home() {
         generating={generating}
         hasPicks={Object.keys(picks).length > 0}
         totalSongs={SONGS.length}
+        nickname={nickname}
+        onNicknameChange={handleNicknameChange}
       />
 
       <main className="max-w-7xl w-full mx-auto px-3 sm:px-6 flex-1 flex flex-col">
@@ -294,7 +306,7 @@ export default function Home() {
 
       {/* Hidden off-screen grid canvas container for absolute consistency & device-independence during export */}
       <div className="fixed -left-[9999px] -top-[9999px] overflow-hidden pointer-events-none select-none">
-        <ExportGrid rows={ROWS} cols={COLS} picks={picks} showTitles={showTitles} transparentBg={transparentBg} />
+        <ExportGrid rows={ROWS} cols={COLS} picks={picks} showTitles={showTitles} transparentBg={transparentBg} nickname={nickname} />
       </div>
     </div>
   );
