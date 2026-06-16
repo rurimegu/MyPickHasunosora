@@ -27,7 +27,7 @@
   },
   "preview": {
     "title": "Image Preview",
-    "subtitle": "This is exactly how your exported selection card will look.",
+    "subtitle": "This is exactly how your exported selection card will look. You can also long-press or right-click the image to save it.",
     "show_titles": "Show Song Titles",
     "transparent_bg": "Transparent Background",
     "updating": "Updating Preview...",

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Song, RowConfig, ColConfig } from "../schema/song";
 import { useTranslation } from "react-i18next";
 import { getUnitKey, getGradeKey } from "../i18n/config";
@@ -23,6 +23,16 @@ export default function SearchModal({
   const [searchQuery, setSearchQuery] = useState("");
   const { t, i18n } = useTranslation();
   const isJa = i18n.language.startsWith('ja');
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    // Prevent autofocus on mobile devices to avoid keyboard popup
+    const isMobile = window.matchMedia('(max-width: 768px)').matches || 
+                     window.matchMedia('(pointer: coarse)').matches;
+    if (!isMobile && inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, []);
 
   const normalizeStr = (str: string): string => {
     if (!str) return "";
@@ -99,11 +109,11 @@ export default function SearchModal({
         <div className="p-5 border-b border-black/5 bg-slate-50/30">
           <div className="relative">
             <input
+              ref={inputRef}
               type="text"
               placeholder={t('search.placeholder')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              autoFocus
               className="w-full py-3 pl-11 pr-4 bg-white border border-slate-200 focus:border-pink-500 focus:outline-none focus:ring-1 focus:ring-pink-500/20 rounded-2xl text-sm text-slate-900 placeholder-slate-400 transition-all duration-300 shadow-sm"
             />
             <svg

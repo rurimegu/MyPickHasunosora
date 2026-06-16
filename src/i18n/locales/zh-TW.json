@@ -27,7 +27,7 @@
   },
   "preview": {
     "title": "圖片預覽",
-    "subtitle": "這是你導出的選擇卡片的最終外觀。",
+    "subtitle": "這是你導出的選擇卡片的最終外觀。您也可以長按或右鍵儲存圖片。",
     "show_titles": "顯示歌名",
     "transparent_bg": "透明背景",
     "updating": "正在更新預覽...",

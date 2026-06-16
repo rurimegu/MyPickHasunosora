@@ -27,7 +27,7 @@
   },
   "preview": {
     "title": "图片预览",
-    "subtitle": "这是你导出的选择卡片的最终外观。",
+    "subtitle": "这是你导出的选择卡片的最终外观。您也可以长按或右键保存图片。",
     "show_titles": "显示歌名",
     "transparent_bg": "透明背景",
     "updating": "正在更新预览...",
