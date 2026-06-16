@@ -58,5 +58,9 @@
     "c103_short": "103rd",
     "c104_short": "104th",
     "c105_short": "105th"
+  },
+  "sidebar": {
+    "title": "Other Picks",
+    "disclaimer": "These sites are fan-made projects developed by other authors and are not affiliated with or maintained by the author of this site."
   }
 }

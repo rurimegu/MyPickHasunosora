@@ -10,6 +10,7 @@ import Grid from '../components/Grid';
 import SearchModal from '../components/SearchModal';
 import ExportGrid from '../components/ExportGrid';
 import PreviewModal from '../components/PreviewModal';
+import Sidebar from '../components/Sidebar';
 import { convertColorString } from '../utils/colors';
 import GitHubLink from '../components/GitHubLink';
 import { useTranslation } from 'react-i18next';
@@ -104,6 +105,7 @@ export default function Home() {
   const [showTitles, setShowTitles] = useState(true);
   const [transparentBg, setTransparentBg] = useState(false);
   const [nickname, setNickname] = useState("");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   
   const gridRef = useRef<HTMLDivElement>(null);
 
@@ -251,6 +253,19 @@ export default function Home() {
     <div className="flex-1 flex flex-col relative">
       <div className="h-1.5 w-full bg-gradient-to-r from-pink-500 via-cyan-400 to-amber-400 shadow-md" />
 
+      <div className="absolute top-4 left-4 sm:top-6 sm:left-6 z-30">
+        <button
+          onClick={() => setSidebarOpen(true)}
+          className="text-slate-400 hover:text-slate-900 transition-colors p-2 rounded-full hover:bg-slate-100/60 flex items-center justify-center cursor-pointer"
+          title="Other MyPick Sites / 他のMyPickサイト"
+          aria-label="Open menu"
+        >
+          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
       <div className="absolute top-4 right-4 sm:top-6 sm:right-6 flex items-center gap-1.5 z-30">
         <LanguageSwitcher />
         <GitHubLink />
@@ -303,6 +318,11 @@ export default function Home() {
           generating={generating}
         />
       )}
+
+      <Sidebar
+        isOpen={sidebarOpen}
+        onClose={() => setSidebarOpen(false)}
+      />
 
       {/* Hidden off-screen grid canvas container for absolute consistency & device-independence during export */}
       <div className="fixed -left-[9999px] -top-[9999px] overflow-hidden pointer-events-none select-none">
