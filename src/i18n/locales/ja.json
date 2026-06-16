@@ -7,7 +7,8 @@
     "clear_grid": "グリッドをクリア",
     "generating": "画像を生成中...",
     "generate": "画像を生成",
-    "nickname_placeholder": "ニックネーム (任意)"
+    "nickname_placeholder": "ニックネーム (任意)",
+    "nickname_help": "生成画像の下部に「Picked by ...」として表示されます。"
   },
   "grid": {
     "selections": "SELECTIONS",

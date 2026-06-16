@@ -7,7 +7,8 @@
     "clear_grid": "Clear Grid",
     "generating": "Generating Image...",
     "generate": "Generate Image",
-    "nickname_placeholder": "Nickname (Optional)"
+    "nickname_placeholder": "Nickname (Optional)",
+    "nickname_help": "Appears as 'Picked by ...' at the bottom of the generated image."
   },
   "grid": {
     "selections": "SELECTIONS",

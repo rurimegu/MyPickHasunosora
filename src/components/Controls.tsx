@@ -27,17 +27,44 @@ export default function Controls({
   const { t } = useTranslation();
 
   return (
-    <div className="max-w-7xl w-full mx-auto px-4 mb-6 md:mb-10 flex flex-wrap items-center justify-between gap-3.5">
-      <div className="flex items-center gap-2.5 text-xs text-slate-600 font-light">
+    <div className="max-w-7xl w-full mx-auto px-4 mb-6 grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-4 items-center">
+      {/* 1. Status Text (Mobile: Order 1, Desktop: Row 2 Col 1) */}
+      <div className="md:ml-4 flex items-center gap-2.5 text-xs text-slate-600 font-light justify-center sm:justify-start sm:row-start-2 sm:col-start-1">
         <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
         <span>{t('controls.database_loaded', { count: totalSongs })}</span>
       </div>
-      <div className="flex flex-wrap items-center gap-3 justify-end w-full sm:w-auto">
+
+      {/* 2. Fancy Dedicated Nickname Input block (Mobile: Order 2, Desktop: Row 1 Col 2) */}
+      <div className="flex flex-wrap items-center gap-3.5 bg-gradient-to-r from-pink-50/45 via-white/90 to-amber-50/40 border border-pink-200/50 rounded-2xl px-5 py-3 shadow-xs w-full justify-center sm:justify-start sm:row-start-1 sm:col-start-2 sm:justify-self-end sm:w-auto">
+        <span className="flex items-center justify-center w-6 h-6 rounded-full bg-pink-100 text-pink-600 flex-shrink-0">
+          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+          </svg>
+        </span>
+        <div className="relative">
+          <input
+            type="text"
+            value={nickname}
+            onChange={(e) => onNicknameChange(e.target.value)}
+            placeholder={t('controls.nickname_placeholder')}
+            className="pl-8 pr-4 py-1.5 border border-slate-200/80 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500/10 rounded-full text-xs text-slate-900 placeholder-slate-400 bg-white w-48 sm:w-52 shadow-xs transition-all hover:border-pink-300"
+          />
+          <svg className="w-3.5 h-3.5 absolute left-3 top-2.5 text-slate-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+        </div>
+        <span className="text-[10.5px] text-slate-500 font-medium leading-tight max-w-xs sm:max-w-none text-center sm:text-left">
+          {t('controls.nickname_help')}
+        </span>
+      </div>
+
+      {/* 3. Action Buttons (Mobile: Order 3, Desktop: Row 2 Col 2) */}
+      <div className="flex flex-wrap items-center gap-3 justify-center sm:justify-end w-full sm:row-start-2 sm:col-start-2 sm:justify-self-end sm:w-auto">
         <button
           onClick={onGlobalSearch}
           className="px-4 py-2 rounded-full text-xs font-semibold border border-pink-200 text-pink-600 hover:text-white hover:bg-pink-500 transition-all duration-300 cursor-pointer flex items-center gap-1.5 shadow-sm"
         >
-          <svg className="w-3.5 h-3.5 stroke-current text-pink-500/80" fill="none" viewBox="0 0 24 24" strokeWidth="2.5">
+          <svg className="w-3.5 h-3.5 stroke-current text-pink-500/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
           {t('controls.search_all')}
@@ -49,19 +76,6 @@ export default function Controls({
         >
           {t('controls.clear_grid')}
         </button>
-        {/* Nickname Input Capsule */}
-        <div className="relative group">
-          <input
-            type="text"
-            value={nickname}
-            onChange={(e) => onNicknameChange(e.target.value)}
-            placeholder={t('controls.nickname_placeholder')}
-            className="pl-8 pr-4 py-2 border border-slate-200 group-hover:border-pink-300 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500/10 rounded-full text-xs text-slate-900 placeholder-slate-400 bg-white/60 focus:bg-white transition-all w-36 sm:w-40 shadow-sm cursor-text"
-          />
-          <svg className="w-3.5 h-3.5 absolute left-3 top-2.5 text-slate-400 group-hover:text-pink-500 transition-colors pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-          </svg>
-        </div>
         <button
           onClick={onGenerate}
           disabled={generating || !hasPicks}

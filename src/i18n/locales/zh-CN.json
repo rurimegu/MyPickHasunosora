@@ -7,7 +7,8 @@
     "clear_grid": "清空网格",
     "generating": "正在生成图片...",
     "generate": "生成图片",
-    "nickname_placeholder": "昵称 (可选)"
+    "nickname_placeholder": "昵称 (可选)",
+    "nickname_help": "将在生成的图片底部显示为「Picked by ...」。"
   },
   "grid": {
     "selections": "SELECTIONS",
