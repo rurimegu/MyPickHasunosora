@@ -1,0 +1,61 @@
+{
+  "title": "MY PICK HASUNOSORA",
+  "description": "蓮ノ空女学院スクールアイドルクラブのお気に入りの楽曲を選ぼう！",
+  "controls": {
+    "database_loaded": "全 {{count}} 曲を読み込みました",
+    "search_all": "全楽曲から検索",
+    "clear_grid": "グリッドをクリア",
+    "generating": "画像を生成中...",
+    "generate": "画像を生成"
+  },
+  "grid": {
+    "selections": "SELECTIONS",
+    "no_pick": "未選択",
+    "pick_song": "楽曲を選択",
+    "clear_pick": "選択を解除"
+  },
+  "search": {
+    "title_select": "{{name}} の楽曲を選択",
+    "title_global": "全楽曲検索",
+    "subtitle_all": "すべての103期、104期、105期の楽曲",
+    "placeholder": "曲名、アーティスト、作詞、作曲、編曲、またはローマ字で検索...",
+    "no_results": "検索条件に一致する楽曲が見つかりませんでした。",
+    "footer_info": "全 {{total}} 曲中 {{count}} 曲が見つかりました。",
+    "lyricist": "作詞",
+    "composer": "作曲",
+    "arranger": "編曲"
+  },
+  "preview": {
+    "title": "画像プレビュー",
+    "subtitle": "この画像がそのまま保存されます。",
+    "show_titles": "曲名を表示する",
+    "transparent_bg": "背景を透過する",
+    "updating": "プレビューを更新中...",
+    "close": "閉じる",
+    "download": "画像をダウンロード",
+    "share_x": "Xでシェア",
+    "share_text": "蓮ノ空女学院スクールアイドルクラブの楽曲マイベストグリッドを作成しました！\n（※ダウンロードした画像を添付してください）\n#MyPick蓮ノ空"
+  },
+  "confirm": {
+    "clear_all": "グリッドの選択をすべてクリアしますか？"
+  },
+  "alert": {
+    "generate_failed": "画像の生成に失敗しました。もう一度お試しください。"
+  },
+  "units": {
+    "hasunosora": "蓮ノ空女学院スクールアイドルクラブ",
+    "cerisebouquet": "スリーズブーケ",
+    "dollchestra": "DOLLCHESTRA",
+    "miracrapark": "みらくらぱーく！",
+    "edelnote": "エーデルノート",
+    "other": "シャッフル・ソロ・その他"
+  },
+  "grades": {
+    "c103": "103期 (2023年度)",
+    "c104": "104期 (2024年度)",
+    "c105": "105期 (2025年度)",
+    "c103_short": "103期",
+    "c104_short": "104期",
+    "c105_short": "105期"
+  }
+}

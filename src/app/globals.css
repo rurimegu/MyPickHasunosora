@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Outfit:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Outfit:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&family=Noto+Serif+TC:wght@400;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -16,7 +16,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: 'Outfit', 'Noto Serif JP', sans-serif;
+  --font-sans: 'Outfit', 'Noto Serif JP', 'Noto Serif SC', 'Noto Serif TC', sans-serif;
   --font-serif: 'Cinzel', serif;
 }
 

@@ -2,6 +2,8 @@ import React, { forwardRef } from 'react';
 import { Song, RowConfig, ColConfig, Unit, GradeClass } from '../schema/song';
 import { SONGS } from '../data/songs';
 import GridCell from './GridCell';
+import { useTranslation } from 'react-i18next';
+import { getUnitKey, getGradeKey } from '../i18n/config';
 
 interface GridProps {
   rows: RowConfig[];
@@ -29,6 +31,7 @@ const Grid = forwardRef<HTMLDivElement, GridProps>(({
   onCellClick,
   onClearCell
 }, ref) => {
+  const { t } = useTranslation();
   return (
     <div 
       ref={ref} 
@@ -45,17 +48,24 @@ const Grid = forwardRef<HTMLDivElement, GridProps>(({
           {/* Selections corner title (1st column) */}
           <div className="col-span-1 flex items-end pb-1 md:pb-2 pl-1 md:pl-2">
             <div className="flex flex-col text-left">
-              <span className="font-serif text-[10px] sm:text-xs md:text-base font-bold text-slate-800 tracking-wider">SELECTIONS</span>
+              <span className="font-serif text-[10px] sm:text-xs md:text-base font-bold text-slate-800 tracking-wider">{t('grid.selections')}</span>
             </div>
           </div>
           {/* Grade Headers (3 columns) */}
           <div className="col-span-3 grid grid-cols-3 gap-2 md:gap-4 text-center">
-            {cols.map(col => (
-              <div key={col.id} className="py-1 md:py-2">
-                <div className="font-serif text-xs sm:text-sm md:text-lg font-bold text-slate-900 tracking-wide">{col.name}</div>
-                <div className="text-[8px] md:text-[10px] text-slate-500 tracking-wider font-light uppercase mt-0.5 leading-tight">{col.label}</div>
-              </div>
-            ))}
+            {cols.map(col => {
+              const gradeKey = getGradeKey(col.id);
+              return (
+                <div key={col.id} className="py-1 md:py-2">
+                  <div className="font-serif text-xs sm:text-sm md:text-lg font-bold text-slate-900 tracking-wide">
+                    {t(`grades.${gradeKey}_short`)}
+                  </div>
+                  <div className="text-[8px] md:text-[10px] text-slate-500 tracking-wider font-light uppercase mt-0.5 leading-tight">
+                    {t(`grades.${gradeKey}`)}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -82,8 +92,9 @@ const Grid = forwardRef<HTMLDivElement, GridProps>(({
                     />
                   ) : (
                     <div className="flex flex-col items-center text-center">
-                      <span className="font-serif text-[9px] sm:text-xs md:text-sm font-bold text-slate-900 tracking-wide leading-tight">{row.name}</span>
-                      <span className="text-[7px] sm:text-[9px] text-slate-500 font-light mt-0.5 leading-none">{row.nameJa}</span>
+                      <span className="font-serif text-[9px] sm:text-xs md:text-sm font-bold text-slate-900 tracking-wide leading-tight">
+                        {t(`units.${getUnitKey(row.id)}`)}
+                      </span>
                     </div>
                   )}
                 </div>

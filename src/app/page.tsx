@@ -12,6 +12,9 @@ import ExportGrid from '../components/ExportGrid';
 import PreviewModal from '../components/PreviewModal';
 import { convertColorString } from '../utils/colors';
 import GitHubLink from '../components/GitHubLink';
+import { useTranslation } from 'react-i18next';
+import '../i18n/config';
+import LanguageSwitcher from '../components/LanguageSwitcher';
 
 
 const ROWS: RowConfig[] = [
@@ -92,6 +95,7 @@ const COLS: ColConfig[] = [
 
 
 export default function Home() {
+  const { t, i18n } = useTranslation();
   const [picks, setPicks] = useState<Record<string, Song>>({});
   const [activeCell, setActiveCell] = useState<{ rowUnit: Unit; colClass: GradeClass } | null>(null);
   const [showModal, setShowModal] = useState(false);
@@ -123,6 +127,14 @@ export default function Home() {
       return () => clearTimeout(timer);
     }
   }, [showTitles, transparentBg]);
+
+  // Update document title and lang attribute when language changes
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      document.documentElement.lang = i18n.language;
+      document.title = t('title') + " | " + t('description');
+    }
+  }, [t, i18n.language]);
 
   // Save picks to localStorage
   const savePicks = (newPicks: Record<string, Song>) => {
@@ -163,7 +175,7 @@ export default function Home() {
   };
 
   const handleClearAllPicks = () => {
-    if (window.confirm("Are you sure you want to clear all your picks?")) {
+    if (window.confirm(t('confirm.clear_all'))) {
       savePicks({});
     }
   };
@@ -214,7 +226,7 @@ export default function Home() {
       }
     } catch (err) {
       console.error("Failed to generate image", err);
-      alert("Failed to generate image. Please try again.");
+      alert(t('alert.generate_failed'));
     } finally {
       // Restore original getComputedStyle
       window.getComputedStyle = originalGetComputedStyle;
@@ -229,7 +241,10 @@ export default function Home() {
     <div className="flex-1 flex flex-col relative">
       <div className="h-1.5 w-full bg-gradient-to-r from-pink-500 via-cyan-400 to-amber-400 shadow-md" />
 
-      <GitHubLink />
+      <div className="absolute top-4 right-4 sm:top-6 sm:right-6 flex items-center gap-1.5 z-30">
+        <LanguageSwitcher />
+        <GitHubLink />
+      </div>
 
       <Header />
 

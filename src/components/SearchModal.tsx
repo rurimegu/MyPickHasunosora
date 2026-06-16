@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import { Song, RowConfig, ColConfig } from "../schema/song";
+import { useTranslation } from "react-i18next";
+import { getUnitKey, getGradeKey } from "../i18n/config";
 
 interface SearchModalProps {
   row: RowConfig | undefined;
@@ -19,6 +21,8 @@ export default function SearchModal({
   onSelect,
 }: SearchModalProps) {
   const [searchQuery, setSearchQuery] = useState("");
+  const { t, i18n } = useTranslation();
+  const isJa = i18n.language.startsWith('ja');
 
   const normalizeStr = (str: string): string => {
     if (!str) return "";
@@ -75,10 +79,10 @@ export default function SearchModal({
         <div className="p-6 border-b border-black/5 flex items-center justify-between bg-slate-50/80">
           <div>
             <h3 className="text-lg font-bold text-slate-950 tracking-wide font-serif">
-              {row ? `Select Song for ${row.name}` : "Global Song Search"}
+              {row ? t('search.title_select', { name: t(`units.${getUnitKey(row.id)}`) }) : t('search.title_global')}
             </h3>
             <p className="text-[10px] text-pink-500 mt-0.5 tracking-wider font-semibold">
-              {col ? col.label : "All 103, 104, and 105期 Songs"}
+              {col ? t(`grades.${getGradeKey(col.id)}`) : t('search.subtitle_all')}
             </p>
           </div>
           <button
@@ -96,7 +100,7 @@ export default function SearchModal({
           <div className="relative">
             <input
               type="text"
-              placeholder="Search by Title, Artist, Lyricist, Composer, Arranger, or Romaji..."
+              placeholder={t('search.placeholder')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               autoFocus
@@ -122,6 +126,8 @@ export default function SearchModal({
         <div className="flex-1 overflow-y-auto p-5 space-y-3 no-scrollbar">
           {filteredSongs.length > 0 ? (
             filteredSongs.map((song) => {
+              const gradeKey = getGradeKey(song.class);
+
               return (
                 <div
                   key={`${song.title.romaji}_${song.unit}`}
@@ -149,11 +155,7 @@ export default function SearchModal({
                         {song.title.ja}
                       </h4>
                       <span className="text-[9px] text-slate-500 font-semibold tracking-wider ml-2">
-                        {song.class === 0
-                          ? "103期"
-                          : song.class === 1
-                            ? "104期"
-                            : "105期"}
+                        {t(`grades.${gradeKey}_short`)}
                       </span>
                     </div>
 
@@ -168,7 +170,7 @@ export default function SearchModal({
                     <div className="flex items-center gap-x-2 gap-y-0.5 mt-2 pt-2 border-t border-slate-100 text-[8.5px] text-slate-400 truncate">
                       <span className="truncate flex-shrink-0">
                         <span className="font-bold tracking-wider text-pink-500/90 uppercase mr-1">
-                          Lyricist
+                          {t('search.lyricist')}
                         </span>
                         <span className="font-bold text-slate-600">
                           {song.lyricist.ja}
@@ -177,7 +179,7 @@ export default function SearchModal({
                       <span className="text-slate-200 font-light">|</span>
                       <span className="truncate flex-shrink-0">
                         <span className="font-bold tracking-wider text-cyan-600/90 uppercase mr-1">
-                          Composer
+                          {t('search.composer')}
                         </span>
                         <span className="font-bold text-slate-600">
                           {song.composer.ja}
@@ -186,7 +188,7 @@ export default function SearchModal({
                       <span className="text-slate-200 font-light">|</span>
                       <span className="truncate flex-shrink-0">
                         <span className="font-bold tracking-wider text-amber-500/90 uppercase mr-1">
-                          Arranger
+                          {t('search.arranger')}
                         </span>
                         <span className="font-bold text-slate-600">
                           {song.arranger.ja}
@@ -199,15 +201,14 @@ export default function SearchModal({
             })
           ) : (
             <div className="text-center py-12 text-slate-400 font-light text-xs">
-              No songs found matching your search terms.
+              {t('search.no_results')}
             </div>
           )}
         </div>
 
         {/* Modal Footer info */}
         <div className="p-4 bg-slate-50 border-t border-black/5 text-center text-[9px] text-slate-500 font-light">
-          Found {filteredSongs.length} matching songs out of {songs.length}{" "}
-          total.
+          {t('search.footer_info', { count: filteredSongs.length, total: songs.length })}
         </div>
       </div>
     </div>

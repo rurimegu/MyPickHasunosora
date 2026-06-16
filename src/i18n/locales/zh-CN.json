@@ -1,0 +1,61 @@
+{
+  "title": "MY PICK HASUNOSORA",
+  "description": "选择你最喜欢的莲之空女学院学园偶像俱乐部歌曲吧！",
+  "controls": {
+    "database_loaded": "已加载全部 {{count}} 首歌曲",
+    "search_all": "搜索所有歌曲",
+    "clear_grid": "清空网格",
+    "generating": "正在生成图片...",
+    "generate": "生成图片"
+  },
+  "grid": {
+    "selections": "SELECTIONS",
+    "no_pick": "未选择",
+    "pick_song": "选择歌曲",
+    "clear_pick": "清除选择"
+  },
+  "search": {
+    "title_select": "选择 {{name}} 的歌曲",
+    "title_global": "全局歌曲搜索",
+    "subtitle_all": "所有 103、104 和 105 期歌曲",
+    "placeholder": "通过歌名、歌手、作词、作曲、编曲或罗马音搜索...",
+    "no_results": "未找到匹配的歌曲。",
+    "footer_info": "在共 {{total}} 首歌曲中找到 {{count}} 首匹配。",
+    "lyricist": "作词",
+    "composer": "作曲",
+    "arranger": "编曲"
+  },
+  "preview": {
+    "title": "图片预览",
+    "subtitle": "这是你导出的选择卡片的最终外观。",
+    "show_titles": "显示歌名",
+    "transparent_bg": "透明背景",
+    "updating": "正在更新预览...",
+    "close": "关闭",
+    "download": "下载图片",
+    "share_x": "分享到 X",
+    "share_text": "我制作了莲之空女学院学园偶像俱乐部的歌曲推荐网格！\n（※请附加下载的图片）\n#MyPick蓮ノ空"
+  },
+  "confirm": {
+    "clear_all": "确定要清空所有选择吗？"
+  },
+  "alert": {
+    "generate_failed": "生成图片失败，请重试。"
+  },
+  "units": {
+    "hasunosora": "莲之空女学院学园偶像俱乐部",
+    "cerisebouquet": "Cerise Bouquet",
+    "dollchestra": "DOLLCHESTRA",
+    "miracrapark": "Mira-Cra Park!",
+    "edelnote": "Edel Note",
+    "other": "混搭・Solo・其他"
+  },
+  "grades": {
+    "c103": "103期 (2023年度)",
+    "c104": "104期 (2024年度)",
+    "c105": "105期 (2025年度)",
+    "c103_short": "103期",
+    "c104_short": "104期",
+    "c105_short": "105期"
+  }
+}

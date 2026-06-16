@@ -1,5 +1,6 @@
 import React from "react";
 import { SITE_URL } from "../utils/constants";
+import { useTranslation } from "react-i18next";
 
 interface PreviewModalProps {
   previewUrl: string;
@@ -20,6 +21,7 @@ export default function PreviewModal({
   onToggleTransparentBg,
   generating,
 }: PreviewModalProps) {
+  const { t } = useTranslation();
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center px-4 animate-in fade-in duration-200">
       {/* Overlay Backdrop */}
@@ -36,10 +38,10 @@ export default function PreviewModal({
             <div className="flex items-center justify-between sm:block w-full sm:w-auto">
               <div>
                 <h3 className="text-lg font-serif font-bold text-slate-950 tracking-wide">
-                  Image Preview
+                  {t('preview.title')}
                 </h3>
                 <p className="text-[10px] text-pink-500 mt-0.5 tracking-wider font-semibold">
-                  This is exactly how your exported selection card will look.
+                  {t('preview.subtitle')}
                 </p>
               </div>
 
@@ -65,7 +67,7 @@ export default function PreviewModal({
                   className="w-4 h-4 rounded text-pink-500 focus:ring-pink-400 border-slate-300 transition cursor-pointer disabled:opacity-50"
                 />
                 <span className="text-xs font-bold text-slate-700">
-                  Show Song Titles
+                  {t('preview.show_titles')}
                 </span>
               </label>
 
@@ -79,7 +81,7 @@ export default function PreviewModal({
                   className="w-4 h-4 rounded text-pink-500 focus:ring-pink-400 border-slate-300 transition cursor-pointer disabled:opacity-50"
                 />
                 <span className="text-xs font-bold text-slate-700">
-                  Transparent Background
+                  {t('preview.transparent_bg')}
                 </span>
               </label>
             </div>
@@ -127,7 +129,7 @@ export default function PreviewModal({
                     d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                   />
                 </svg>
-                Updating Preview...
+                {t('preview.updating')}
               </div>
             </div>
           )}
@@ -139,7 +141,7 @@ export default function PreviewModal({
             onClick={onClose}
             className="px-6 py-2.5 rounded-full text-xs font-medium border border-slate-200 text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all duration-300 cursor-pointer"
           >
-            Close
+            {t('preview.close')}
           </button>
           <button
             onClick={async () => {
@@ -187,12 +189,11 @@ export default function PreviewModal({
             <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
               <path d="M13 8V2H7v6H2l8 8 8-8h-5zM2 18h16v2H2v-2z" />
             </svg>
-            Download Image
+            {t('preview.download')}
           </button>
           <button
             onClick={() => {
-              const shareText =
-                "蓮ノ空女学院スクールアイドルクラブの楽曲マイベストグリッドを作成しました！\n（※ダウンロードした画像を添付してください）\n#MyPick蓮ノ空";
+              const shareText = t('preview.share_text');
               const xUrl = `https://x.com/intent/post?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(SITE_URL)}`;
               window.open(xUrl, "_blank", "noopener,noreferrer");
             }}
@@ -201,7 +202,7 @@ export default function PreviewModal({
             <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
               <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
             </svg>
-            Share to X
+            {t('preview.share_x')}
           </button>
         </div>
       </div>

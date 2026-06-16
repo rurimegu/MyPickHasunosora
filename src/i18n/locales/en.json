@@ -1,0 +1,61 @@
+{
+  "title": "MY PICK HASUNOSORA",
+  "description": "Choose your favorite songs of Hasunosora Girls' High School Idol Club!",
+  "controls": {
+    "database_loaded": "Loaded {{count}} songs in total",
+    "search_all": "Search All Songs",
+    "clear_grid": "Clear Grid",
+    "generating": "Generating Image...",
+    "generate": "Generate Image"
+  },
+  "grid": {
+    "selections": "SELECTIONS",
+    "no_pick": "No Pick",
+    "pick_song": "Pick Song",
+    "clear_pick": "Clear Pick"
+  },
+  "search": {
+    "title_select": "Select Song for {{name}}",
+    "title_global": "Global Song Search",
+    "subtitle_all": "All 103, 104, and 105期 Songs",
+    "placeholder": "Search by Title, Artist, Lyricist, Composer, Arranger, or Romaji...",
+    "no_results": "No songs found matching your search terms.",
+    "footer_info": "Found {{count}} matching songs out of {{total}} total.",
+    "lyricist": "Lyricist",
+    "composer": "Composer",
+    "arranger": "Arranger"
+  },
+  "preview": {
+    "title": "Image Preview",
+    "subtitle": "This is exactly how your exported selection card will look.",
+    "show_titles": "Show Song Titles",
+    "transparent_bg": "Transparent Background",
+    "updating": "Updating Preview...",
+    "close": "Close",
+    "download": "Download Image",
+    "share_x": "Share to X",
+    "share_text": "I created my best grid of Hasunosora Girls' High School Idol Club songs!\n(*Please attach the downloaded image)\n#MyPick蓮ノ空"
+  },
+  "confirm": {
+    "clear_all": "Are you sure you want to clear all your picks?"
+  },
+  "alert": {
+    "generate_failed": "Failed to generate image. Please try again."
+  },
+  "units": {
+    "hasunosora": "Hasunosora Girls' High School Idol Club",
+    "cerisebouquet": "Cerise Bouquet",
+    "dollchestra": "DOLLCHESTRA",
+    "miracrapark": "Mira-Cra Park!",
+    "edelnote": "Edel Note",
+    "other": "Shuffle / Solo / Other"
+  },
+  "grades": {
+    "c103": "103rd Class (2023)",
+    "c104": "104th Class (2024)",
+    "c105": "105th Class (2025)",
+    "c103_short": "103rd",
+    "c104_short": "104th",
+    "c105_short": "105th"
+  }
+}

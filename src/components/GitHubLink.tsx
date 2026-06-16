@@ -7,14 +7,14 @@ interface GitHubLinkProps {
 
 export default function GitHubLink({
   repoUrl = "https://github.com/rurimegu/MyPickHasunosora",
-  className = "absolute top-4 right-4 sm:top-6 sm:right-6"
+  className = ""
 }: GitHubLinkProps) {
   return (
     <a
       href={repoUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className={`${className} text-slate-400 hover:text-slate-900 transition-colors p-2 rounded-full hover:bg-slate-100/60`}
+      className={`text-slate-400 hover:text-slate-900 transition-colors p-2 rounded-full hover:bg-slate-100/60 ${className}`}
       title="View on GitHub"
     >
       <svg
