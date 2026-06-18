@@ -92,7 +92,7 @@ export default function SearchModal({
               {row ? t('search.title_select', { name: t(`units.${getUnitKey(row.id)}`) }) : t('search.title_global')}
             </h3>
             <p className="text-[10px] text-pink-500 mt-0.5 tracking-wider font-semibold">
-              {col ? t(`grades.${getGradeKey(col.id)}`) : t('search.subtitle_all')}
+              {col ? t(`grades.${getGradeKey(col.id)}_short`) : t('search.subtitle_all')}
             </p>
           </div>
           <button
