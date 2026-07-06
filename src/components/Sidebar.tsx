@@ -43,6 +43,11 @@ const OTHER_SITES: MyPickSite[] = [
     isActive: true
   },
   {
+    siteName: 'スクステMyPick蓮ノ空',
+    groupNameJa: 'Link！Like！ラブライブ！',
+    url: 'https://skst-mypick.sukisuki.club'
+  },
+  {
     siteName: 'My Pick IKIZULIVE!',
     groupNameJa: 'いきづらい部！',
     url: 'https://mypick-ikizulive.kotoha.moe/'
@@ -51,6 +56,16 @@ const OTHER_SITES: MyPickSite[] = [
     siteName: 'My Pick =LOVE',
     groupNameJa: '＝LOVE',
     url: 'https://mypick.kozueginko.com/'
+  },
+  {
+    siteName: 'My Pick ≠ME',
+    groupNameJa: '≠ME',
+    url: 'https://mypick-not-equal-me.kozueginko.com/'
+  },
+  {
+    siteName: 'My Pick ≒JOY',
+    groupNameJa: '≒JOY',
+    url: 'https://mypick-nearly-equal-joy.kozueginko.com/'
   }
 ];
 
